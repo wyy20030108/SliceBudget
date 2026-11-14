@@ -1,0 +1,16 @@
+{
+  "cohort": "ACDC official training, development only",
+  "holdout_protocol_seed": 2026,
+  "development_seed": 20261117,
+  "blocks": 2,
+  "train_patients": 40,
+  "calibration_patients": 12,
+  "assessment_patients": 20,
+  "training_seed": 2027,
+  "warmup_updates": 1800,
+  "additional_updates": 2000,
+  "batch_size": 4,
+  "calibration_false_positive_rate": 0.2,
+  "methods": ["interval", "uncertain", "targeted_unbalanced", "targeted"],
+  "subjects": "Each fold starts with two shared annotated mid-stack slices per patient, one per phase. Every method requests exactly two additional dense masks, one per phase. All four evaluators use the same annotation budget and warmup checkpoint. The selector receives images, slice indices, phases and warmup probabilities only. Every genuinely acquired mask counts in the 160. Calibration uses separate labels common to all methods, and these are logged separately. Thresholds are chosen entirely from calibration patients."
+}

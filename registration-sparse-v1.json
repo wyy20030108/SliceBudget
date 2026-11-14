@@ -1,0 +1,17 @@
+{
+  "data_release": "ACDC official training release",
+  "holdout_protocol_seed": 2026,
+  "development_seed": 20261116,
+  "folds": 2,
+  "calibration_patients_per_fold": 16,
+  "training_seeds": [2025, 2026],
+  "dense_slices_per_phase": 2,
+  "updates": 3000,
+  "batch_size": 4,
+  "methods": ["interval", "random", "positive", "balanced"],
+  "target_calibration_fpr": 0.2,
+  "maximum_evaluation_fpr_increase": 0.05,
+  "maximum_global_dice_drop": 0.01,
+  "minimum_small_recall_increase": 0.02,
+  "notes": "Two cross-fitted 40-patient development blocks. Each models the other block using 16 disjoint calibration and 24 assessment patients. Assessment masks stay out of model fitting, slice assignment and threshold calibration within each fold. In each phase, if available, pick class-specific small-positive and true-absent examples using training mask-derived triage. Positive-only ablation shares the prior positive. Any masks used to construct simulated triage lie outside the reported training-slice count; practical annotation resource accounting is pending. Freeze this protocol before launching cloud experiments."
+}

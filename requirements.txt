@@ -1,0 +1,5 @@
+# The CUDA-enabled torch build comes from the GPU image or the official PyTorch index.
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+nibabel==5.3.3

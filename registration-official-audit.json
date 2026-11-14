@@ -1,0 +1,9 @@
+{
+  "data": "ACDC official challenge testing release, 50 patients, same dataset source as training",
+  "development_cohorts": ["registration-sparse-v1.json", "registration-image-budget.json"],
+  "freeze": "Carry forward all four policies in each study, both development folds and their original training seeds. Refit each model on its original development roster and calibrate only on its original calibration patients. Read official test masks solely for scoring and never to change selections, models, calibration or metrics.",
+  "primary_explanatory_contrasts": [{"study": "truth-informed", "contrast": "balanced minus positive"}, {"study": "truth-informed", "contrast": "balanced minus interval"}, {"study": "image-only", "contrast": "targeted minus interval"}, {"study": "image-only", "contrast": "targeted minus uncertain"}],
+  "outcomes": ["patient-macro small-foreground recall", "patient-macro true-absence false-positive rate", "patient-macro near-absence false-positive rate", "whole-foreground Dice", "small-foreground Dice"],
+  "inference": "First average paired outcomes per official test patient across applicable seeds and folds, then bootstrap the 50 distinct patients. Do not treat the repeat results on official cases as new patients. Explain observed tradeoffs. Test thresholds are never fit on the test release.",
+  "operating_point": "20% calibration target is not a guaranteed or necessarily matched test FPR. Add threshold-free standardized AUC limited to FPR 0.4 for comparison."
+}

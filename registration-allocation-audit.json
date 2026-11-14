@@ -1,0 +1,8 @@
+{
+  "status": "Follow-up designed from development summaries before viewing official audit outcomes",
+  "shared_protocol": "registration-image-budget.json",
+  "arms": ["interval", "uncertain", "targeted_unbalanced", "targeted", "truth_balanced", "mixed_image"],
+  "contrast": "Same 40 patients and initial two masks per patient, warmup, number of training updates, two new masks per patient, calibration roster, and held-apart evaluation patients. The truth-informed diagnostic enters the same assignment rule with mask-derived candidate eligibility; the mixed arm uses the interval policy for half of the patients per phase and the image-guided policy for the other half. The half is selected with a fixed seed before evaluation.",
+  "truth_cost": "Truth-informed selection needs complete masks for the training pool, so is not cost-equivalent as an acquisition workflow. Intermediate masks used only to select are counted separately as information required. Image-guided policies and the mixed arm require only the 160 dense training masks and zero additional mask lookups for scoring.",
+  "analysis": "Use all frozen contrasts and report patient-level paired effects, realized FPR and Dice. Match the image-only official outputs against their development acquisition lists, and publish no official test-based tuning. Treat revisions after inspecting the development cohorts as exploratory until this same-source confirmation."
+}

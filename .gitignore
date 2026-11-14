@@ -1,0 +1,15 @@
+/data/
+/runs/
+/.venv/
+__pycache__/
+*.py[cod]
+*.nii
+*.nii.gz
+*.npz
+*.pt
+*.pth
+*.zip
+*.tar.gz
+*.pem
+.env
+autodl_*
