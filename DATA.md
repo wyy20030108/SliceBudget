@@ -6,6 +6,8 @@ Cite O. Bernard et al., “Deep Learning Techniques for Automatic MRI Cardiac Mu
 
 `results/annotation-evidence-aggregate.json` holds patient-aggregated outcome estimates and resampling intervals. `results/annotation-target-audit.json` counts whether selected slice–class nominations matched their reference masks by class, phase and state. The corresponding scripts reconstruct summaries from local evaluation output. The audit estimates annotation effort in masks rather than clinician time.
 
+`results/acquisition-baseline-aggregate.json` contains post-hoc uniform-random and pooled-image-difference controls at the frozen 160-mask budget and their paired contrasts against balanced targeting on the ACDC test cohort.
+
 The external transfer audit uses the original Sunnybrook 2009 cine MRI release from Sunnybrook Health Sciences Centre, Toronto. The [Cardiac Atlas Project data page](https://www.cardiacatlas.org/sunnybrook-cardiac-data/) specifies CC0 1.0. The converter downloads the [original challenge archives](https://sourceforge.net/projects/cardiac-mr/files/) and records their SHA-256 checksums locally. Cite Radau et al., Evaluation Framework for Algorithms Segmenting Short Axis Cardiac MRI, The MIDAS Journal, 2009. [Original article](https://doi.org/10.54294/g80ruo)
 
 `results/sunnybrook-transfer.json` contains the external LV-cavity evaluation at end-diastole and end-systole. `results/sunnybrook-myo-ed.json` contains the secondary end-diastolic LV myocardium evaluation. The cohort contains 45 patients with 805 contoured LV cavity slices, of which 420 have paired epicardial contours.

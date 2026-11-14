@@ -37,6 +37,17 @@ python audit_prcv_bridge.py aggregate --folds runs/extension/prcv-bridge-fold-0 
 python summarize_budget_audit.py --experiment runs/extension --original runs/sparse-official-cloud --output runs/mask-budget-aggregate.json
 ```
 
+### 等预算追加对照
+
+在原 ACDC 协议及 160 张掩膜预算下，追加均匀随机选片及图像差异选片。后者比较候选切片与同一患者同一期的初始切片，取中心化并归一化的 16×16 块均值特征欧氏距离最大的候选。追加对照在主实验后设计，结果仍使用同一批 ACDC 测试患者。随机选片每折固定一个清单。
+
+```bash
+for fold in 0 1; do
+  python audit_acquisition_baselines.py --data data/acdc-192 --official-audit data/acdc-challenge-audit-192 --registration registration-image-budget.json --prior "runs/sparse-image-cloud/fold-$fold" --official-prior "runs/sparse-official-cloud/image-$fold" --output "runs/acquisition-baselines/fold-$fold" --fold "$fold"
+done
+python summarize_acquisition_baselines.py --runs runs/acquisition-baselines --official-prior runs/sparse-official-cloud --output runs/acquisition-baselines/summary-public.json
+```
+
 ### 独立中心验证
 
 外部影像只用于评分。沿用上述两折的 ACDC 选片名单、训练设置和类别阈值。重建四种策略的教师模型时核验其 ACDC 校准阈值是否与原运行一致。Sunnybrook 按原始人工轮廓评价左室腔舒张末期和收缩末期，并单独评价舒张末期左室心肌。York 儿科队列在所有时相均有轮廓的共同切片上汇总左室腔面积，按其最大值和最小值估计两个时相，分别评价左室腔和左室心肌。外部数据上的未勾画切片视为状态未知，评估限于对应类别有人工轮廓的阳性切片。检出召回使用源域阈值，外部误报率及部分 AUC 在结果中记为 `null`。数据来源及适用范围见 [DATA.md](DATA.md)。
@@ -63,4 +74,4 @@ for sample in sunnybrook-transfer sunnybrook-myo-ed york-lv york-myo acdc-lv-ref
 done
 ```
 
-复现时，实际数据使用应遵守其研究许可。论文或补充包如使用这些数据，引用 Bernard 等的原始论文并按会方匿名要求处理。报告的生成式 AI 参与、可接受的使用范围和正式投稿由作者按 PAKDD 规则核实。 [PAKDD 作者指南](https://www.pakdd2027.org/pages/calls/authors-kit)
+论文及补充材料应引用原始数据论文，数据来源见 [DATA.md](DATA.md)。投稿按会方双盲要求处理仓库链接和作者信息，并按出版政策如实披露生成式 AI 工具的使用范围。 [DASFAA 征稿](https://dasfaa2027.github.io/CallforResearchTrack/list.htm) · [Springer 写作政策](https://www.springernature.com/gp/policies/editorial-policies/ai-manuscript-preparation)

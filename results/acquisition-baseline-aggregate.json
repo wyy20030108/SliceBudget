@@ -1,0 +1,164 @@
+{
+  "patients": 50,
+  "means": {
+    "uniform_random": {
+      "recall": {
+        "mean": 0.033772180433945136,
+        "n": 50
+      },
+      "fpr": {
+        "mean": 0.18923315579978242,
+        "n": 49
+      },
+      "near_fpr": {
+        "mean": 0.024796747967479674,
+        "n": 41
+      },
+      "global_dice": {
+        "mean": 0.7794038929546584,
+        "n": 50
+      },
+      "small_dice": {
+        "mean": 0.39518924890976664,
+        "n": 50
+      }
+    },
+    "pooled_image_farthest": {
+      "recall": {
+        "mean": 0.1981002575855517,
+        "n": 50
+      },
+      "fpr": {
+        "mean": 0.2594174766143553,
+        "n": 49
+      },
+      "near_fpr": {
+        "mean": 0.024390243902439025,
+        "n": 41
+      },
+      "global_dice": {
+        "mean": 0.7607792840441276,
+        "n": 50
+      },
+      "small_dice": {
+        "mean": 0.46456038534188765,
+        "n": 50
+      }
+    },
+    "targeted": {
+      "recall": {
+        "mean": 0.03779894941659648,
+        "n": 50
+      },
+      "fpr": {
+        "mean": 0.20514517995010192,
+        "n": 49
+      },
+      "near_fpr": {
+        "mean": 0.018292682926829267,
+        "n": 41
+      },
+      "global_dice": {
+        "mean": 0.7538244052518454,
+        "n": 50
+      },
+      "small_dice": {
+        "mean": 0.4807913458428007,
+        "n": 50
+      }
+    }
+  },
+  "contrasts": {
+    "uniform_random": {
+      "recall": {
+        "difference": 0.004026768982651336,
+        "interval": [
+          -0.010122803666921315,
+          0.018211964424464426
+        ]
+      },
+      "fpr": {
+        "difference": 0.015912024150319466,
+        "interval": [
+          -0.009351300043827053,
+          0.04410639118284678
+        ]
+      },
+      "near_fpr": {
+        "difference": -0.006504065040650405,
+        "interval": [
+          -0.026422764227642274,
+          0.012195121951219513
+        ]
+      },
+      "global_dice": {
+        "difference": -0.02557948770281298,
+        "interval": [
+          -0.031778008897766274,
+          -0.01912817049578745
+        ]
+      },
+      "small_dice": {
+        "difference": 0.08560209693303408,
+        "interval": [
+          0.0649010313962192,
+          0.1067440567090368
+        ]
+      }
+    },
+    "pooled_image_farthest": {
+      "recall": {
+        "difference": -0.16030130816895524,
+        "interval": [
+          -0.19888025426371014,
+          -0.12457687496327202
+        ]
+      },
+      "fpr": {
+        "difference": -0.05427229666425344,
+        "interval": [
+          -0.09147156810609693,
+          -0.016122492578449957
+        ]
+      },
+      "near_fpr": {
+        "difference": -0.0060975609756097554,
+        "interval": [
+          -0.031504065040650404,
+          0.02032520325203252
+        ]
+      },
+      "global_dice": {
+        "difference": -0.006954878792282058,
+        "interval": [
+          -0.014514023749263128,
+          0.0005824664054749484
+        ]
+      },
+      "small_dice": {
+        "difference": 0.016230960500913105,
+        "interval": [
+          -0.0034183596133544113,
+          0.035604010549502046
+        ]
+      }
+    }
+  },
+  "mean_run_pauc": {
+    "uniform_random": {
+      "all_absent": 0.4220989002042147,
+      "near_absent": 0.67223466221768
+    },
+    "pooled_image_farthest": {
+      "all_absent": 0.47286178355008057,
+      "near_absent": 0.7424243573940925
+    },
+    "targeted": {
+      "all_absent": 0.41048579488280357,
+      "near_absent": 0.7044081449233262
+    }
+  },
+  "scope": "Post-hoc controls at the frozen 160-mask budget on the ACDC official test cohort",
+  "registration_sha256": "3e130b950e27bb03388c27b0fee9276c4563467e19fc2269478c12c6bfbd19d1",
+  "random_selection_seed": 20261126
+}
