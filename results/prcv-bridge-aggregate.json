@@ -1,0 +1,887 @@
+{
+  "patients": 50,
+  "means": {
+    "uncertain_off": {
+      "global_dice": 0.7898120200718796,
+      "small_dice": 0.36396918325046346,
+      "recall": 0.08217863345804523,
+      "fpr": 0.17462294941286535,
+      "near_fpr": 0.027439024390243903
+    },
+    "uncertain_on": {
+      "global_dice": 0.79062440708652,
+      "small_dice": 0.37104312108981946,
+      "recall": 0.081027405600935,
+      "fpr": 0.16400043867030661,
+      "near_fpr": 0.01524390243902439
+    },
+    "targeted_off": {
+      "global_dice": 0.7538244052518454,
+      "small_dice": 0.4807913458428007,
+      "recall": 0.03779894941659648,
+      "fpr": 0.20514517995010192,
+      "near_fpr": 0.018292682926829267
+    },
+    "targeted_on": {
+      "global_dice": 0.7549968293029878,
+      "small_dice": 0.49389451454983907,
+      "recall": 0.041173132423132426,
+      "fpr": 0.19625429758983182,
+      "near_fpr": 0.012195121951219513
+    }
+  },
+  "targeted_minus_uncertain_off": {
+    "global_dice": {
+      "difference": -0.03598761482003424,
+      "patients": 50,
+      "descriptive_95_interval": [
+        -0.04451056885145452,
+        -0.027337893817901523
+      ]
+    },
+    "small_dice": {
+      "difference": 0.11682216259233734,
+      "patients": 50,
+      "descriptive_95_interval": [
+        0.08875753224848114,
+        0.14633199404030223
+      ]
+    },
+    "recall": {
+      "difference": -0.04437968404144874,
+      "patients": 50,
+      "descriptive_95_interval": [
+        -0.06656984681984682,
+        -0.022462147166558925
+      ]
+    },
+    "fpr": {
+      "difference": 0.03052223053723654,
+      "patients": 49,
+      "descriptive_95_interval": [
+        -0.004815310016780606,
+        0.06655874692451072
+      ]
+    },
+    "near_fpr": {
+      "difference": -0.009146341463414634,
+      "patients": 41,
+      "descriptive_95_interval": [
+        -0.0326698147010647,
+        0.012198009053954188
+      ]
+    }
+  },
+  "targeted_minus_uncertain_on": {
+    "global_dice": {
+      "difference": -0.03562757778353229,
+      "patients": 50,
+      "descriptive_95_interval": [
+        -0.0447440716756483,
+        -0.02649457103325203
+      ]
+    },
+    "small_dice": {
+      "difference": 0.12285139346001957,
+      "patients": 50,
+      "descriptive_95_interval": [
+        0.09833252986871516,
+        0.1483466664981178
+      ]
+    },
+    "recall": {
+      "difference": -0.03985427317780259,
+      "patients": 50,
+      "descriptive_95_interval": [
+        -0.06179756811815634,
+        -0.01848411098705216
+      ]
+    },
+    "fpr": {
+      "difference": 0.03225385891952519,
+      "patients": 49,
+      "descriptive_95_interval": [
+        0.004578115900941907,
+        0.06016366696029062
+      ]
+    },
+    "near_fpr": {
+      "difference": -0.003048780487804878,
+      "patients": 41,
+      "descriptive_95_interval": [
+        -0.021875,
+        0.01524390243902439
+      ]
+    }
+  },
+  "uot_effect_uncertain": {
+    "global_dice": {
+      "difference": 0.000812387014640501,
+      "patients": 50,
+      "descriptive_95_interval": [
+        -0.0010664787621142476,
+        0.002678487446624203
+      ]
+    },
+    "small_dice": {
+      "difference": 0.007073937839356048,
+      "patients": 50,
+      "descriptive_95_interval": [
+        -0.0017229986030594354,
+        0.015976872379093517
+      ]
+    },
+    "recall": {
+      "difference": -0.0011512278571102087,
+      "patients": 50,
+      "descriptive_95_interval": [
+        -0.018526881451881454,
+        0.01706591745672628
+      ]
+    },
+    "fpr": {
+      "difference": -0.010622510742558761,
+      "patients": 49,
+      "descriptive_95_interval": [
+        -0.030254996377735738,
+        0.010733301379992557
+      ]
+    },
+    "near_fpr": {
+      "difference": -0.012195121951219513,
+      "patients": 41,
+      "descriptive_95_interval": [
+        -0.03333333333333333,
+        0.0
+      ]
+    }
+  },
+  "uot_effect_targeted": {
+    "global_dice": {
+      "difference": 0.0011724240511424566,
+      "patients": 50,
+      "descriptive_95_interval": [
+        -0.0006773259574517847,
+        0.0030924783443934717
+      ]
+    },
+    "small_dice": {
+      "difference": 0.013103168707038284,
+      "patients": 50,
+      "descriptive_95_interval": [
+        0.00024156187101504538,
+        0.026688720817338935
+      ]
+    },
+    "recall": {
+      "difference": 0.0033741830065359473,
+      "patients": 50,
+      "descriptive_95_interval": [
+        -0.009800816993464051,
+        0.017961309523809525
+      ]
+    },
+    "fpr": {
+      "difference": -0.008890882360270115,
+      "patients": 49,
+      "descriptive_95_interval": [
+        -0.025200336563196698,
+        0.00763803646916642
+      ]
+    },
+    "near_fpr": {
+      "difference": -0.006097560975609756,
+      "patients": 41,
+      "descriptive_95_interval": [
+        -0.019736842105263157,
+        0.0
+      ]
+    }
+  },
+  "interaction_targeted_minus_uncertain": {
+    "global_dice": {
+      "difference": 0.0003600370365019556,
+      "patients": 50,
+      "descriptive_95_interval": [
+        -0.0021906877342801343,
+        0.0030459102603050776
+      ]
+    },
+    "small_dice": {
+      "difference": 0.006029230867682233,
+      "patients": 50,
+      "descriptive_95_interval": [
+        -0.009799196254722078,
+        0.023103820092050198
+      ]
+    },
+    "recall": {
+      "difference": 0.004525410863646157,
+      "patients": 50,
+      "descriptive_95_interval": [
+        -0.021768191000176296,
+        0.029809628239407655
+      ]
+    },
+    "fpr": {
+      "difference": 0.0017316283822886467,
+      "patients": 49,
+      "descriptive_95_interval": [
+        -0.020086563252923545,
+        0.023819250112632473
+      ]
+    },
+    "near_fpr": {
+      "difference": 0.006097560975609756,
+      "patients": 41,
+      "descriptive_95_interval": [
+        -0.014957264957264958,
+        0.028455284552845524
+      ]
+    }
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "cells": {
+        "uncertain": {
+          "mask_occupancy": {
+            "phase0_class1": {
+              "acquired": {
+                "slices": 80,
+                "absent": 8,
+                "small": 10,
+                "mean_foreground_area_fraction": 0.013748168945312497
+              },
+              "pool": {
+                "slices": 389,
+                "absent": 45,
+                "small": 87,
+                "mean_foreground_area_fraction": 0.012372511313731792
+              }
+            },
+            "phase0_class2": {
+              "acquired": {
+                "slices": 80,
+                "absent": 2,
+                "small": 2,
+                "mean_foreground_area_fraction": 0.010701497395833336
+              },
+              "pool": {
+                "slices": 389,
+                "absent": 6,
+                "small": 20,
+                "mean_foreground_area_fraction": 0.009702863913881747
+              }
+            },
+            "phase0_class3": {
+              "acquired": {
+                "slices": 80,
+                "absent": 2,
+                "small": 6,
+                "mean_foreground_area_fraction": 0.014858330620659721
+              },
+              "pool": {
+                "slices": 389,
+                "absent": 6,
+                "small": 38,
+                "mean_foreground_area_fraction": 0.013487566610432735
+              }
+            },
+            "phase1_class1": {
+              "acquired": {
+                "slices": 80,
+                "absent": 29,
+                "small": 8,
+                "mean_foreground_area_fraction": 0.006130303276909724
+              },
+              "pool": {
+                "slices": 389,
+                "absent": 108,
+                "small": 89,
+                "mean_foreground_area_fraction": 0.006551769248964583
+              }
+            },
+            "phase1_class2": {
+              "acquired": {
+                "slices": 80,
+                "absent": 6,
+                "small": 3,
+                "mean_foreground_area_fraction": 0.01196255154079861
+              },
+              "pool": {
+                "slices": 389,
+                "absent": 20,
+                "small": 22,
+                "mean_foreground_area_fraction": 0.011079842143316195
+              }
+            },
+            "phase1_class3": {
+              "acquired": {
+                "slices": 80,
+                "absent": 6,
+                "small": 8,
+                "mean_foreground_area_fraction": 0.008886040581597221
+              },
+              "pool": {
+                "slices": 389,
+                "absent": 27,
+                "small": 52,
+                "mean_foreground_area_fraction": 0.008021773354934304
+              }
+            }
+          },
+          "off": {
+            "means": {
+              "global_dice": 0.7960488826041648,
+              "small_dice": 0.32979830497707224,
+              "recall": 0.08942829392829393,
+              "count_small": 7.74,
+              "fpr": 0.16090143350047312,
+              "count_absent": 7.62,
+              "near_fpr": 0.026422764227642274,
+              "count_near_absent": 2.14
+            },
+            "thresholds": {
+              "1": 0.515604555606842,
+              "2": 0.9294944405555725,
+              "3": 0.5472950339317322
+            },
+            "calibration_support": {
+              "1": 12,
+              "2": 7,
+              "3": 9
+            },
+            "prior_end": [
+              0.25,
+              0.25,
+              0.25,
+              0.25
+            ],
+            "pseudo_fraction": 0.9933170676231384,
+            "continuation_seconds": 18.620467661879957,
+            "assessment_pauc": {
+              "all_absent": 0.4779075842375911,
+              "near_absent": 0.6634272888652695
+            },
+            "reference_max_abs_delta": 0.0,
+            "reference_threshold_max_abs_delta": 0.0
+          },
+          "on": {
+            "means": {
+              "global_dice": 0.7983545957404331,
+              "small_dice": 0.33098925429127446,
+              "recall": 0.1075961815961816,
+              "count_small": 7.74,
+              "fpr": 0.16869532028595652,
+              "count_absent": 7.62,
+              "near_fpr": 0.018292682926829267,
+              "count_near_absent": 2.14
+            },
+            "thresholds": {
+              "1": 0.5219562649726868,
+              "2": 0.9663090109825134,
+              "3": 0.5375826358795166
+            },
+            "calibration_support": {
+              "1": 12,
+              "2": 7,
+              "3": 9
+            },
+            "prior_end": [
+              0.9671661853790283,
+              0.00966617465019226,
+              0.011103306896984577,
+              0.012064349837601185
+            ],
+            "pseudo_fraction": 0.9963936805725098,
+            "continuation_seconds": 19.833163127303123,
+            "assessment_pauc": {
+              "all_absent": 0.4707968979888433,
+              "near_absent": 0.6626488637821794
+            }
+          }
+        },
+        "targeted": {
+          "mask_occupancy": {
+            "phase0_class1": {
+              "acquired": {
+                "slices": 80,
+                "absent": 15,
+                "small": 22,
+                "mean_foreground_area_fraction": 0.007483588324652776
+              },
+              "pool": {
+                "slices": 389,
+                "absent": 45,
+                "small": 87,
+                "mean_foreground_area_fraction": 0.012372511313731792
+              }
+            },
+            "phase0_class2": {
+              "acquired": {
+                "slices": 80,
+                "absent": 3,
+                "small": 13,
+                "mean_foreground_area_fraction": 0.007942030164930555
+              },
+              "pool": {
+                "slices": 389,
+                "absent": 6,
+                "small": 20,
+                "mean_foreground_area_fraction": 0.009702863913881747
+              }
+            },
+            "phase0_class3": {
+              "acquired": {
+                "slices": 80,
+                "absent": 3,
+                "small": 19,
+                "mean_foreground_area_fraction": 0.011069403754340278
+              },
+              "pool": {
+                "slices": 389,
+                "absent": 6,
+                "small": 38,
+                "mean_foreground_area_fraction": 0.013487566610432735
+              }
+            },
+            "phase1_class1": {
+              "acquired": {
+                "slices": 80,
+                "absent": 25,
+                "small": 19,
+                "mean_foreground_area_fraction": 0.004725816514756944
+              },
+              "pool": {
+                "slices": 389,
+                "absent": 108,
+                "small": 89,
+                "mean_foreground_area_fraction": 0.006551769248964583
+              }
+            },
+            "phase1_class2": {
+              "acquired": {
+                "slices": 80,
+                "absent": 7,
+                "small": 10,
+                "mean_foreground_area_fraction": 0.009811401367187497
+              },
+              "pool": {
+                "slices": 389,
+                "absent": 20,
+                "small": 22,
+                "mean_foreground_area_fraction": 0.011079842143316195
+              }
+            },
+            "phase1_class3": {
+              "acquired": {
+                "slices": 80,
+                "absent": 9,
+                "small": 19,
+                "mean_foreground_area_fraction": 0.007143147786458336
+              },
+              "pool": {
+                "slices": 389,
+                "absent": 27,
+                "small": 52,
+                "mean_foreground_area_fraction": 0.008021773354934304
+              }
+            }
+          },
+          "off": {
+            "means": {
+              "global_dice": 0.7565374487667712,
+              "small_dice": 0.5159548768296286,
+              "recall": 0.024365079365079364,
+              "count_small": 7.74,
+              "fpr": 0.22504361384913604,
+              "count_absent": 7.62,
+              "near_fpr": 0.012195121951219513,
+              "count_near_absent": 2.14
+            },
+            "thresholds": {
+              "1": 0.7231456637382507,
+              "2": 0.8050995469093323,
+              "3": 0.9096519351005554
+            },
+            "calibration_support": {
+              "1": 12,
+              "2": 7,
+              "3": 9
+            },
+            "prior_end": [
+              0.25,
+              0.25,
+              0.25,
+              0.25
+            ],
+            "pseudo_fraction": 0.9929298162460327,
+            "continuation_seconds": 20.080576271750033,
+            "assessment_pauc": {
+              "all_absent": 0.4213973322945016,
+              "near_absent": 0.7345671255433507
+            },
+            "reference_max_abs_delta": 0.0,
+            "reference_threshold_max_abs_delta": 0.0
+          },
+          "on": {
+            "means": {
+              "global_dice": 0.7597788010843073,
+              "small_dice": 0.5110019434285777,
+              "recall": 0.05538888888888889,
+              "count_small": 7.74,
+              "fpr": 0.21524760753452227,
+              "count_absent": 7.62,
+              "near_fpr": 0.012195121951219513,
+              "count_near_absent": 2.14
+            },
+            "thresholds": {
+              "1": 0.5551699995994568,
+              "2": 0.7633680105209351,
+              "3": 0.8947184085845947
+            },
+            "calibration_support": {
+              "1": 12,
+              "2": 7,
+              "3": 9
+            },
+            "prior_end": [
+              0.9759817123413086,
+              0.005923693999648094,
+              0.008919025771319866,
+              0.009175557643175125
+            ],
+            "pseudo_fraction": 0.9962671399116516,
+            "continuation_seconds": 20.639305682852864,
+            "assessment_pauc": {
+              "all_absent": 0.43800285326242744,
+              "near_absent": 0.7548497391653316
+            }
+          }
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "cells": {
+        "uncertain": {
+          "mask_occupancy": {
+            "phase0_class1": {
+              "acquired": {
+                "slices": 80,
+                "absent": 8,
+                "small": 8,
+                "mean_foreground_area_fraction": 0.01314697265625
+              },
+              "pool": {
+                "slices": 379,
+                "absent": 42,
+                "small": 73,
+                "mean_foreground_area_fraction": 0.012914545198438876
+              }
+            },
+            "phase0_class2": {
+              "acquired": {
+                "slices": 80,
+                "absent": 1,
+                "small": 2,
+                "mean_foreground_area_fraction": 0.010611640082465276
+              },
+              "pool": {
+                "slices": 379,
+                "absent": 7,
+                "small": 16,
+                "mean_foreground_area_fraction": 0.009972189011653474
+              }
+            },
+            "phase0_class3": {
+              "acquired": {
+                "slices": 80,
+                "absent": 1,
+                "small": 5,
+                "mean_foreground_area_fraction": 0.013616943359375003
+              },
+              "pool": {
+                "slices": 379,
+                "absent": 8,
+                "small": 43,
+                "mean_foreground_area_fraction": 0.012578073466358839
+              }
+            },
+            "phase1_class1": {
+              "acquired": {
+                "slices": 80,
+                "absent": 23,
+                "small": 12,
+                "mean_foreground_area_fraction": 0.00749274359809028
+              },
+              "pool": {
+                "slices": 379,
+                "absent": 98,
+                "small": 84,
+                "mean_foreground_area_fraction": 0.0074567031524846086
+              }
+            },
+            "phase1_class2": {
+              "acquired": {
+                "slices": 80,
+                "absent": 5,
+                "small": 1,
+                "mean_foreground_area_fraction": 0.012188042534722224
+              },
+              "pool": {
+                "slices": 379,
+                "absent": 26,
+                "small": 17,
+                "mean_foreground_area_fraction": 0.011268617959359423
+              }
+            },
+            "phase1_class3": {
+              "acquired": {
+                "slices": 80,
+                "absent": 5,
+                "small": 3,
+                "mean_foreground_area_fraction": 0.008258395724826386
+              },
+              "pool": {
+                "slices": 379,
+                "absent": 34,
+                "small": 58,
+                "mean_foreground_area_fraction": 0.007244055308194077
+              }
+            }
+          },
+          "off": {
+            "means": {
+              "global_dice": 0.7835751575395941,
+              "small_dice": 0.3981400615238546,
+              "recall": 0.07492897298779652,
+              "count_small": 7.74,
+              "fpr": 0.18834446532525762,
+              "count_absent": 7.62,
+              "near_fpr": 0.028455284552845524,
+              "count_near_absent": 2.14
+            },
+            "thresholds": {
+              "1": 0.5482199788093567,
+              "2": 0.785695493221283,
+              "3": 0.5680612325668335
+            },
+            "calibration_support": {
+              "1": 11,
+              "2": 6,
+              "3": 8
+            },
+            "prior_end": [
+              0.25,
+              0.25,
+              0.25,
+              0.25
+            ],
+            "pseudo_fraction": 0.9924673438072205,
+            "continuation_seconds": 21.50571030192077,
+            "assessment_pauc": {
+              "all_absent": 0.44253283521852327,
+              "near_absent": 0.6562261629223264
+            },
+            "reference_max_abs_delta": 0.0,
+            "reference_threshold_max_abs_delta": 0.0
+          },
+          "on": {
+            "means": {
+              "global_dice": 0.7828942184326071,
+              "small_dice": 0.41109698788836435,
+              "recall": 0.05445862960568844,
+              "count_small": 7.74,
+              "fpr": 0.15930555705465668,
+              "count_absent": 7.62,
+              "near_fpr": 0.012195121951219513,
+              "count_near_absent": 2.14
+            },
+            "thresholds": {
+              "1": 0.6474493741989136,
+              "2": 0.8132326006889343,
+              "3": 0.652805507183075
+            },
+            "calibration_support": {
+              "1": 11,
+              "2": 6,
+              "3": 8
+            },
+            "prior_end": [
+              0.9672636389732361,
+              0.010338419117033482,
+              0.011295702308416367,
+              0.011102231219410896
+            ],
+            "pseudo_fraction": 0.9960190057754517,
+            "continuation_seconds": 22.157745216041803,
+            "assessment_pauc": {
+              "all_absent": 0.4463624156771783,
+              "near_absent": 0.6588497169203537
+            }
+          }
+        },
+        "targeted": {
+          "mask_occupancy": {
+            "phase0_class1": {
+              "acquired": {
+                "slices": 80,
+                "absent": 13,
+                "small": 19,
+                "mean_foreground_area_fraction": 0.009245130750868056
+              },
+              "pool": {
+                "slices": 379,
+                "absent": 42,
+                "small": 73,
+                "mean_foreground_area_fraction": 0.012914545198438876
+              }
+            },
+            "phase0_class2": {
+              "acquired": {
+                "slices": 80,
+                "absent": 2,
+                "small": 9,
+                "mean_foreground_area_fraction": 0.008558824327256943
+              },
+              "pool": {
+                "slices": 379,
+                "absent": 7,
+                "small": 16,
+                "mean_foreground_area_fraction": 0.009972189011653474
+              }
+            },
+            "phase0_class3": {
+              "acquired": {
+                "slices": 80,
+                "absent": 3,
+                "small": 21,
+                "mean_foreground_area_fraction": 0.010370551215277777
+              },
+              "pool": {
+                "slices": 379,
+                "absent": 8,
+                "small": 43,
+                "mean_foreground_area_fraction": 0.012578073466358839
+              }
+            },
+            "phase1_class1": {
+              "acquired": {
+                "slices": 80,
+                "absent": 14,
+                "small": 24,
+                "mean_foreground_area_fraction": 0.006567043728298613
+              },
+              "pool": {
+                "slices": 379,
+                "absent": 98,
+                "small": 84,
+                "mean_foreground_area_fraction": 0.0074567031524846086
+              }
+            },
+            "phase1_class2": {
+              "acquired": {
+                "slices": 80,
+                "absent": 2,
+                "small": 4,
+                "mean_foreground_area_fraction": 0.011128065321180557
+              },
+              "pool": {
+                "slices": 379,
+                "absent": 26,
+                "small": 17,
+                "mean_foreground_area_fraction": 0.011268617959359423
+              }
+            },
+            "phase1_class3": {
+              "acquired": {
+                "slices": 80,
+                "absent": 5,
+                "small": 19,
+                "mean_foreground_area_fraction": 0.006748792860243056
+              },
+              "pool": {
+                "slices": 379,
+                "absent": 34,
+                "small": 58,
+                "mean_foreground_area_fraction": 0.007244055308194077
+              }
+            }
+          },
+          "off": {
+            "means": {
+              "global_dice": 0.7511113617369195,
+              "small_dice": 0.44562781485597297,
+              "recall": 0.05123281946811359,
+              "count_small": 7.74,
+              "fpr": 0.18524674605106778,
+              "count_absent": 7.62,
+              "near_fpr": 0.024390243902439025,
+              "count_near_absent": 2.14
+            },
+            "thresholds": {
+              "1": 0.9982663989067078,
+              "2": 0.5019241571426392,
+              "3": 0.5157266855239868
+            },
+            "calibration_support": {
+              "1": 11,
+              "2": 6,
+              "3": 8
+            },
+            "prior_end": [
+              0.25,
+              0.25,
+              0.25,
+              0.25
+            ],
+            "pseudo_fraction": 0.9922364950180054,
+            "continuation_seconds": 20.835734341293573,
+            "assessment_pauc": {
+              "all_absent": 0.39957425747110553,
+              "near_absent": 0.6742491643033015
+            },
+            "reference_max_abs_delta": 0.0,
+            "reference_threshold_max_abs_delta": 0.0
+          },
+          "on": {
+            "means": {
+              "global_dice": 0.7502148575216683,
+              "small_dice": 0.4767870856711003,
+              "recall": 0.026957375957375955,
+              "count_small": 7.74,
+              "fpr": 0.1772609876451413,
+              "count_absent": 7.62,
+              "near_fpr": 0.012195121951219513,
+              "count_near_absent": 2.14
+            },
+            "thresholds": {
+              "1": 0.9939146637916565,
+              "2": 0.6207776069641113,
+              "3": 0.5744519233703613
+            },
+            "calibration_support": {
+              "1": 11,
+              "2": 6,
+              "3": 8
+            },
+            "prior_end": [
+              0.973679780960083,
+              0.007827172987163067,
+              0.009725191630423069,
+              0.008767911233007908
+            ],
+            "pseudo_fraction": 0.9958187341690063,
+            "continuation_seconds": 21.977574698626995,
+            "assessment_pauc": {
+              "all_absent": 0.3957529931093649,
+              "near_absent": 0.6656617911943181
+            }
+          }
+        }
+      }
+    }
+  ]
+}
