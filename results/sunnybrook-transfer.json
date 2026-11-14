@@ -1,0 +1,379 @@
+{
+  "folds": [
+    0,
+    1
+  ],
+  "cohort": {
+    "name": "Sunnybrook",
+    "source_url": "https://www.cardiacatlas.org/sunnybrook-cardiac-data/",
+    "assessment_kind": "external transfer",
+    "classes": [
+      3
+    ],
+    "positive_only": true,
+    "source_fit_only": true,
+    "n_patients": 45
+  },
+  "methods": {
+    "interval": {
+      "recall": {
+        "mean": 0.2196969696969697,
+        "n": 33
+      },
+      "fpr": {
+        "mean": null,
+        "n": 0
+      },
+      "near_fpr": {
+        "mean": null,
+        "n": 0
+      },
+      "global_dice": {
+        "mean": 0.7629855345664849,
+        "n": 45
+      },
+      "small_dice": {
+        "mean": 0.44243517678709987,
+        "n": 33
+      }
+    },
+    "uncertain": {
+      "recall": {
+        "mean": 0.3232323232323232,
+        "n": 33
+      },
+      "fpr": {
+        "mean": null,
+        "n": 0
+      },
+      "near_fpr": {
+        "mean": null,
+        "n": 0
+      },
+      "global_dice": {
+        "mean": 0.7597026150957252,
+        "n": 45
+      },
+      "small_dice": {
+        "mean": 0.3550225330617348,
+        "n": 33
+      }
+    },
+    "targeted_unbalanced": {
+      "recall": {
+        "mean": 0.17424242424242425,
+        "n": 33
+      },
+      "fpr": {
+        "mean": null,
+        "n": 0
+      },
+      "near_fpr": {
+        "mean": null,
+        "n": 0
+      },
+      "global_dice": {
+        "mean": 0.7408905873660561,
+        "n": 45
+      },
+      "small_dice": {
+        "mean": 0.5269707249557327,
+        "n": 33
+      }
+    },
+    "targeted": {
+      "recall": {
+        "mean": 0.1767676767676768,
+        "n": 33
+      },
+      "fpr": {
+        "mean": null,
+        "n": 0
+      },
+      "near_fpr": {
+        "mean": null,
+        "n": 0
+      },
+      "global_dice": {
+        "mean": 0.7408166823671563,
+        "n": 45
+      },
+      "small_dice": {
+        "mean": 0.529827717136639,
+        "n": 33
+      }
+    }
+  },
+  "comparisons": {
+    "interval": {
+      "recall": {
+        "difference": -0.04292929292929293,
+        "patients": 33,
+        "descriptive_95_interval": [
+          -0.1126159247482777,
+          0.025
+        ]
+      },
+      "fpr": {
+        "difference": null,
+        "patients": 0,
+        "descriptive_95_interval": null
+      },
+      "near_fpr": {
+        "difference": null,
+        "patients": 0,
+        "descriptive_95_interval": null
+      },
+      "global_dice": {
+        "difference": -0.022168852199328667,
+        "patients": 45,
+        "descriptive_95_interval": [
+          -0.03272561377555006,
+          -0.012064228416003657
+        ]
+      },
+      "small_dice": {
+        "difference": 0.08739254034953897,
+        "patients": 33,
+        "descriptive_95_interval": [
+          0.03509434208664268,
+          0.14128779140589315
+        ]
+      }
+    },
+    "uncertain": {
+      "recall": {
+        "difference": -0.14646464646464646,
+        "patients": 33,
+        "descriptive_95_interval": [
+          -0.23453192640692638,
+          -0.0625
+        ]
+      },
+      "fpr": {
+        "difference": null,
+        "patients": 0,
+        "descriptive_95_interval": null
+      },
+      "near_fpr": {
+        "difference": null,
+        "patients": 0,
+        "descriptive_95_interval": null
+      },
+      "global_dice": {
+        "difference": -0.018885932728569046,
+        "patients": 45,
+        "descriptive_95_interval": [
+          -0.032676984867493965,
+          -0.005702225289538259
+        ]
+      },
+      "small_dice": {
+        "difference": 0.17480518407490403,
+        "patients": 33,
+        "descriptive_95_interval": [
+          0.11685707793470475,
+          0.23490646643968546
+        ]
+      }
+    },
+    "targeted_unbalanced": {
+      "recall": {
+        "difference": 0.0025252525252525263,
+        "patients": 33,
+        "descriptive_95_interval": [
+          -0.06372549019607843,
+          0.0625
+        ]
+      },
+      "fpr": {
+        "difference": null,
+        "patients": 0,
+        "descriptive_95_interval": null
+      },
+      "near_fpr": {
+        "difference": null,
+        "patients": 0,
+        "descriptive_95_interval": null
+      },
+      "global_dice": {
+        "difference": -7.390499889975791e-05,
+        "patients": 45,
+        "descriptive_95_interval": [
+          -0.006079159564529418,
+          0.006208816018921086
+        ]
+      },
+      "small_dice": {
+        "difference": 0.002856992180906174,
+        "patients": 33,
+        "descriptive_95_interval": [
+          -0.035124812983679095,
+          0.0402362864644178
+        ]
+      }
+    }
+  },
+  "assessment_pauc_by_fold": {
+    "interval": {
+      "0": {
+        "all_absent": null,
+        "near_absent": null
+      },
+      "1": {
+        "all_absent": null,
+        "near_absent": null
+      }
+    },
+    "uncertain": {
+      "0": {
+        "all_absent": null,
+        "near_absent": null
+      },
+      "1": {
+        "all_absent": null,
+        "near_absent": null
+      }
+    },
+    "targeted_unbalanced": {
+      "0": {
+        "all_absent": null,
+        "near_absent": null
+      },
+      "1": {
+        "all_absent": null,
+        "near_absent": null
+      }
+    },
+    "targeted": {
+      "0": {
+        "all_absent": null,
+        "near_absent": null
+      },
+      "1": {
+        "all_absent": null,
+        "near_absent": null
+      }
+    }
+  },
+  "support_by_fold": {
+    "0": {
+      "interval": {
+        "small": {
+          "patient_slice_classes": 71,
+          "patients": 33
+        },
+        "absent": {
+          "patient_slice_classes": 0,
+          "patients": 0
+        },
+        "near_absent": {
+          "patient_slice_classes": 0,
+          "patients": 0
+        }
+      },
+      "uncertain": {
+        "small": {
+          "patient_slice_classes": 71,
+          "patients": 33
+        },
+        "absent": {
+          "patient_slice_classes": 0,
+          "patients": 0
+        },
+        "near_absent": {
+          "patient_slice_classes": 0,
+          "patients": 0
+        }
+      },
+      "targeted_unbalanced": {
+        "small": {
+          "patient_slice_classes": 71,
+          "patients": 33
+        },
+        "absent": {
+          "patient_slice_classes": 0,
+          "patients": 0
+        },
+        "near_absent": {
+          "patient_slice_classes": 0,
+          "patients": 0
+        }
+      },
+      "targeted": {
+        "small": {
+          "patient_slice_classes": 71,
+          "patients": 33
+        },
+        "absent": {
+          "patient_slice_classes": 0,
+          "patients": 0
+        },
+        "near_absent": {
+          "patient_slice_classes": 0,
+          "patients": 0
+        }
+      }
+    },
+    "1": {
+      "interval": {
+        "small": {
+          "patient_slice_classes": 71,
+          "patients": 33
+        },
+        "absent": {
+          "patient_slice_classes": 0,
+          "patients": 0
+        },
+        "near_absent": {
+          "patient_slice_classes": 0,
+          "patients": 0
+        }
+      },
+      "uncertain": {
+        "small": {
+          "patient_slice_classes": 71,
+          "patients": 33
+        },
+        "absent": {
+          "patient_slice_classes": 0,
+          "patients": 0
+        },
+        "near_absent": {
+          "patient_slice_classes": 0,
+          "patients": 0
+        }
+      },
+      "targeted_unbalanced": {
+        "small": {
+          "patient_slice_classes": 71,
+          "patients": 33
+        },
+        "absent": {
+          "patient_slice_classes": 0,
+          "patients": 0
+        },
+        "near_absent": {
+          "patient_slice_classes": 0,
+          "patients": 0
+        }
+      },
+      "targeted": {
+        "small": {
+          "patient_slice_classes": 71,
+          "patients": 33
+        },
+        "absent": {
+          "patient_slice_classes": 0,
+          "patients": 0
+        },
+        "near_absent": {
+          "patient_slice_classes": 0,
+          "patients": 0
+        }
+      }
+    }
+  },
+  "per_center": {},
+  "pooling": "Average fold outcomes per patient, then bootstrap paired patients"
+}

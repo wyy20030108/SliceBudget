@@ -1,0 +1,33 @@
+{
+  "dataset": "Sunnybrook Cardiac Data",
+  "center": "Sunnybrook Health Sciences Centre, Toronto, Canada",
+  "source": "https://sourceforge.net/projects/cardiac-mr/files/",
+  "citation": "https://hdl.handle.net/10380/3070",
+  "source_license": "CC0-1.0",
+  "patients": 45,
+  "archive_sha256": {
+    "DICOMPart1.zip": "851f08232641a3fd17821b0f07ca74e86c31c15fba3fcb259c6b32c0e7f36aac",
+    "ContoursPart1.zip": "c79aafe6041f7a15eb680e334a6fb96660179cbd5f07851078b589a30a445514",
+    "DICOMPart2.zip": "0114c8038832294da243abc487f80d941539364a3d1fc18be457b1a96d7e33aa",
+    "ContoursPart2.zip": "e691206550a4d22d4cfb2b21f443a74591e61b2844ca1ce8518c3d88b460ad65",
+    "DICOMPart3.zip": "b0a54336316e09e801e8175edaa01a75c108bcfb87be7cacc16d5d044e01bd38",
+    "ContoursPart3.zip": "7b5433b16a82ebc9dcd3fabbfc1197ab68b24c960af310da6ed99ccc6b43290c"
+  },
+  "counts": {
+    "ED": {
+      "available_dicom_slices": 527.0,
+      "positive_lv_slices": 420.0,
+      "positive_myocardium_slices": 420.0
+    },
+    "ES": {
+      "available_dicom_slices": 527.0,
+      "positive_lv_slices": 385.0,
+      "positive_myocardium_slices": 0.0
+    }
+  },
+  "myocardium": "Available only in the separate ED-myocardium cache",
+  "ambiguities": [
+    "Missing contours are unverified, so evaluation excludes them.",
+    "Coordinates follow original MATLAB one-based (x,y) column/row pixel origin; pixel-center ray casting can differ on polygon boundary pixels from MATLAB subpixel-grid rasterization."
+  ]
+}
