@@ -45,3 +45,26 @@ python plot_decision_curves.py runs/reviewer-audit/summary.json decision-curves.
 ```
 
 `registration-review-audit.json` records the follow-up comparison and eligibility rules. The three score rules each use cutoffs fitted on the source calibration patients. Retrospective matched FPR uses assessment labels to locate a point on an empirical ROC curve. Keep the local per-patient outputs separate from the included aggregate results. The 2028 and 2029 matched-recall comparisons are seed-specific point estimates, and the three seeds share the same assessment patients.
+
+## External verified-absence audit
+
+HVSMR-2.0 provides full-volume chamber references for static axial MRI at a separate hospital. Use the cropped, non-normalized NIfTI variant and the technical CSV from the releases listed in [DATA.md](DATA.md). Preserve their original file names. The converter reorients the original axial grid and uses the native reference for negative eligibility. It writes a local reference-group map from the technical CSV for the 20 manual-reference sensitivity run.
+
+```bash
+python download_hvsmr.py --output data/hvsmr2-cropped
+python prepare_hvsmr.py --raw data/hvsmr2-cropped --output data/hvsmr2-axial-192 \
+  --technical-csv data/hvsmr2-cropped/hvsmr_technical.csv
+for fold in 0 1; do
+  CUDA_VISIBLE_DEVICES=$fold python audit_verified_negatives.py score \
+    --data data/acdc-192 --external data/hvsmr2-axial-192 --coverage data/hvsmr2-axial-192/coverage.json \
+    --registration registration-image-budget.json --fold "$fold" \
+    --original "runs/sparse-image-cloud/fold-$fold" --official-original "runs/sparse-official-cloud/image-$fold" \
+    --baseline-runs "runs/acquisition-baselines/fold-$fold" --core-weights "runs/review-core/fold-$fold" \
+    --extra-weights "runs/reviewer-weights/fold-$fold" --source-audit "runs/reviewer-audit/fold-$fold.json" \
+    --output "runs/verified-hvsmr2/fold-$fold.json"
+done
+python audit_verified_negatives.py aggregate --folds runs/verified-hvsmr2/fold-0.json runs/verified-hvsmr2/fold-1.json \
+  --reference-groups data/hvsmr2-axial-192/reference_groups.json --output runs/verified-hvsmr2/summary.json
+```
+
+The fold files and reference-group map are used locally. The distributed JSON gives patient-macro rates, support counts, paired bootstrap intervals, and retrospective recall at 20% external FPR. The method retains the supplied ACDC thresholds for observed FPR and small-slice recall. Evaluation is limited to the two cavities in the static axial acquisition.

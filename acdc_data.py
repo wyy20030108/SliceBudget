@@ -241,7 +241,7 @@ def prepare(raw_root: Path, out_root: Path, size: int = 192) -> dict[str, Case]:
     return cases
 
 
-def _load_case(path: Path) -> Case:
+def _load_case(path: Path, *, require_both_phases: bool = True) -> Case:
     required = {"images", "masks", "phase", "slice_index"}
     with np.load(path, allow_pickle=False) as data:
         if missing := required - set(data.files):
@@ -261,7 +261,9 @@ def _load_case(path: Path) -> Case:
         raise ValueError("Images must be finite floating-point arrays")
     if masks.dtype.kind not in "ui" or masks.min() < 0 or masks.max() > 3:
         raise ValueError("Masks must have integer labels 0–3")
-    if phase.shape != (len(images),) or phase.dtype.kind not in "ui" or set(np.unique(phase)) != {0, 1}:
+    valid_phases = set(np.unique(phase))
+    if (phase.shape != (len(images),) or phase.dtype.kind not in "ui" or not valid_phases <= {0, 1}
+            or (require_both_phases and valid_phases != {0, 1})):
         raise ValueError("Phase must identify both ED (0) and ES (1)")
     if (
         index.shape != phase.shape
