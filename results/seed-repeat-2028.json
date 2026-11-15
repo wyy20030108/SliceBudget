@@ -1,0 +1,312 @@
+{
+  "patients": 50,
+  "means": {
+    "interval": {
+      "recall": {
+        "mean": 0.06138984708102355,
+        "n": 50
+      },
+      "fpr": {
+        "mean": 0.191681294562447,
+        "n": 49
+      },
+      "near_fpr": {
+        "mean": 0.016260162601626015,
+        "n": 41
+      },
+      "global_dice": {
+        "mean": 0.7611461011923142,
+        "n": 50
+      },
+      "small_dice": {
+        "mean": 0.4220325985274345,
+        "n": 50
+      }
+    },
+    "uncertain": {
+      "recall": {
+        "mean": 0.15418995383701264,
+        "n": 50
+      },
+      "fpr": {
+        "mean": 0.21589288396011083,
+        "n": 49
+      },
+      "near_fpr": {
+        "mean": 0.06341463414634146,
+        "n": 41
+      },
+      "global_dice": {
+        "mean": 0.7816183672121737,
+        "n": 50
+      },
+      "small_dice": {
+        "mean": 0.2974373486412379,
+        "n": 50
+      }
+    },
+    "targeted_unbalanced": {
+      "recall": {
+        "mean": 0.05360772560772561,
+        "n": 50
+      },
+      "fpr": {
+        "mean": 0.2171260562166924,
+        "n": 49
+      },
+      "near_fpr": {
+        "mean": 0.01016260162601626,
+        "n": 41
+      },
+      "global_dice": {
+        "mean": 0.7568532420520765,
+        "n": 50
+      },
+      "small_dice": {
+        "mean": 0.466532727438805,
+        "n": 50
+      }
+    },
+    "targeted": {
+      "recall": {
+        "mean": 0.033306998556998556,
+        "n": 50
+      },
+      "fpr": {
+        "mean": 0.1805138788782246,
+        "n": 49
+      },
+      "near_fpr": {
+        "mean": 0.012195121951219513,
+        "n": 41
+      },
+      "global_dice": {
+        "mean": 0.757571428710088,
+        "n": 50
+      },
+      "small_dice": {
+        "mean": 0.4706503766761797,
+        "n": 50
+      }
+    }
+  },
+  "contrasts": {
+    "interval": {
+      "recall": {
+        "difference": -0.028082848524024994,
+        "interval": [
+          -0.04791481631113984,
+          -0.010882142857142856
+        ]
+      },
+      "fpr": {
+        "difference": -0.01116741568422241,
+        "interval": [
+          -0.03963209047355206,
+          0.018082558114821026
+        ]
+      },
+      "near_fpr": {
+        "difference": -0.004065040650406504,
+        "interval": [
+          -0.022357723577235773,
+          0.014227642276422765
+        ]
+      },
+      "global_dice": {
+        "difference": -0.0035746724822261,
+        "interval": [
+          -0.00936654526875429,
+          0.002191816269527736
+        ]
+      },
+      "small_dice": {
+        "difference": 0.0486177781487452,
+        "interval": [
+          0.02763751086621167,
+          0.06966374819743508
+        ]
+      }
+    },
+    "uncertain": {
+      "recall": {
+        "difference": -0.1208829552800141,
+        "interval": [
+          -0.16715030606648254,
+          -0.07917216802805037
+        ]
+      },
+      "fpr": {
+        "difference": -0.03537900508188624,
+        "interval": [
+          -0.07143818470611688,
+          -0.0024942096802090677
+        ]
+      },
+      "near_fpr": {
+        "difference": -0.051219512195121955,
+        "interval": [
+          -0.09390243902439023,
+          -0.016666666666666666
+        ]
+      },
+      "global_dice": {
+        "difference": -0.024046938502085703,
+        "interval": [
+          -0.03384780476556694,
+          -0.013730178616945019
+        ]
+      },
+      "small_dice": {
+        "difference": 0.17321302803494174,
+        "interval": [
+          0.14321666002706918,
+          0.20486357983243647
+        ]
+      }
+    },
+    "targeted_unbalanced": {
+      "recall": {
+        "difference": -0.02030072705072705,
+        "interval": [
+          -0.03254523809523809,
+          -0.008284204684204682
+        ]
+      },
+      "fpr": {
+        "difference": -0.03661217733846786,
+        "interval": [
+          -0.06019351842468589,
+          -0.013527817512286293
+        ]
+      },
+      "near_fpr": {
+        "difference": 0.0020325203252032522,
+        "interval": [
+          -0.012195121951219513,
+          0.018292682926829267
+        ]
+      },
+      "global_dice": {
+        "difference": 0.0007181866580114593,
+        "interval": [
+          -0.002179940501788449,
+          0.003727927290533145
+        ]
+      },
+      "small_dice": {
+        "difference": 0.004117649237374746,
+        "interval": [
+          -0.010120602428647745,
+          0.020228642430794086
+        ]
+      }
+    }
+  },
+  "mean_run_pauc": {
+    "interval": {
+      "all_absent": 0.4189078784462523,
+      "near_absent": 0.6525791580521385
+    },
+    "uncertain": {
+      "all_absent": 0.46341018289194624,
+      "near_absent": 0.6416472182267265
+    },
+    "targeted_unbalanced": {
+      "all_absent": 0.4242375685772911,
+      "near_absent": 0.7034171769553865
+    },
+    "targeted": {
+      "all_absent": 0.4191543892358107,
+      "near_absent": 0.7299170689122595
+    }
+  },
+  "repeat_seed": 2028,
+  "scope": "Post-hoc repeat reselecting masks; same official test patients, fold and within-fold data roles.",
+  "by_fold": {
+    "0": {
+      "interval": {
+        "global_dice": 0.7654738374753989,
+        "small_dice": 0.4388748174034389,
+        "recall": 0.048682040182040184,
+        "count_small": 7.74,
+        "fpr": 0.17895561487998463,
+        "count_absent": 7.62,
+        "near_fpr": 0.012195121951219513,
+        "count_near_absent": 2.14
+      },
+      "uncertain": {
+        "global_dice": 0.7936038856877415,
+        "small_dice": 0.2975481511171665,
+        "recall": 0.09404062604062602,
+        "count_small": 7.74,
+        "fpr": 0.16861293968136706,
+        "count_absent": 7.62,
+        "near_fpr": 0.028455284552845524,
+        "count_near_absent": 2.14
+      },
+      "targeted_unbalanced": {
+        "global_dice": 0.7535693143222112,
+        "small_dice": 0.46886340013884564,
+        "recall": 0.05543795093795094,
+        "count_small": 7.74,
+        "fpr": 0.2501385669152776,
+        "count_absent": 7.62,
+        "near_fpr": 0.02032520325203252,
+        "count_near_absent": 2.14
+      },
+      "targeted": {
+        "global_dice": 0.7580904555299268,
+        "small_dice": 0.4850629834461317,
+        "recall": 0.03640620490620491,
+        "count_small": 7.74,
+        "fpr": 0.20225508451798965,
+        "count_absent": 7.62,
+        "near_fpr": 0.012195121951219513,
+        "count_near_absent": 2.14
+      }
+    },
+    "1": {
+      "interval": {
+        "global_dice": 0.7568183649092294,
+        "small_dice": 0.4051903796514299,
+        "recall": 0.07409765398000694,
+        "count_small": 7.74,
+        "fpr": 0.20440697424490942,
+        "count_absent": 7.62,
+        "near_fpr": 0.02032520325203252,
+        "count_near_absent": 2.14
+      },
+      "uncertain": {
+        "global_dice": 0.7696328487366056,
+        "small_dice": 0.29732654616530935,
+        "recall": 0.21433928163339927,
+        "count_small": 7.74,
+        "fpr": 0.26317282823885463,
+        "count_absent": 7.62,
+        "near_fpr": 0.0983739837398374,
+        "count_near_absent": 2.14
+      },
+      "targeted_unbalanced": {
+        "global_dice": 0.7601371697819417,
+        "small_dice": 0.4642020547387643,
+        "recall": 0.05177750027750028,
+        "count_small": 7.74,
+        "fpr": 0.18411354551810732,
+        "count_absent": 7.62,
+        "near_fpr": 0.0,
+        "count_near_absent": 2.14
+      },
+      "targeted": {
+        "global_dice": 0.757052401890249,
+        "small_dice": 0.45623776990622766,
+        "recall": 0.030207792207792204,
+        "count_small": 7.74,
+        "fpr": 0.15877267323845956,
+        "count_absent": 7.62,
+        "near_fpr": 0.012195121951219513,
+        "count_near_absent": 2.14
+      }
+    }
+  }
+}

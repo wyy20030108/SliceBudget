@@ -48,6 +48,27 @@ done
 python summarize_acquisition_baselines.py --runs runs/acquisition-baselines --official-prior runs/sparse-official-cloud --output runs/acquisition-baselines/summary-public.json
 ```
 
+### 随机种子和检测操作点复查
+
+第二个训练种子复用原两折患者，并重新训练、选择切片和校准阈值，评估结果另行报告。匹配误报率的分析使用原已冻结模型，在官方测试集按所有真缺失或邻近真缺失切片计算经验 ROC。所用测试标签仅确定回顾性匹配点。原可用阈值由 ACDC 校准患者独立确定。
+
+```bash
+for fold in 0 1; do
+  python run_image_slice_budget.py --data data/acdc-192 --official-audit data/acdc-challenge-audit-192 --registration registration-image-budget-seed-2028.json --output "runs/acquisition-seed-2028/fold-$fold" --fold "$fold"
+  common=(--data data/acdc-192 --registration registration-image-budget.json --original "runs/sparse-image-cloud/fold-$fold" --official-original "runs/sparse-official-cloud/image-$fold" --fold "$fold")
+  weights="runs/decision-replay/fold-$fold"
+  python audit_external_transfer.py prepare "${common[@]}" --output "$weights"
+  for mode in score argmax; do
+    python audit_decision_curves.py "$mode" "${common[@]}" --assessment data/acdc-challenge-audit-192 --weights "$weights" --output "runs/decision-curves/fold-$fold"
+  done
+done
+python summarize_seed_repeat.py --original runs/sparse-official-cloud --repeat runs/acquisition-seed-2028 --output runs/acquisition-seed-2028/summary-public.json
+python audit_decision_curves.py aggregate --folds runs/decision-curves/fold-0 runs/decision-curves/fold-1 --output runs/decision-curves/summary.json
+python plot_decision_curves.py runs/decision-curves/summary.json decision-curves.pdf
+```
+
+绘图步骤需要 ReportLab。图由公开在本仓库的汇总值重建。
+
 ### 独立中心验证
 
 外部影像只用于评分。沿用上述两折的 ACDC 选片名单、训练设置和类别阈值。重建四种策略的教师模型时核验其 ACDC 校准阈值是否与原运行一致。Sunnybrook 按原始人工轮廓评价左室腔舒张末期和收缩末期，并单独评价舒张末期左室心肌。York 儿科队列在所有时相均有轮廓的共同切片上汇总左室腔面积，按其最大值和最小值估计两个时相，分别评价左室腔和左室心肌。外部数据上的未勾画切片视为状态未知，评估限于对应类别有人工轮廓的阳性切片。检出召回使用源域阈值，外部误报率及部分 AUC 在结果中记为 `null`。数据来源及适用范围见 [DATA.md](DATA.md)。
