@@ -1,0 +1,9 @@
+{
+  "scope": "Post-hoc paired diagnostic using the existing 113-patient native and physical-spacing cine ledgers. No thresholds or models are newly selected.",
+  "arms": ["pooled_image_farthest", "bounded"],
+  "seed_folds": [[2027, 0], [2027, 1], [2028, 0], [2028, 1], [2029, 0], [2029, 1]],
+  "metric": "Patient-macro recall at retrospective 20 percent matched FPR, all and adjacent verified absences.",
+  "target_estimands": ["original pooled three-class centered scores", "pooled ventricular centered scores", "pooled ventricular raw scores", "separately matched equal-ventricular recall", "separately matched RV and LV"],
+  "interaction": "Compute physical-spacing minus native differences in the bounded-minus-image-difference contrast within each seed/fold. Average the fixed fits and resample the same target patients for all scoring modes.",
+  "reporting": "Report pooled and class-stratified estimates with pointwise 95 percent paired intervals, equal weighting of seeds and folds. For the same ventricular classes, subtract the raw-score geometry interaction from the centered-score interaction on each draw. The raw and centered comparison is post hoc; the registered primary analysis is retained."
+}

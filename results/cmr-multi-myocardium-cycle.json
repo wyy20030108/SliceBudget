@@ -1,0 +1,2491 @@
+{
+  "design_sha256": "7cf9671162503eaa7aa3c046cb242d587b4dbb55a589af1b518564e7f4e5d515",
+  "cohorts": {
+    "native": {
+      "coverage": "655a51fcb85700eb5d2105d58aefcedb91c6bcb8062aef17826838cdf98c0b0e",
+      "cycle": "7cb36de91a23e0b1ffefcfe114cb2616b13d3069c7ce531f8e0e9ddffb486c29"
+    },
+    "fov": {
+      "coverage": "fa530b4818a7c9c8ca58cdeb881908a7f89e4f74e59688897794c7e8b78b2544",
+      "cycle": "86dab0da8a8bf5cbecf871de7f7f1ab817a4eb97a7d4656273b03c0e91bf946c"
+    }
+  },
+  "draws": 4000,
+  "patients": 113,
+  "support": {
+    "all": {
+      "pairs": 16,
+      "patients": 12
+    },
+    "adjacent": {
+      "pairs": 3,
+      "patients": 3
+    }
+  },
+  "source_cutoffs": {
+    "seed-2027-fold-0": {
+      "pooled_image_farthest": {
+        "estimate": 0.45038944482803345,
+        "ci95": [
+          0.11175815016031265,
+          0.7700496315956116
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 4,
+        "fallback_fraction": 0.662,
+        "original_fallback": true
+      },
+      "calibrated": {
+        "estimate": 0.39212822914123535,
+        "ci95": [
+          0.11905323714017868,
+          0.7892018556594849
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 4,
+        "fallback_fraction": 0.662,
+        "original_fallback": true
+      },
+      "bounded": {
+        "estimate": 0.29333066940307617,
+        "ci95": [
+          0.17054040729999542,
+          0.6715841889381409
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 4,
+        "fallback_fraction": 0.662,
+        "original_fallback": true
+      },
+      "image_loss_matched": {
+        "estimate": 0.2196369171142578,
+        "ci95": [
+          0.13543953001499176,
+          0.8021825551986694
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 4,
+        "fallback_fraction": 0.662,
+        "original_fallback": true
+      }
+    },
+    "seed-2027-fold-1": {
+      "pooled_image_farthest": {
+        "estimate": 0.5934526920318604,
+        "ci95": [
+          0.2725960314273834,
+          0.8686776757240295
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 3,
+        "fallback_fraction": 0.89775,
+        "original_fallback": true
+      },
+      "calibrated": {
+        "estimate": 0.9995695948600769,
+        "ci95": [
+          0.49436673521995544,
+          0.9998350739479065
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 3,
+        "fallback_fraction": 0.89775,
+        "original_fallback": true
+      },
+      "bounded": {
+        "estimate": 0.7874715328216553,
+        "ci95": [
+          0.5495388507843018,
+          0.8837743997573853
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 3,
+        "fallback_fraction": 0.89775,
+        "original_fallback": true
+      },
+      "image_loss_matched": {
+        "estimate": 0.9797608256340027,
+        "ci95": [
+          0.5254784822463989,
+          0.9997591972351074
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 3,
+        "fallback_fraction": 0.89775,
+        "original_fallback": true
+      }
+    },
+    "seed-2028-fold-0": {
+      "pooled_image_farthest": {
+        "estimate": 0.46197307109832764,
+        "ci95": [
+          0.15936271846294403,
+          0.8492775559425354
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 4,
+        "fallback_fraction": 0.662,
+        "original_fallback": true
+      },
+      "calibrated": {
+        "estimate": 0.454502671957016,
+        "ci95": [
+          0.11078670620918274,
+          0.9035913348197937
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 4,
+        "fallback_fraction": 0.662,
+        "original_fallback": true
+      },
+      "bounded": {
+        "estimate": 0.4340754449367523,
+        "ci95": [
+          0.1670776754617691,
+          0.9264498949050903
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 4,
+        "fallback_fraction": 0.662,
+        "original_fallback": true
+      },
+      "image_loss_matched": {
+        "estimate": 0.3867248296737671,
+        "ci95": [
+          0.19386103749275208,
+          0.9348254799842834
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 4,
+        "fallback_fraction": 0.662,
+        "original_fallback": true
+      }
+    },
+    "seed-2028-fold-1": {
+      "pooled_image_farthest": {
+        "estimate": 0.7469697594642639,
+        "ci95": [
+          0.4053451716899872,
+          0.8777933716773987
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 3,
+        "fallback_fraction": 0.89775,
+        "original_fallback": true
+      },
+      "calibrated": {
+        "estimate": 0.9409926533699036,
+        "ci95": [
+          0.3725630044937134,
+          0.9895452857017517
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 3,
+        "fallback_fraction": 0.89775,
+        "original_fallback": true
+      },
+      "bounded": {
+        "estimate": 0.8896040916442871,
+        "ci95": [
+          0.5604982972145081,
+          0.9825697541236877
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 3,
+        "fallback_fraction": 0.89775,
+        "original_fallback": true
+      },
+      "image_loss_matched": {
+        "estimate": 0.9375813603401184,
+        "ci95": [
+          0.5236992239952087,
+          0.9825573563575745
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 3,
+        "fallback_fraction": 0.89775,
+        "original_fallback": true
+      }
+    },
+    "seed-2029-fold-0": {
+      "pooled_image_farthest": {
+        "estimate": 0.3790619671344757,
+        "ci95": [
+          0.13074035942554474,
+          0.5075541138648987
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 4,
+        "fallback_fraction": 0.662,
+        "original_fallback": true
+      },
+      "calibrated": {
+        "estimate": 0.48740124702453613,
+        "ci95": [
+          0.257097989320755,
+          0.7606819868087769
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 4,
+        "fallback_fraction": 0.662,
+        "original_fallback": true
+      },
+      "bounded": {
+        "estimate": 0.37240928411483765,
+        "ci95": [
+          0.17906728386878967,
+          0.7593352198600769
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 4,
+        "fallback_fraction": 0.662,
+        "original_fallback": true
+      },
+      "image_loss_matched": {
+        "estimate": 0.4117993116378784,
+        "ci95": [
+          0.19699767231941223,
+          0.6841322183609009
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 4,
+        "fallback_fraction": 0.662,
+        "original_fallback": true
+      }
+    },
+    "seed-2029-fold-1": {
+      "pooled_image_farthest": {
+        "estimate": 0.6951624751091003,
+        "ci95": [
+          0.45236021280288696,
+          0.96530681848526
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 3,
+        "fallback_fraction": 0.89775,
+        "original_fallback": true
+      },
+      "calibrated": {
+        "estimate": 0.983500599861145,
+        "ci95": [
+          0.6019081473350525,
+          0.9992018342018127
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 3,
+        "fallback_fraction": 0.89775,
+        "original_fallback": true
+      },
+      "bounded": {
+        "estimate": 0.9594031572341919,
+        "ci95": [
+          0.6165953278541565,
+          0.9918654561042786
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 3,
+        "fallback_fraction": 0.89775,
+        "original_fallback": true
+      },
+      "image_loss_matched": {
+        "estimate": 0.9921866655349731,
+        "ci95": [
+          0.5954107642173767,
+          0.998650848865509
+        ],
+        "valid_draws": 4000,
+        "source_negative_patients": 3,
+        "fallback_fraction": 0.89775,
+        "original_fallback": true
+      }
+    }
+  },
+  "raw_errors_by_fit": {
+    "seed-2027-fold-0": {
+      "native": {
+        "pooled_image_farthest": {
+          "all": 5,
+          "adjacent": 2
+        },
+        "calibrated": {
+          "all": 1,
+          "adjacent": 0
+        },
+        "bounded": {
+          "all": 5,
+          "adjacent": 2
+        },
+        "image_loss_matched": {
+          "all": 10,
+          "adjacent": 3
+        }
+      },
+      "fov": {
+        "pooled_image_farthest": {
+          "all": 2,
+          "adjacent": 0
+        },
+        "calibrated": {
+          "all": 2,
+          "adjacent": 0
+        },
+        "bounded": {
+          "all": 2,
+          "adjacent": 0
+        },
+        "image_loss_matched": {
+          "all": 2,
+          "adjacent": 0
+        }
+      }
+    },
+    "seed-2027-fold-1": {
+      "native": {
+        "pooled_image_farthest": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "calibrated": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "bounded": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "image_loss_matched": {
+          "all": 0,
+          "adjacent": 0
+        }
+      },
+      "fov": {
+        "pooled_image_farthest": {
+          "all": 3,
+          "adjacent": 1
+        },
+        "calibrated": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "bounded": {
+          "all": 1,
+          "adjacent": 0
+        },
+        "image_loss_matched": {
+          "all": 0,
+          "adjacent": 0
+        }
+      }
+    },
+    "seed-2028-fold-0": {
+      "native": {
+        "pooled_image_farthest": {
+          "all": 1,
+          "adjacent": 0
+        },
+        "calibrated": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "bounded": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "image_loss_matched": {
+          "all": 3,
+          "adjacent": 0
+        }
+      },
+      "fov": {
+        "pooled_image_farthest": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "calibrated": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "bounded": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "image_loss_matched": {
+          "all": 0,
+          "adjacent": 0
+        }
+      }
+    },
+    "seed-2028-fold-1": {
+      "native": {
+        "pooled_image_farthest": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "calibrated": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "bounded": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "image_loss_matched": {
+          "all": 0,
+          "adjacent": 0
+        }
+      },
+      "fov": {
+        "pooled_image_farthest": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "calibrated": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "bounded": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "image_loss_matched": {
+          "all": 0,
+          "adjacent": 0
+        }
+      }
+    },
+    "seed-2029-fold-0": {
+      "native": {
+        "pooled_image_farthest": {
+          "all": 1,
+          "adjacent": 0
+        },
+        "calibrated": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "bounded": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "image_loss_matched": {
+          "all": 0,
+          "adjacent": 0
+        }
+      },
+      "fov": {
+        "pooled_image_farthest": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "calibrated": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "bounded": {
+          "all": 1,
+          "adjacent": 0
+        },
+        "image_loss_matched": {
+          "all": 0,
+          "adjacent": 0
+        }
+      }
+    },
+    "seed-2029-fold-1": {
+      "native": {
+        "pooled_image_farthest": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "calibrated": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "bounded": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "image_loss_matched": {
+          "all": 0,
+          "adjacent": 0
+        }
+      },
+      "fov": {
+        "pooled_image_farthest": {
+          "all": 1,
+          "adjacent": 0
+        },
+        "calibrated": {
+          "all": 0,
+          "adjacent": 0
+        },
+        "bounded": {
+          "all": 1,
+          "adjacent": 0
+        },
+        "image_loss_matched": {
+          "all": 0,
+          "adjacent": 0
+        }
+      }
+    }
+  },
+  "results": {
+    "native": {
+      "2027": {
+        "methods": {
+          "pooled_image_farthest": {
+            "all_fpr": {
+              "estimate": 0.14583333333333334,
+              "ci95": [
+                0.041666666666666664,
+                0.2692307692307692
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.14583333333333334,
+              "ci95": [
+                0.0,
+                0.5333333333333333
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.3333333333333333,
+              "ci95": [
+                0.0,
+                0.5
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.3333333333333333,
+              "ci95": [
+                0.0,
+                0.5
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "calibrated": {
+            "all_fpr": {
+              "estimate": 0.020833333333333332,
+              "ci95": [
+                0.0,
+                0.06818181818181818
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.020833333333333332,
+              "ci95": [
+                0.0,
+                0.3409090909090909
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.5
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "bounded": {
+            "all_fpr": {
+              "estimate": 0.16666666666666666,
+              "ci95": [
+                0.041666666666666664,
+                0.2916666666666667
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.16666666666666666,
+              "ci95": [
+                0.0,
+                0.42857142857142855
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.3333333333333333,
+              "ci95": [
+                0.0,
+                0.5
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.3333333333333333,
+              "ci95": [
+                0.0,
+                0.5
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "image_loss_matched": {
+            "all_fpr": {
+              "estimate": 0.2916666666666667,
+              "ci95": [
+                0.14705882352941177,
+                0.4375
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.2916666666666667,
+              "ci95": [
+                0.0,
+                0.5
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.5,
+              "ci95": [
+                0.5,
+                0.5
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.5,
+              "ci95": [
+                0.0,
+                0.5
+              ],
+              "valid_draws": 3806
+            }
+          }
+        },
+        "bounded_minus": {
+          "pooled_image_farthest": {
+            "all_fpr": {
+              "estimate": 0.020833333333333315,
+              "ci95": [
+                -0.13336538461538464,
+                0.16666666666666669
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.020833333333333315,
+              "ci95": [
+                -0.32504807692307697,
+                0.22727272727272727
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                -0.5,
+                0.5
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                -0.5,
+                0.49999999999999994
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "calibrated": {
+            "all_fpr": {
+              "estimate": 0.14583333333333331,
+              "ci95": [
+                0.024943181818181833,
+                0.27499999999999997
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.14583333333333331,
+              "ci95": [
+                -0.1,
+                0.28125
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.3333333333333333,
+              "ci95": [
+                0.0,
+                0.5
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.3333333333333333,
+              "ci95": [
+                -0.5,
+                0.5
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "image_loss_matched": {
+            "all_fpr": {
+              "estimate": -0.12500000000000003,
+              "ci95": [
+                -0.2857142857142857,
+                0.04545454545454544
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": -0.12500000000000003,
+              "ci95": [
+                -0.27777777777777773,
+                0.14285714285714285
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": -0.16666666666666669,
+              "ci95": [
+                -0.5,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": -0.16666666666666669,
+              "ci95": [
+                -0.5,
+                0.16666666666666666
+              ],
+              "valid_draws": 3806
+            }
+          }
+        }
+      },
+      "2028": {
+        "methods": {
+          "pooled_image_farthest": {
+            "all_fpr": {
+              "estimate": 0.041666666666666664,
+              "ci95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.041666666666666664,
+              "ci95": [
+                0.0,
+                0.2333593750000001
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.25
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "calibrated": {
+            "all_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.17857142857142858
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.3
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "bounded": {
+            "all_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.2125
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "image_loss_matched": {
+            "all_fpr": {
+              "estimate": 0.10416666666666667,
+              "ci95": [
+                0.0,
+                0.225
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.10416666666666667,
+              "ci95": [
+                0.0,
+                0.23214285714285715
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          }
+        },
+        "bounded_minus": {
+          "pooled_image_farthest": {
+            "all_fpr": {
+              "estimate": -0.041666666666666664,
+              "ci95": [
+                -0.13636363636363635,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": -0.041666666666666664,
+              "ci95": [
+                -0.16666666666666666,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "calibrated": {
+            "all_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                -0.07894736842105263,
+                0.038461538461538464
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                -0.16666666666666666,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "image_loss_matched": {
+            "all_fpr": {
+              "estimate": -0.10416666666666667,
+              "ci95": [
+                -0.225,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": -0.10416666666666667,
+              "ci95": [
+                -0.20454545454545456,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.16666666666666666
+              ],
+              "valid_draws": 3806
+            }
+          }
+        }
+      },
+      "2029": {
+        "methods": {
+          "pooled_image_farthest": {
+            "all_fpr": {
+              "estimate": 0.020833333333333332,
+              "ci95": [
+                0.0,
+                0.06818181818181818
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.020833333333333332,
+              "ci95": [
+                0.0,
+                0.16666666666666666
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "calibrated": {
+            "all_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0625
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "bounded": {
+            "all_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.08333333333333333
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "image_loss_matched": {
+            "all_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.10714285714285714
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          }
+        },
+        "bounded_minus": {
+          "pooled_image_farthest": {
+            "all_fpr": {
+              "estimate": -0.020833333333333332,
+              "ci95": [
+                -0.06818181818181818,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": -0.020833333333333332,
+              "ci95": [
+                -0.15,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "calibrated": {
+            "all_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                -0.041666666666666664,
+                0.0694940476190478
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "image_loss_matched": {
+            "all_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                -0.08333333333333333,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          }
+        }
+      },
+      "all": {
+        "methods": {
+          "pooled_image_farthest": {
+            "all_fpr": {
+              "estimate": 0.06944444444444445,
+              "ci95": [
+                0.016666666666666666,
+                0.13636363636363638
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.06944444444444445,
+              "ci95": [
+                0.006944444444444444,
+                0.27777777777777773
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.1111111111111111,
+              "ci95": [
+                0.0,
+                0.16666666666666666
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.1111111111111111,
+              "ci95": [
+                0.0,
+                0.27777777777777773
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "calibrated": {
+            "all_fpr": {
+              "estimate": 0.006944444444444444,
+              "ci95": [
+                0.0,
+                0.022727272727272724
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.006944444444444444,
+              "ci95": [
+                0.0,
+                0.15744949494949512
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.25
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "bounded": {
+            "all_fpr": {
+              "estimate": 0.05555555555555555,
+              "ci95": [
+                0.013888888888888888,
+                0.09722222222222222
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.05555555555555555,
+              "ci95": [
+                0.0,
+                0.17948717948717952
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.1111111111111111,
+              "ci95": [
+                0.0,
+                0.16666666666666666
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.1111111111111111,
+              "ci95": [
+                0.0,
+                0.24851190476190477
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "image_loss_matched": {
+            "all_fpr": {
+              "estimate": 0.13194444444444445,
+              "ci95": [
+                0.0625,
+                0.20833333333333334
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.13194444444444445,
+              "ci95": [
+                0.0,
+                0.24613095238095273
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.16666666666666666,
+              "ci95": [
+                0.16666666666666666,
+                0.16666666666666666
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.16666666666666666,
+              "ci95": [
+                0.0,
+                0.16666666666666666
+              ],
+              "valid_draws": 3806
+            }
+          }
+        },
+        "bounded_minus": {
+          "pooled_image_farthest": {
+            "all_fpr": {
+              "estimate": -0.013888888888888895,
+              "ci95": [
+                -0.07407407407407407,
+                0.046296296296296294
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": -0.013888888888888895,
+              "ci95": [
+                -0.1527777777777778,
+                0.06111111111111111
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                -0.16666666666666666,
+                0.16666666666666666
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                -0.16666666666666666,
+                0.16666666666666663
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "calibrated": {
+            "all_fpr": {
+              "estimate": 0.048611111111111105,
+              "ci95": [
+                0.008314393939393944,
+                0.09166666666666666
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.048611111111111105,
+              "ci95": [
+                -0.0444551282051282,
+                0.10119047619047618
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.1111111111111111,
+              "ci95": [
+                0.0,
+                0.16666666666666666
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.1111111111111111,
+              "ci95": [
+                -0.16666666666666666,
+                0.16666666666666666
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "image_loss_matched": {
+            "all_fpr": {
+              "estimate": -0.0763888888888889,
+              "ci95": [
+                -0.15000000000000002,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": -0.0763888888888889,
+              "ci95": [
+                -0.1354403409090909,
+                0.038461538461538464
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": -0.05555555555555555,
+              "ci95": [
+                -0.16666666666666666,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": -0.05555555555555555,
+              "ci95": [
+                -0.16666666666666666,
+                0.08333333333333334
+              ],
+              "valid_draws": 3806
+            }
+          }
+        }
+      }
+    },
+    "fov": {
+      "2027": {
+        "methods": {
+          "pooled_image_farthest": {
+            "all_fpr": {
+              "estimate": 0.10416666666666666,
+              "ci95": [
+                0.0,
+                0.26666666666666666
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.10416666666666666,
+              "ci95": [
+                0.0,
+                0.2727272727272727
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.16666666666666666,
+              "ci95": [
+                0.0,
+                0.5
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.16666666666666666,
+              "ci95": [
+                0.0,
+                0.5
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "calibrated": {
+            "all_fpr": {
+              "estimate": 0.041666666666666664,
+              "ci95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.041666666666666664,
+              "ci95": [
+                0.0,
+                0.15
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.3
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "bounded": {
+            "all_fpr": {
+              "estimate": 0.0625,
+              "ci95": [
+                0.0,
+                0.16666666666666666
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.0625,
+              "ci95": [
+                0.0,
+                0.1875
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.39687500000000003
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "image_loss_matched": {
+            "all_fpr": {
+              "estimate": 0.041666666666666664,
+              "ci95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.041666666666666664,
+              "ci95": [
+                0.0,
+                0.16666666666666666
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          }
+        },
+        "bounded_minus": {
+          "pooled_image_farthest": {
+            "all_fpr": {
+              "estimate": -0.04166666666666666,
+              "ci95": [
+                -0.10007352941176471,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": -0.04166666666666666,
+              "ci95": [
+                -0.14583333333333331,
+                0.035782967032967294
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": -0.16666666666666666,
+              "ci95": [
+                -0.5,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": -0.16666666666666666,
+              "ci95": [
+                -0.5,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "calibrated": {
+            "all_fpr": {
+              "estimate": 0.020833333333333336,
+              "ci95": [
+                0.0,
+                0.07142857142857142
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.020833333333333336,
+              "ci95": [
+                -0.05882352941176471,
+                0.13336538461538475
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                -0.25,
+                0.375
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "image_loss_matched": {
+            "all_fpr": {
+              "estimate": 0.020833333333333336,
+              "ci95": [
+                0.0,
+                0.07142857142857142
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.020833333333333336,
+              "ci95": [
+                -0.02500000000000001,
+                0.08826155462184884
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.39687500000000003
+              ],
+              "valid_draws": 3806
+            }
+          }
+        }
+      },
+      "2028": {
+        "methods": {
+          "pooled_image_farthest": {
+            "all_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.041666666666666664
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "calibrated": {
+            "all_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0441510695187167
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "bounded": {
+            "all_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.03333333333333333
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "image_loss_matched": {
+            "all_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.05
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          }
+        },
+        "bounded_minus": {
+          "pooled_image_farthest": {
+            "all_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "calibrated": {
+            "all_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                -0.03571428571428571,
+                0.016666666666666666
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "image_loss_matched": {
+            "all_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                -0.038461538461538464,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          }
+        }
+      },
+      "2029": {
+        "methods": {
+          "pooled_image_farthest": {
+            "all_fpr": {
+              "estimate": 0.020833333333333332,
+              "ci95": [
+                0.0,
+                0.06818181818181818
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.020833333333333332,
+              "ci95": [
+                0.0,
+                0.10724206349206385
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "calibrated": {
+            "all_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.11538461538461539
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "bounded": {
+            "all_fpr": {
+              "estimate": 0.041666666666666664,
+              "ci95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.041666666666666664,
+              "ci95": [
+                0.0,
+                0.1111111111111111
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "image_loss_matched": {
+            "all_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.07142857142857142
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          }
+        },
+        "bounded_minus": {
+          "pooled_image_farthest": {
+            "all_fpr": {
+              "estimate": 0.020833333333333332,
+              "ci95": [
+                0.0,
+                0.06818181818181818
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.020833333333333332,
+              "ci95": [
+                -0.04545454545454544,
+                0.05555555555555555
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "calibrated": {
+            "all_fpr": {
+              "estimate": 0.041666666666666664,
+              "ci95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.041666666666666664,
+              "ci95": [
+                -0.06249999999999999,
+                0.07142857142857142
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "image_loss_matched": {
+            "all_fpr": {
+              "estimate": 0.041666666666666664,
+              "ci95": [
+                0.0,
+                0.13636363636363635
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.041666666666666664,
+              "ci95": [
+                0.0,
+                0.08333333333333333
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          }
+        }
+      },
+      "all": {
+        "methods": {
+          "pooled_image_farthest": {
+            "all_fpr": {
+              "estimate": 0.041666666666666664,
+              "ci95": [
+                0.0,
+                0.1111111111111111
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.041666666666666664,
+              "ci95": [
+                0.0,
+                0.12121212121212122
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.05555555555555555,
+              "ci95": [
+                0.0,
+                0.16666666666666666
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.05555555555555555,
+              "ci95": [
+                0.0,
+                0.16666666666666666
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "calibrated": {
+            "all_fpr": {
+              "estimate": 0.013888888888888888,
+              "ci95": [
+                0.0,
+                0.04545454545454545
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.013888888888888888,
+              "ci95": [
+                0.0,
+                0.08333333333333333
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.09999999999999999
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "bounded": {
+            "all_fpr": {
+              "estimate": 0.03472222222222222,
+              "ci95": [
+                0.0,
+                0.09999999999999999
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.03472222222222222,
+              "ci95": [
+                0.0,
+                0.09848484848484847
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.13229166666666667
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "image_loss_matched": {
+            "all_fpr": {
+              "estimate": 0.013888888888888888,
+              "ci95": [
+                0.0,
+                0.04545454545454545
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.013888888888888888,
+              "ci95": [
+                0.0,
+                0.08333333333333333
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          }
+        },
+        "bounded_minus": {
+          "pooled_image_farthest": {
+            "all_fpr": {
+              "estimate": -0.0069444444444444475,
+              "ci95": [
+                -0.023809523809523794,
+                0.0
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": -0.0069444444444444475,
+              "ci95": [
+                -0.05,
+                0.022222222222222213
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": -0.05555555555555555,
+              "ci95": [
+                -0.16666666666666666,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": -0.05555555555555555,
+              "ci95": [
+                -0.16666666666666666,
+                0.0
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "calibrated": {
+            "all_fpr": {
+              "estimate": 0.02083333333333333,
+              "ci95": [
+                0.0,
+                0.05555555555555555
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.02083333333333333,
+              "ci95": [
+                -0.025016025641025657,
+                0.049999999999999996
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                -0.08333333333333333,
+                0.125
+              ],
+              "valid_draws": 3806
+            }
+          },
+          "image_loss_matched": {
+            "all_fpr": {
+              "estimate": 0.02083333333333333,
+              "ci95": [
+                0.0,
+                0.05555555555555555
+              ],
+              "valid_draws": 4000
+            },
+            "all_fpr_source_and_target": {
+              "estimate": 0.02083333333333333,
+              "ci95": [
+                -0.008333333333333331,
+                0.041666666666666664
+              ],
+              "valid_draws": 4000
+            },
+            "adjacent_fpr": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "valid_draws": 3806
+            },
+            "adjacent_fpr_source_and_target": {
+              "estimate": 0.0,
+              "ci95": [
+                0.0,
+                0.13229166666666667
+              ],
+              "valid_draws": 3806
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "dataset": "CMR-MULTI, the same 113 phase-resolvable short-axis cine participants across both existing input representations",
+  "arms": ["pooled_image_farthest", "calibrated", "bounded", "image_loss_matched"],
+  "seeds": [2027, 2028, 2029],
+  "folds": [0, 1],
+  "conditions": ["native", "fov"],
+  "target": "LV myocardium",
+  "eligibility": "A cycle-supported candidate has an entirely blank released annotation at the selected ED/ES-extremum phase and at least one annotated cardiac structure at the same native z in another frame. The myocardium is annotated elsewhere in the selected phase. Adjacent also requires a positive native myocardium area at z+/-1 no greater than one quarter of the selected phase maximum. This is weaker evidence than the primary same-plane-positive eligibility and does not change that analysis.",
+  "support_expected": {"all": {"pairs": 16, "patients": 12}, "adjacent": {"pairs": 3, "patients": 3}},
+  "scoring": "Exact existing EMA weights, no training, frozen source thresholds, original top-one-percent per-slice myocardium probability. Score only deterministic inference batches that contain eligible planes; retain original shape and batch boundaries.",
+  "calibration": "Replay already verified native and FOV source ledgers against the archived fit cutoffs, support and weights. Use original ACDC patient weights and pooled fallback for donor-resampled sensitivity.",
+  "endpoint": "Raw false-positive counts, patient-macro FPR and paired differences at the archived thresholds. Paired patient-bootstrap 4000 draws on all 113 participants shared across both representations and all six fits; optional joint source donor and external case resampling. Report valid replicates when no eligible case is drawn. No test threshold optimization or stable myocardial matched-FPR claim."
+}

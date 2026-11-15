@@ -205,6 +205,35 @@ python audit_cmr_multi_phase_agreement.py --coverage data/cmr-multi-192/coverage
 
 The cine archive includes the native and physical-spacing ledgers, role and geometry receipts, and both aggregate results. The replay commands use those ledgers without re-running inference. Three fitted seeds and both folds share a single resample of target patients. Only cutoff-sensitivity intervals resample the six ACDC source patients in each fold. A blank class-specific endpoint denotes insufficient verified reference support.
 
+### Submission diagnostics for cine
+
+The geometry audit measures a paired change in the acquisition contrast under fixed weights, cutoffs, and patient support. Its ventricular-only comparison uses the same cases and class groups with and without subtracting the frozen cutoffs. This diagnostic is separate from the registered primary operating point.
+
+```bash
+python audit_cine_geometry_interaction.py --native runs/external-cine-native \
+  --physical runs/external-cine-fov --native-protocol registration-external-cine.json \
+  --physical-protocol registration-external-cine-fov.json \
+  --design registration-cine-geometry-interaction.json --output runs/cine-geometry-interaction/summary.json
+```
+
+The exploratory myocardial audit uses 16 cycle-supported blank planes from 12 patients, with only three adjacent planes. Generate `cycle-eligibility.json` for both input caches with `audit_cmr_multi_cycle_support.py`. Frozen detector cutoffs are verified against the original cine ledgers. GPU inference preserves each original case batch boundary and retains only the selected numeric scores.
+
+```bash
+out=runs/cine-myocardium-cycle
+for fold in 0 1; do
+  for seed in 2027 2028 2029; do
+    python audit_cmr_multi_myocardium_cycle.py score \
+      --native data/cmr-multi-192 --fov data/cmr-multi-fov-192 \
+      --bounded runs/bounded-boundary/development --swap runs/boundary-swap-control/development \
+      --native-archive runs/external-cine-native --fov-archive runs/external-cine-fov \
+      --design registration-cmr-multi-myocardium-cycle.json --fold "$fold" --seed "$seed" \
+      --output "$out/seed-$seed-fold-$fold.json.gz"
+  done
+done
+python audit_cmr_multi_myocardium_cycle.py replay --files "$out"/seed-*.json.gz \
+  --design registration-cmr-multi-myocardium-cycle.json --output "$out/summary.json"
+```
+
 To regenerate the ledger from the original dataset releases, use the frozen ACDC and HVSMR score outputs from the preceding sections. Run `extract_review_calibration.py` per fold with those original and replay paths. The `cache-acdc-native` and `compare` commands of `audit_review_common_support.py` combine the unresized official ACDC reference areas, external cache, frozen score records and calibration score records. Use the original and manual-source HVSMR grouping recorded in its preparation step.
 
 For the candidate audit, reuse the original and strong-seed runs above. Run `audit_candidate_stage.py` with `--repeat-seed`, `--fold`, `--registration registration-image-budget.json` and `--seed-runs runs/strong-seed` in addition to the original candidate audit arguments. Pass the six replay JSONs to `--repeat-files` to regenerate the aggregated seed stability table. The analysis compares reconstructed acquisition rosters against previously scored ones. Its inference resamples patients within each fixed training fold.
