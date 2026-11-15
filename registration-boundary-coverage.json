@@ -1,0 +1,18 @@
+{
+  "question": "Can anchor-conditioned boundary credits correct false absence nominations and improve downstream acquisition at the same mask budget?",
+  "source_protocol": "registration-image-budget.json",
+  "seeds": [2027, 2028, 2029],
+  "folds": [0, 1],
+  "views": [[1.0, 0.0], [0.9, -0.1], [1.1, 0.1]],
+  "tail_fraction": 0.001,
+  "area_cutoff": 0.35,
+  "strength": 0.5,
+  "arms": ["anchored", "local", "pooled_image_farthest", "targeted"],
+  "primary": "Patient-macro small-positive recall at retrospective 20% all-absence FPR, anchored versus image difference, same fixed top-1% presence score as the earlier audit",
+  "boundary_precision_k": 50,
+  "proposal_audit": "Anchor and local allocation share the same view, area, image-distance and coverage rules. Compare selected small and adjacent reference-absence counts per 80 new masks; compare exact boundary precision for their 50 highest-scoring nominations per fold across both phases and report the full available support.",
+  "secondary_metrics": ["near-absence matched recall", "small and global Dice", "FPR and recall at independent source cutoffs", "mean pAUC"],
+  "scope": "Development first; official ACDC 50 and the same-source reserve have already appeared in earlier analyses. If used here, they are locked retrospective evaluations, not fresh validation.",
+  "labels": "Only the same two central training masks are visible to each selector. Evaluation labels and calibration labels are separate. The segmenter, loss, seed, update budget and calibration protocol are shared.",
+  "inference": "Bootstrap patients paired across method and seed, stratified by development fold, or average two official fits over the same test roster. Keep separate seed point estimates and avoid interpreting fixed-seed intervals as training uncertainty."
+}

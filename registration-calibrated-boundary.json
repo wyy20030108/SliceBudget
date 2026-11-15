@@ -1,0 +1,20 @@
+{
+  "question": "Can supervised, independently calibrated boundary-state credits correct the systematic teacher error seen in the uncalibrated pilot?",
+  "declared_after": "Inspection of the prospectively locked 2027 development nomination audit for uncalibrated boundary coverage; the method did not materially separate anchored and local candidate precision.",
+  "source_protocol": "registration-image-budget.json",
+  "seeds": [2027, 2028, 2029],
+  "folds": [0, 1],
+  "views": [[1.0, 0.0], [0.9, -0.1], [1.1, 0.1]],
+  "tail_fraction": 0.001,
+  "area_cutoff": 0.35,
+  "strength": 1.0,
+  "state_fit": "Ridge multinomial logit with a 0.01 penalty on standardized slopes and equal total weight per calibration patient.",
+  "arms": ["calibrated", "calibrated_local", "anchored", "pooled_image_farthest", "targeted"],
+  "primary_arm": "calibrated",
+  "proposal_audit": "Using the same existing labeled selection-calibration cases, compare ordered versus slice-local multinomial state prediction, top-50 adjacent absence nominations, and realized class states among 80 queries per seed and fold.",
+  "boundary_precision_k": 50,
+  "label_roles": "Use the even-indexed six original calibration patients to fit selection-state models; the odd-indexed six set final detection thresholds for every comparison arm. All roles are patient-disjoint within each fold. Dense reference consumption remains 160 training masks plus the original separate calibration masks. The controls are scored at the same six-patient detection thresholds.",
+  "primary": "Patient-macro small-positive recall at retrospective 20% all-absence FPR, calibrated ordered coverage versus image difference; separately report improvement in realized adjacent absence and small label yield.",
+  "secondary_metrics": ["adjacent-absence matched recall", "small and global Dice", "false positive rate and small recall at independent detection-calibration thresholds", "mean pAUC"],
+  "scope": "Exploratory follow-up. The previously observed 50 official ACDC cases are reused for locked retrospective evaluation, never for fitting, selection or further rule adjustment."
+}

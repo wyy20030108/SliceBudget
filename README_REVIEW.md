@@ -2,7 +2,7 @@
 
 The main manuscript compares seven image-driven policies at 160 training masks per split. The privileged reference-mask controls use a separate information regime. The additional same-source sample has 20 patients reserved by the original protocol. The two training splits share the official test patients, so the analysis pairs and resamples patients across fitted splits.
 
-The anonymized bundle includes aggregate outputs and, under `manifests/`, the frozen patient roles and selected positions. Use the CREATIS releases described in [DATA.md](DATA.md) for images and reference masks. The scripts reconstruct checkpoints from those releases. Clinical time and verified external absences were outside the available audit.
+The anonymized bundle includes aggregate outputs and, under `manifests/`, frozen patient roles and selected positions from the earlier experiment. Use the CREATIS releases described in [DATA.md](DATA.md) for images and reference masks. The scripts reconstruct checkpoints from those releases. Human annotation time was unavailable.
 
 ## Environment and original runs
 
@@ -70,6 +70,58 @@ python audit_verified_negatives.py aggregate --folds runs/verified-hvsmr2/fold-0
 The fold files and reference-group map are used locally. The distributed JSON gives patient-macro rates, support counts, paired bootstrap intervals, and retrospective recall at 20% external FPR. The method retains the supplied ACDC thresholds for observed FPR and small-slice recall. Evaluation is limited to the two cavities in the static axial acquisition.
 
 ## Second review analyses
+
+### Boundary-state acquisition follow-up
+
+The three design files record the sequence of experiments. The uncalibrated round keeps the 12 detector-calibration cases. The calibrated and bounded rounds divide those cases into six selection reliability and six detector cases. The training roster and 160-mask training budget are constant. The 50 official test patients are a retrospective assessment. Patient bootstrap intervals hold all fitted models fixed.
+
+```bash
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
+for fold in 0 1; do
+  for seed in 2027 2028 2029; do
+    id=seed-$seed-fold-$fold
+    common=(--data data/acdc-192 --registration registration-image-budget.json)
+    seed_fold=(--seed "$seed" --fold "$fold")
+    v1=runs/boundary-coverage/development/$id
+    v2=runs/calibrated-boundary/development/$id
+    v3=runs/bounded-boundary/development/$id
+    python run_boundary_coverage.py fit "${common[@]}" "${seed_fold[@]}" \
+      --original runs/sparse-image-cloud --design registration-boundary-coverage.json --output "$v1"
+    python run_calibrated_boundary_coverage.py "${common[@]}" "${seed_fold[@]}" \
+      --prior "$v1" --design registration-calibrated-boundary.json --output "$v2"
+    python run_bounded_boundary_coverage.py "${common[@]}" \
+      --prior "$v2" --design registration-bounded-boundary.json --output "$v3"
+    for method in boundary-coverage calibrated-boundary bounded-boundary; do
+      python run_boundary_coverage.py official --fit "runs/$method/development/$id" \
+        --assessment data/acdc-challenge-audit-192 --design "registration-$method.json" \
+        --output "runs/$method/official/$id"
+    done
+  done
+done
+for method in boundary-coverage calibrated-boundary bounded-boundary; do
+  python summarize_boundary_coverage.py --root "runs/$method" --design "registration-$method.json" \
+    --output "results/$method-summary-recomputed.json"
+done
+```
+
+The released summaries additionally record exact replay comparisons from the original archived runs. Add `--archive-root runs` to the summarizer to check those runs if available. The bounded runner verifies upstream checkpoints before reusing controls. The summaries report acquired states, paired intervals, and seed-specific estimates. Full MRI volumes, masks and fitted weights remain outside the release archive.
+
+Run the matched-weight acquisition-only control after the calibrated stage. The optional saved initial teachers are read from `runs/reviewer-weights`. The control reconstructs warm-up from the shared seed if a compatible checkpoint is absent.
+
+```bash
+mkdir -p runs/boundary-equal-weight
+for fold in 0 1; do
+  python audit_boundary_equal_weight.py score --data data/acdc-192 \
+    --registration registration-image-budget.json --design registration-calibrated-boundary.json \
+    --v2 runs/calibrated-boundary/development --warmups runs/reviewer-weights \
+    --fold "$fold" --output "runs/boundary-equal-weight/fold-$fold.json"
+done
+python audit_boundary_equal_weight.py aggregate \
+  --inputs runs/boundary-equal-weight/fold-0.json runs/boundary-equal-weight/fold-1.json \
+  --output results/boundary-equal-weight-summary-recomputed.json
+```
+
+### Common-support analysis
 
 The anonymous reproduction archive contains a compressed numeric ledger for the common-support and source-calibration analysis. The ledger uses artificial patient keys and sorted within-support scores. It includes no source images, masks, original case keys, or slice coordinates. Extract the archive and run the analysis with NumPy, SciPy and scikit-learn. The saved JSON includes separate RV and LV results, area cells, nominal FPR curves, opposite-ventricle support, and paired contrasts. The original three-class ACDC table uses centered scores for both matched recall and standardized partial AUC.
 

@@ -20,18 +20,24 @@ RANDOM_SEED = 20261126
 METRICS = ("recall", "fpr", "near_fpr", "global_dice", "small_dice")
 
 
+def block_features(images):
+    count, height, width = images.shape
+    if height % 16 or width % 16:
+        raise ValueError("The image grid must be evenly divisible into 16×16 cells")
+    features = images.reshape(count, 16, height // 16, 16, width // 16).mean(axis=(2, 4))
+    features = features.reshape(count, 256).astype(np.float64)
+    features -= features.mean(axis=1, keepdims=True)
+    features /= np.maximum(np.linalg.norm(features, axis=1, keepdims=True), 1e-12)
+    return features
+
+
 def acquisition_rosters(images, initial, fold):
     selections = {arm: {} for arm in ARMS}
     for patient, case in sorted(images.items()):
         if len(initial[patient]) != 2 or sorted(case.phase[initial[patient]].tolist()) != [0, 1]:
             raise ValueError(f"Expected one initial mask per phase for {patient}")
-        count, height, width = case.images.shape
-        if height % 16 or width % 16:
-            raise ValueError("The image grid must be evenly divisible into 16×16 cells")
-        features = case.images.reshape(count, 16, height // 16, 16, width // 16).mean(axis=(2, 4))
-        features = features.reshape(count, 256).astype(np.float64)
-        features -= features.mean(axis=1, keepdims=True)
-        features /= np.maximum(np.linalg.norm(features, axis=1, keepdims=True), 1e-12)
+        count = len(case.images)
+        features = block_features(case.images)
         choices = {arm: list(initial[patient]) for arm in ARMS}
         patient_seed = int.from_bytes(blake2s(patient.encode(), digest_size=8).digest(), "little")
         for phase in (0, 1):

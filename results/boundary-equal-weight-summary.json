@@ -1,0 +1,593 @@
+{
+  "scope": "Exploratory acquisition-only control on the original two ACDC development training blocks.",
+  "unit": "Mean reference slice-class counts per 80 new training masks, averaged over two folds and three seeds.",
+  "analysis": "Four thousand paired patient bootstrap draws within folds, shared across arms and seeds. Intervals condition on warm-up models and frozen choices.",
+  "metrics": {
+    "small": "Positive reference area no greater than 25% of the class and phase peak",
+    "absent": "Zero reference area for the class",
+    "near_absent": "Absent with a native neighboring small-positive slice of the same class and phase"
+  },
+  "training_patients_per_fold": 40,
+  "new_masks_per_fold": 80,
+  "variants": {
+    "calibrated": {
+      "all_classes": {
+        "small": {
+          "estimate": 109.5,
+          "ci95": [
+            97.16666666666667,
+            122.33333333333334
+          ]
+        },
+        "absent": {
+          "estimate": 86.83333333333334,
+          "ci95": [
+            73.1625,
+            101.0
+          ]
+        },
+        "near_absent": {
+          "estimate": 42.33333333333333,
+          "ci95": [
+            33.333333333333336,
+            51.5
+          ]
+        }
+      },
+      "RV": {
+        "small": {
+          "estimate": 26.666666666666668,
+          "ci95": [
+            19.666666666666668,
+            33.833333333333336
+          ]
+        },
+        "absent": {
+          "estimate": 51.833333333333336,
+          "ci95": [
+            44.5,
+            59.0
+          ]
+        },
+        "near_absent": {
+          "estimate": 24.5,
+          "ci95": [
+            18.5,
+            30.5
+          ]
+        }
+      },
+      "MYO": {
+        "small": {
+          "estimate": 31.333333333333332,
+          "ci95": [
+            24.5,
+            38.5
+          ]
+        },
+        "absent": {
+          "estimate": 14.5,
+          "ci95": [
+            9.0,
+            20.333333333333332
+          ]
+        },
+        "near_absent": {
+          "estimate": 2.3333333333333335,
+          "ci95": [
+            0.5,
+            4.5
+          ]
+        }
+      },
+      "LV": {
+        "small": {
+          "estimate": 51.5,
+          "ci95": [
+            45.166666666666664,
+            57.5
+          ]
+        },
+        "absent": {
+          "estimate": 20.5,
+          "ci95": [
+            14.666666666666666,
+            26.666666666666668
+          ]
+        },
+        "near_absent": {
+          "estimate": 15.5,
+          "ci95": [
+            10.5,
+            20.833333333333332
+          ]
+        }
+      }
+    },
+    "raw_weight_1": {
+      "all_classes": {
+        "small": {
+          "estimate": 112.5,
+          "ci95": [
+            101.66666666666667,
+            123.66666666666666
+          ]
+        },
+        "absent": {
+          "estimate": 70.5,
+          "ci95": [
+            59.0,
+            82.0
+          ]
+        },
+        "near_absent": {
+          "estimate": 34.333333333333336,
+          "ci95": [
+            27.162499999999998,
+            42.0
+          ]
+        }
+      },
+      "RV": {
+        "small": {
+          "estimate": 30.666666666666668,
+          "ci95": [
+            24.0,
+            37.833333333333336
+          ]
+        },
+        "absent": {
+          "estimate": 46.833333333333336,
+          "ci95": [
+            39.5,
+            54.004166666666684
+          ]
+        },
+        "near_absent": {
+          "estimate": 23.666666666666668,
+          "ci95": [
+            18.166666666666668,
+            29.666666666666668
+          ]
+        }
+      },
+      "MYO": {
+        "small": {
+          "estimate": 27.833333333333332,
+          "ci95": [
+            21.666666666666668,
+            34.5
+          ]
+        },
+        "absent": {
+          "estimate": 9.5,
+          "ci95": [
+            5.5,
+            13.833333333333334
+          ]
+        },
+        "near_absent": {
+          "estimate": 1.5,
+          "ci95": [
+            0.3333333333333333,
+            3.1666666666666665
+          ]
+        }
+      },
+      "LV": {
+        "small": {
+          "estimate": 54.0,
+          "ci95": [
+            48.333333333333336,
+            59.5
+          ]
+        },
+        "absent": {
+          "estimate": 14.166666666666666,
+          "ci95": [
+            9.833333333333334,
+            19.0
+          ]
+        },
+        "near_absent": {
+          "estimate": 9.166666666666666,
+          "ci95": [
+            5.833333333333333,
+            13.0
+          ]
+        }
+      }
+    },
+    "raw_weight_0_5": {
+      "all_classes": {
+        "small": {
+          "estimate": 108.5,
+          "ci95": [
+            97.32916666666667,
+            120.0
+          ]
+        },
+        "absent": {
+          "estimate": 76.66666666666666,
+          "ci95": [
+            64.33333333333333,
+            89.33750000000002
+          ]
+        },
+        "near_absent": {
+          "estimate": 36.666666666666664,
+          "ci95": [
+            28.495833333333334,
+            45.33750000000002
+          ]
+        }
+      },
+      "RV": {
+        "small": {
+          "estimate": 28.666666666666668,
+          "ci95": [
+            21.833333333333332,
+            35.833333333333336
+          ]
+        },
+        "absent": {
+          "estimate": 48.5,
+          "ci95": [
+            41.333333333333336,
+            55.504166666666684
+          ]
+        },
+        "near_absent": {
+          "estimate": 23.833333333333332,
+          "ci95": [
+            18.0,
+            30.0
+          ]
+        }
+      },
+      "MYO": {
+        "small": {
+          "estimate": 28.0,
+          "ci95": [
+            21.666666666666668,
+            34.833333333333336
+          ]
+        },
+        "absent": {
+          "estimate": 11.666666666666666,
+          "ci95": [
+            7.0,
+            16.833333333333332
+          ]
+        },
+        "near_absent": {
+          "estimate": 2.0,
+          "ci95": [
+            0.5,
+            4.0
+          ]
+        }
+      },
+      "LV": {
+        "small": {
+          "estimate": 51.833333333333336,
+          "ci95": [
+            46.0,
+            57.5
+          ]
+        },
+        "absent": {
+          "estimate": 16.5,
+          "ci95": [
+            11.5,
+            21.833333333333332
+          ]
+        },
+        "near_absent": {
+          "estimate": 10.833333333333334,
+          "ci95": [
+            6.833333333333333,
+            15.5
+          ]
+        }
+      }
+    }
+  },
+  "paired_contrasts": {
+    "calibrated_minus_raw_weight_1": {
+      "all_classes": {
+        "small": {
+          "estimate": -3.0,
+          "ci95": [
+            -9.166666666666668,
+            2.833333333333325
+          ]
+        },
+        "absent": {
+          "estimate": 16.333333333333336,
+          "ci95": [
+            9.499999999999998,
+            24.666666666666664
+          ]
+        },
+        "near_absent": {
+          "estimate": 8.0,
+          "ci95": [
+            3.666666666666666,
+            13.0
+          ]
+        }
+      },
+      "RV": {
+        "small": {
+          "estimate": -4.0,
+          "ci95": [
+            -6.666666666666668,
+            -1.6666666666666643
+          ]
+        },
+        "absent": {
+          "estimate": 5.0,
+          "ci95": [
+            2.6666666666666643,
+            7.666666666666671
+          ]
+        },
+        "near_absent": {
+          "estimate": 0.8333333333333321,
+          "ci95": [
+            -2.333333333333332,
+            4.0
+          ]
+        }
+      },
+      "MYO": {
+        "small": {
+          "estimate": 3.5,
+          "ci95": [
+            1.3333333333333321,
+            6.0
+          ]
+        },
+        "absent": {
+          "estimate": 5.0,
+          "ci95": [
+            2.333333333333334,
+            8.166666666666666
+          ]
+        },
+        "near_absent": {
+          "estimate": 0.8333333333333335,
+          "ci95": [
+            0.16666666666666663,
+            1.833333333333333
+          ]
+        }
+      },
+      "LV": {
+        "small": {
+          "estimate": -2.5,
+          "ci95": [
+            -5.833333333333336,
+            0.6666666666666714
+          ]
+        },
+        "absent": {
+          "estimate": 6.333333333333334,
+          "ci95": [
+            3.666666666666666,
+            9.504166666666684
+          ]
+        },
+        "near_absent": {
+          "estimate": 6.333333333333334,
+          "ci95": [
+            3.500000000000001,
+            9.666666666666666
+          ]
+        }
+      }
+    },
+    "raw_weight_1_minus_raw_weight_0_5": {
+      "all_classes": {
+        "small": {
+          "estimate": 3.9999999999999964,
+          "ci95": [
+            0.6666666666666642,
+            7.666666666666668
+          ]
+        },
+        "absent": {
+          "estimate": -6.166666666666664,
+          "ci95": [
+            -11.333333333333332,
+            -1.6666666666666679
+          ]
+        },
+        "near_absent": {
+          "estimate": -2.333333333333332,
+          "ci95": [
+            -5.333333333333333,
+            0.33333333333333504
+          ]
+        }
+      },
+      "RV": {
+        "small": {
+          "estimate": 2.0,
+          "ci95": [
+            0.5,
+            3.666666666666668
+          ]
+        },
+        "absent": {
+          "estimate": -1.6666666666666643,
+          "ci95": [
+            -3.6666666666666643,
+            0.1666666666666643
+          ]
+        },
+        "near_absent": {
+          "estimate": -0.1666666666666643,
+          "ci95": [
+            -2.166666666666668,
+            1.8333333333333357
+          ]
+        }
+      },
+      "MYO": {
+        "small": {
+          "estimate": -0.16666666666666785,
+          "ci95": [
+            -1.3333333333333357,
+            1.0
+          ]
+        },
+        "absent": {
+          "estimate": -2.166666666666666,
+          "ci95": [
+            -4.166666666666667,
+            -0.5
+          ]
+        },
+        "near_absent": {
+          "estimate": -0.5,
+          "ci95": [
+            -1.1666666666666665,
+            0.0
+          ]
+        }
+      },
+      "LV": {
+        "small": {
+          "estimate": 2.1666666666666643,
+          "ci95": [
+            0.1666666666666643,
+            4.333333333333336
+          ]
+        },
+        "absent": {
+          "estimate": -2.333333333333334,
+          "ci95": [
+            -4.5,
+            -0.5
+          ]
+        },
+        "near_absent": {
+          "estimate": -1.6666666666666679,
+          "ci95": [
+            -3.5,
+            -0.3333333333333339
+          ]
+        }
+      }
+    }
+  },
+  "seed_estimates_all_classes": {
+    "2027": {
+      "calibrated": {
+        "small": 109.5,
+        "absent": 87.0,
+        "near_absent": 42.5
+      },
+      "raw_weight_1": {
+        "small": 111.5,
+        "absent": 74.0,
+        "near_absent": 37.0
+      },
+      "raw_weight_0_5": {
+        "small": 107.5,
+        "absent": 78.0,
+        "near_absent": 39.0
+      }
+    },
+    "2028": {
+      "calibrated": {
+        "small": 110.0,
+        "absent": 85.5,
+        "near_absent": 41.5
+      },
+      "raw_weight_1": {
+        "small": 114.0,
+        "absent": 70.5,
+        "near_absent": 32.5
+      },
+      "raw_weight_0_5": {
+        "small": 107.5,
+        "absent": 78.0,
+        "near_absent": 36.5
+      }
+    },
+    "2029": {
+      "calibrated": {
+        "small": 109.0,
+        "absent": 88.0,
+        "near_absent": 43.0
+      },
+      "raw_weight_1": {
+        "small": 112.0,
+        "absent": 67.0,
+        "near_absent": 33.5
+      },
+      "raw_weight_0_5": {
+        "small": 110.5,
+        "absent": 74.0,
+        "near_absent": 34.5
+      }
+    }
+  },
+  "archive_replay": {
+    "0": {
+      "2027": {
+        "frozen_acquisitions_sha256": "755c82af7efe0bf056393335a660cc500f451c69486e7ba2ac3de6e9e786a68f",
+        "warm_up": "retained warm-up checkpoint",
+        "exact_replay": [
+          "calibrated",
+          "raw_weight_0_5"
+        ]
+      },
+      "2028": {
+        "frozen_acquisitions_sha256": "bdf1bf4887808cc67f97f6bc22998db28900928139f3c451f42a7f7cf408c7cd",
+        "warm_up": "deterministic warm-up replay",
+        "exact_replay": [
+          "calibrated",
+          "raw_weight_0_5"
+        ]
+      },
+      "2029": {
+        "frozen_acquisitions_sha256": "1a5f88d34b83381adf1eb3df418f3d4c441303532cf47c694926fbfc34626b02",
+        "warm_up": "deterministic warm-up replay",
+        "exact_replay": [
+          "calibrated",
+          "raw_weight_0_5"
+        ]
+      }
+    },
+    "1": {
+      "2027": {
+        "frozen_acquisitions_sha256": "f21c28917a8b5fa20cf524ffc1928adb8ecef2b808d9e9c7d209b5de8bacc427",
+        "warm_up": "retained warm-up checkpoint",
+        "exact_replay": [
+          "calibrated",
+          "raw_weight_0_5"
+        ]
+      },
+      "2028": {
+        "frozen_acquisitions_sha256": "ff9875cb54df47c6eb8571b06ce7f68b7109b4822d3b96f6c6a3224267ef6b8a",
+        "warm_up": "deterministic warm-up replay",
+        "exact_replay": [
+          "calibrated",
+          "raw_weight_0_5"
+        ]
+      },
+      "2029": {
+        "frozen_acquisitions_sha256": "fb3762b78f3dbc2af240686b39eccd94c10ce1d72ee34336a5c94bed0bf9b03b",
+        "warm_up": "deterministic warm-up replay",
+        "exact_replay": [
+          "calibrated",
+          "raw_weight_0_5"
+        ]
+      }
+    }
+  }
+}

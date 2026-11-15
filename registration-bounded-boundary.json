@@ -1,0 +1,18 @@
+{
+  "question": "Can a small, explicit replacement budget retain image diversity while adding calibrated boundary-state supervision?",
+  "declared_after": "Development and early retrospective evaluations of unbounded boundary coverage motivated limiting changes to the image-difference acquisition list. This test is exploratory. Whole-cohort results from both earlier methods are retained.",
+  "source_protocol": "registration-image-budget.json",
+  "seeds": [2027, 2028, 2029],
+  "folds": [0, 1],
+  "views": [[1.0, 0.0], [0.9, -0.1], [1.1, 0.1]],
+  "tail_fraction": 0.001,
+  "area_cutoff": 0.35,
+  "strength": 1.0,
+  "max_replacements": 8,
+  "arms": ["bounded", "calibrated", "pooled_image_farthest", "targeted"],
+  "contender": "bounded",
+  "primary": "Patient-macro small-positive recall at retrospective 20% all-absence FPR against image difference, and realized small-positive and adjacent-absence yields per 80 newly annotated masks. Report both, irrespective of direction.",
+  "secondary_metrics": ["small and global Dice", "adjacent-absence matched recall", "FPR and recall at independently calibrated cutoffs"],
+  "label_roles": "Use the same six selection-calibration and six independent detection-calibration patients as calibrated coverage. Retain at least 72 of the 80 proposed image-difference acquisitions before training. All fits use exactly 160 dense training masks.",
+  "scope": "No new untouched test panel. The previously evaluated official ACDC cohort is used for locked retrospective evaluation."
+}
