@@ -121,6 +121,44 @@ python audit_boundary_equal_weight.py aggregate \
   --output results/boundary-equal-weight-summary-recomputed.json
 ```
 
+### Review follow-up diagnostics
+
+Use the V2 and V3 runs from the boundary-state workflow. The matched-slot control holds the eight bounded patient–phase slots fixed, picks the nearest alternative by image-distance loss, and repeats continuation training with fixed seeds. State reliability uses development patients outside each fold's state fitting panel and replays both acquisition lists. The detector audit reuses frozen checkpoints and verifies both the six-patient cutoffs and the scores on the official 50 before writing anonymous numeric ledgers.
+
+```bash
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
+swap=runs/boundary-swap-control
+state=runs/boundary-state-reliability
+detector=runs/boundary-detector-audit
+mkdir -p "$swap" "$state" "$detector"
+for fold in 0 1; do
+  python audit_boundary_state_reliability.py score --data data/acdc-192 \
+    --registration registration-image-budget.json --design registration-calibrated-boundary.json \
+    --v2 runs/calibrated-boundary/development --warmups runs/reviewer-weights \
+    --fold "$fold" --output "$state/fold-$fold.json"
+  for seed in 2027 2028 2029; do
+    id=seed-$seed-fold-$fold
+    python run_boundary_swap_control.py --data data/acdc-192 --registration registration-image-budget.json \
+      --prior "runs/bounded-boundary/development/$id" --design registration-boundary-swap-control.json \
+      --output "$swap/development/$id"
+    python run_boundary_coverage.py official --fit "$swap/development/$id" \
+      --assessment data/acdc-challenge-audit-192 --design registration-boundary-swap-control.json \
+      --output "$swap/official/$id"
+    python audit_boundary_detector.py score --source data/acdc-192 --assessment data/acdc-challenge-audit-192 \
+      --fit "runs/bounded-boundary/development/$id" --archived "runs/bounded-boundary/official/$id" \
+      --design registration-boundary-detector-audit.json --output "$detector/$id.json.gz"
+  done
+done
+python summarize_boundary_swap_control.py --root "$swap" --design registration-boundary-swap-control.json \
+  --assessment data/acdc-challenge-audit-192 --output "$swap/summary.json"
+python audit_boundary_state_reliability.py aggregate --inputs "$state/fold-0.json" "$state/fold-1.json" \
+  --output "$state/summary.json"
+python audit_boundary_detector.py replay --files "$detector"/seed-*.json.gz \
+  --design registration-boundary-detector-audit.json --output "$detector/summary.json"
+```
+
+The last command can replay from the numeric ledgers in Artifact A1 without images. Table 4 in the reviewer revision uses the original pooled, centered assessment at 20% FPR. The per-class matched ROC is invariant to a common subtraction in that class. Cutoff resampling re-estimates performance at the six-source-patient operating point, with the original fewer-than-five fallback. Both folds share the official 50 patients for all bootstrap draws. Patient intervals condition on the fixed fitted seeds.
+
 ### Common-support analysis
 
 The anonymous reproduction archive contains a compressed numeric ledger for the common-support and source-calibration analysis. The ledger uses artificial patient keys and sorted within-support scores. It includes no source images, masks, original case keys, or slice coordinates. Extract the archive and run the analysis with NumPy, SciPy and scikit-learn. The saved JSON includes separate RV and LV results, area cells, nominal FPR curves, opposite-ventricle support, and paired contrasts. The original three-class ACDC table uses centered scores for both matched recall and standardized partial AUC.

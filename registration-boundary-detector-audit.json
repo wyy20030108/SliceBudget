@@ -1,0 +1,10 @@
+{
+  "scope": "Exploratory frozen-model detector audit of the three boundary acquisition policies on the previously evaluated official 50 ACDC patients.",
+  "source": "runs/bounded-boundary/development",
+  "seeds": [2027, 2028, 2029],
+  "folds": [0, 1],
+  "arms": ["pooled_image_farthest", "calibrated", "bounded"],
+  "comparison": "Report every class, the equal-class average, and the original centered pooled estimates, for all and adjacent absences at matched FPR 0.20.",
+  "threshold_audit": "Use the archived class cutoffs at the original operating point. Jointly resample the six detector patients within each fold and the same 50 target patients across both folds and all models. Retain the source 80th-percentile and fallback rule, counting repetitions as bootstrap draws. Compare against target-only intervals.",
+  "sampling": "4000 paired patient bootstrap draws, fixed fitted models, no re-ranking or fitting acquisition policies, pointwise intervals."
+}

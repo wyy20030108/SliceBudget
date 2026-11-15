@@ -1,0 +1,14 @@
+{
+  "question": "Does state-ranked slice replacement add benefits beyond swapping the same number of image-difference selections at approximately the same image-distance cost?",
+  "declared_after": "Bounded boundary coverage has been scored. This exploratory comparator is frozen before its training or evaluation and reuses V3's locations for the eight replacements.",
+  "parent_design": "registration-bounded-boundary.json",
+  "seeds": [2027, 2028, 2029],
+  "folds": [0, 1],
+  "requested_swaps": 8,
+  "arms": ["bounded", "image_loss_matched", "pooled_image_farthest"],
+  "contender": "bounded",
+  "selection": "Hold fixed all eight archived bounded patient-phase slots and their image-difference losses. In each slot choose an eligible non-anchor slice other than the image-difference and bounded choices that minimizes absolute normalized image-distance loss mismatch, with seeded randomized tie-breaking. If no such choice exists, use the bounded replacement and record the shared choice. Assignment reads only image features, native indices, and the two locked query lists. State scores, state labels, and held-out results are inaccessible to the conditional comparator.",
+  "scope": "The control conditions on the bounded method's changed slots and image-distance losses. Its slice substitutions are state-free conditional on those design inputs; between-slot decisions are not independently tested. The 50 official ACDC patients remain a previously evaluated cohort.",
+  "primary": "Report actual small and adjacent-absence label yields per 80 queries, and all-absence matched recall at retrospective 20% FPR, bounded versus the conditional control and image difference. Keep same six-case detector calibration, two folds, three seeds, 160 masks, and training schedule. Report the matched image-distance discrepancies.",
+  "secondary_metrics": ["small and global Dice", "adjacent-absence matched recall", "FPR and small-positive recall at independently fitted source cutoffs"]
+}
