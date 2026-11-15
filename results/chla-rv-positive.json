@@ -1,0 +1,469 @@
+{
+  "coverage": {
+    "cohort": "CHLA pediatric congenital heart disease",
+    "source_url": "https://github.com/saeedkarimi/Cardiac_MRI_Segmentation",
+    "source_article_doi": "10.1186/s12968-020-00678-0",
+    "release_revision": "1e0d483045cbcd4d172156152c6ab7e8169528a4",
+    "source_archive_sha256": "eb9df013b43f0d1f4178c183476f67e61f583c3044479196ec83cbaef02fdee4",
+    "patients": 64,
+    "labels": [
+      1
+    ],
+    "phase_scope": "cine",
+    "released_grid": [
+      128,
+      128
+    ],
+    "model_grid": [
+      192,
+      192
+    ],
+    "eligibility": "Only explicitly contoured positive slices in each released chamber and phase stack",
+    "area_basis": "Counts on the released 128\u00d7128 binary mask before resizing",
+    "phases": {
+      "ED": {
+        "released_slices": 775,
+        "positive_slices": 772,
+        "excluded_blank_slices": 3,
+        "small_slices": 121,
+        "small_supporting_patients": 62
+      },
+      "ES": {
+        "released_slices": 578,
+        "positive_slices": 578,
+        "excluded_blank_slices": 0,
+        "small_slices": 111,
+        "small_supporting_patients": 58
+      }
+    }
+  },
+  "strata": {
+    "pooled": {
+      "support": {
+        "positive_slices": 1350,
+        "small_slices": 232,
+        "small_patients": 63
+      },
+      "methods": {
+        "targeted": {
+          "recall": {
+            "estimate": 0.061760461760461766,
+            "ci95": [
+              0.02837324543316227,
+              0.10610952010019552
+            ]
+          },
+          "small_dice": {
+            "estimate": 0.1762058382460343,
+            "ci95": [
+              0.13356450414878734,
+              0.22397865614849605
+            ]
+          },
+          "global_dice": {
+            "estimate": 0.36980132146229644,
+            "ci95": [
+              0.3432780944736667,
+              0.3970415690655596
+            ]
+          }
+        },
+        "uncertain": {
+          "recall": {
+            "estimate": 0.0870499209784924,
+            "ci95": [
+              0.05348307996257215,
+              0.12817421457830447
+            ]
+          },
+          "small_dice": {
+            "estimate": 0.14236925815737486,
+            "ci95": [
+              0.10497021809098776,
+              0.18233633974126626
+            ]
+          },
+          "global_dice": {
+            "estimate": 0.384593674979074,
+            "ci95": [
+              0.3521361369118718,
+              0.41684526094610846
+            ]
+          }
+        },
+        "pooled_image_farthest": {
+          "recall": {
+            "estimate": 0.17473888545317118,
+            "ci95": [
+              0.12702313781415345,
+              0.22776755651755656
+            ]
+          },
+          "small_dice": {
+            "estimate": 0.19789750701341838,
+            "ci95": [
+              0.14895427979556428,
+              0.2512823291839532
+            ]
+          },
+          "global_dice": {
+            "estimate": 0.34957623667134985,
+            "ci95": [
+              0.3203088203457196,
+              0.37941066593379424
+            ]
+          }
+        }
+      },
+      "targeted_minus": {
+        "uncertain": {
+          "recall": {
+            "difference": -0.025289459218030642,
+            "patients": 63,
+            "descriptive_95_interval": [
+              -0.056289295014880954,
+              0.00840577241411552
+            ]
+          },
+          "small_dice": {
+            "difference": 0.03383658008865942,
+            "patients": 63,
+            "descriptive_95_interval": [
+              0.013195738080733332,
+              0.05710812593612195
+            ]
+          },
+          "global_dice": {
+            "difference": -0.014792353516777558,
+            "patients": 64,
+            "descriptive_95_interval": [
+              -0.03112891524471451,
+              0.0014130165750848328
+            ]
+          }
+        },
+        "pooled_image_farthest": {
+          "recall": {
+            "difference": -0.1129784236927094,
+            "patients": 63,
+            "descriptive_95_interval": [
+              -0.1584845658693585,
+              -0.06947467137896825
+            ]
+          },
+          "small_dice": {
+            "difference": -0.021691668767384084,
+            "patients": 63,
+            "descriptive_95_interval": [
+              -0.038532768221705406,
+              -0.005277080779284878
+            ]
+          },
+          "global_dice": {
+            "difference": 0.020225084790946642,
+            "patients": 64,
+            "descriptive_95_interval": [
+              0.005773138661863496,
+              0.03425294229924971
+            ]
+          }
+        }
+      }
+    },
+    "ED": {
+      "support": {
+        "positive_slices": 772,
+        "small_slices": 121,
+        "small_patients": 62
+      },
+      "methods": {
+        "targeted": {
+          "recall": {
+            "estimate": 0.04301075268817204,
+            "ci95": [
+              0.013888888888888888,
+              0.08465608465608467
+            ]
+          },
+          "small_dice": {
+            "estimate": 0.16848966592633874,
+            "ci95": [
+              0.12187752178448548,
+              0.21816779132614786
+            ]
+          },
+          "global_dice": {
+            "estimate": 0.36661199268006683,
+            "ci95": [
+              0.34103515607616636,
+              0.3910053312532324
+            ]
+          }
+        },
+        "uncertain": {
+          "recall": {
+            "estimate": 0.089247311827957,
+            "ci95": [
+              0.05116812865497076,
+              0.133879781420765
+            ]
+          },
+          "small_dice": {
+            "estimate": 0.12136532600572848,
+            "ci95": [
+              0.08893430553056286,
+              0.15641661013985234
+            ]
+          },
+          "global_dice": {
+            "estimate": 0.38497126893688305,
+            "ci95": [
+              0.3545581302162853,
+              0.414481922860133
+            ]
+          }
+        },
+        "pooled_image_farthest": {
+          "recall": {
+            "estimate": 0.1575268817204301,
+            "ci95": [
+              0.10582862903225805,
+              0.21718770667989415
+            ]
+          },
+          "small_dice": {
+            "estimate": 0.17869726836159242,
+            "ci95": [
+              0.12928611802893597,
+              0.2332369208062803
+            ]
+          },
+          "global_dice": {
+            "estimate": 0.3354537630116516,
+            "ci95": [
+              0.30632485364756257,
+              0.36508994692617214
+            ]
+          }
+        }
+      },
+      "targeted_minus": {
+        "uncertain": {
+          "recall": {
+            "difference": -0.046236559139784944,
+            "patients": 62,
+            "descriptive_95_interval": [
+              -0.08060219460602855,
+              -0.013976254480286731
+            ]
+          },
+          "small_dice": {
+            "difference": 0.04712433992061026,
+            "patients": 62,
+            "descriptive_95_interval": [
+              0.01784740901374553,
+              0.08034553669061824
+            ]
+          },
+          "global_dice": {
+            "difference": -0.01835927625681619,
+            "patients": 64,
+            "descriptive_95_interval": [
+              -0.038316788494037426,
+              0.0007053055725443658
+            ]
+          }
+        },
+        "pooled_image_farthest": {
+          "recall": {
+            "difference": -0.11451612903225807,
+            "patients": 62,
+            "descriptive_95_interval": [
+              -0.16666666666666666,
+              -0.06833198924731182
+            ]
+          },
+          "small_dice": {
+            "difference": -0.010207602435253675,
+            "patients": 62,
+            "descriptive_95_interval": [
+              -0.030919106267099657,
+              0.008797220224289354
+            ]
+          },
+          "global_dice": {
+            "difference": 0.03115822966841521,
+            "patients": 64,
+            "descriptive_95_interval": [
+              0.014269489843015374,
+              0.04761912183185103
+            ]
+          }
+        }
+      }
+    },
+    "ES": {
+      "support": {
+        "positive_slices": 578,
+        "small_slices": 111,
+        "small_patients": 58
+      },
+      "methods": {
+        "targeted": {
+          "recall": {
+            "estimate": 0.05775862068965516,
+            "ci95": [
+              0.02777529761904762,
+              0.0924308878256247
+            ]
+          },
+          "small_dice": {
+            "estimate": 0.1820669396762604,
+            "ci95": [
+              0.1290339101736091,
+              0.23924258687776753
+            ]
+          },
+          "global_dice": {
+            "estimate": 0.37299065024452616,
+            "ci95": [
+              0.3387831497744753,
+              0.4104066439150393
+            ]
+          }
+        },
+        "uncertain": {
+          "recall": {
+            "estimate": 0.0682471264367816,
+            "ci95": [
+              0.03672103302162477,
+              0.1034797562893082
+            ]
+          },
+          "small_dice": {
+            "estimate": 0.16810830223940998,
+            "ci95": [
+              0.11506209011929736,
+              0.2256503391013386
+            ]
+          },
+          "global_dice": {
+            "estimate": 0.38421608102126503,
+            "ci95": [
+              0.34361154562269375,
+              0.4270226378960069
+            ]
+          }
+        },
+        "pooled_image_farthest": {
+          "recall": {
+            "estimate": 0.16695402298850576,
+            "ci95": [
+              0.11264367816091954,
+              0.22486680327868852
+            ]
+          },
+          "small_dice": {
+            "estimate": 0.22121202092053655,
+            "ci95": [
+              0.15793923325898615,
+              0.288561069836001
+            ]
+          },
+          "global_dice": {
+            "estimate": 0.36369871033104806,
+            "ci95": [
+              0.3260449758095164,
+              0.40387898670551226
+            ]
+          }
+        }
+      },
+      "targeted_minus": {
+        "uncertain": {
+          "recall": {
+            "difference": -0.010488505747126438,
+            "patients": 58,
+            "descriptive_95_interval": [
+              -0.050146401884340476,
+              0.033045977011494254
+            ]
+          },
+          "small_dice": {
+            "difference": 0.013958637436850423,
+            "patients": 58,
+            "descriptive_95_interval": [
+              -0.003576127465349954,
+              0.03198844279913006
+            ]
+          },
+          "global_dice": {
+            "difference": -0.011225430776738933,
+            "patients": 64,
+            "descriptive_95_interval": [
+              -0.028784818865746742,
+              0.006426606912332687
+            ]
+          }
+        },
+        "pooled_image_farthest": {
+          "recall": {
+            "difference": -0.10919540229885055,
+            "patients": 58,
+            "descriptive_95_interval": [
+              -0.1695906432748538,
+              -0.0499926900584795
+            ]
+          },
+          "small_dice": {
+            "difference": -0.03914508124427614,
+            "patients": 58,
+            "descriptive_95_interval": [
+              -0.061244115515949174,
+              -0.01761519240253794
+            ]
+          },
+          "global_dice": {
+            "difference": 0.009291939913478068,
+            "patients": 64,
+            "descriptive_95_interval": [
+              -0.00585238706098759,
+              0.0247673154866509
+            ]
+          }
+        }
+      }
+    }
+  },
+  "source": {
+    "0": {
+      "targeted": {
+        "source_threshold": 0.7231456637382507,
+        "weight_sha256": "96a0020401f1263fa65ce020e66950267e3dd6ca9fa81fa1476116b56f92bb91"
+      },
+      "uncertain": {
+        "source_threshold": 0.515604555606842,
+        "weight_sha256": "88417b372b231a99149c74262107d45b19cd3be753fc18df2a1acaf887c7285d"
+      },
+      "pooled_image_farthest": {
+        "source_threshold": 0.5938979387283325,
+        "weight_sha256": "305c470a569dde3a821a35a1028edeb6f67b1529099c7489f5bfbaaba2bab89a"
+      }
+    },
+    "1": {
+      "targeted": {
+        "source_threshold": 0.9982663989067078,
+        "weight_sha256": "5c8db8635ddd574601700b360cecaae20d129d2831a2f92d411142db23ac30b6"
+      },
+      "uncertain": {
+        "source_threshold": 0.5482199788093567,
+        "weight_sha256": "9a2f661dafe4d90cc5378e37586a1e6985af0140ab65e83c647c3f678e04df5f"
+      },
+      "pooled_image_farthest": {
+        "source_threshold": 0.2828121781349182,
+        "weight_sha256": "aae98bf7516f99f235c818d63cc3fb576a40bea7d393cd0e2dc6580e3c7836ea"
+      }
+    }
+  },
+  "uncertainty": "Two fixed source fits averaged per patient. Paired bootstrap over CHLA patients only."
+}

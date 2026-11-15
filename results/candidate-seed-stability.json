@@ -1,0 +1,3205 @@
+{
+  "seeds": {
+    "2027": {
+      "groups": {
+        "LV/ED/absent": {
+          "offered": {
+            "count": 20,
+            "true_state": {
+              "small": 17,
+              "absent": 2,
+              "typical_positive": 1
+            },
+            "slice_acquired_under_another_intent": 5,
+            "hits": 2,
+            "precision": 0.1,
+            "patients": 20,
+            "physical_slices": 20,
+            "ci95": [
+              0.0,
+              0.25
+            ]
+          },
+          "selected": {
+            "count": 14,
+            "true_state": {
+              "small": 11,
+              "absent": 2,
+              "typical_positive": 1
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 2,
+            "precision": 0.14285714285714285,
+            "patients": 14,
+            "physical_slices": 14,
+            "ci95": [
+              0.0,
+              0.35714285714285715
+            ]
+          },
+          "passed_over": {
+            "count": 6,
+            "true_state": {
+              "small": 6,
+              "absent": 0,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 5,
+            "hits": 0,
+            "precision": 0.0,
+            "patients": 6,
+            "physical_slices": 6,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "LV/ED/small": {
+          "offered": {
+            "count": 45,
+            "true_state": {
+              "small": 27,
+              "absent": 1,
+              "typical_positive": 17
+            },
+            "slice_acquired_under_another_intent": 4,
+            "hits": 27,
+            "precision": 0.6,
+            "patients": 45,
+            "physical_slices": 45,
+            "ci95": [
+              0.4523809523809524,
+              0.7346938775510204
+            ]
+          },
+          "selected": {
+            "count": 17,
+            "true_state": {
+              "small": 12,
+              "absent": 1,
+              "typical_positive": 4
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 12,
+            "precision": 0.7058823529411765,
+            "patients": 17,
+            "physical_slices": 17,
+            "ci95": [
+              0.47368421052631576,
+              0.9230769230769231
+            ]
+          },
+          "passed_over": {
+            "count": 28,
+            "true_state": {
+              "small": 15,
+              "absent": 0,
+              "typical_positive": 13
+            },
+            "slice_acquired_under_another_intent": 4,
+            "hits": 15,
+            "precision": 0.5357142857142857,
+            "patients": 28,
+            "physical_slices": 28,
+            "ci95": [
+              0.34778428093645486,
+              0.7096774193548387
+            ]
+          }
+        },
+        "LV/ES/absent": {
+          "offered": {
+            "count": 22,
+            "true_state": {
+              "small": 17,
+              "absent": 4,
+              "typical_positive": 1
+            },
+            "slice_acquired_under_another_intent": 2,
+            "hits": 4,
+            "precision": 0.18181818181818182,
+            "patients": 22,
+            "physical_slices": 22,
+            "ci95": [
+              0.041666666666666664,
+              0.3684210526315789
+            ]
+          },
+          "selected": {
+            "count": 14,
+            "true_state": {
+              "small": 11,
+              "absent": 2,
+              "typical_positive": 1
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 2,
+            "precision": 0.14285714285714285,
+            "patients": 14,
+            "physical_slices": 14,
+            "ci95": [
+              0.0,
+              0.36363636363636365
+            ]
+          },
+          "passed_over": {
+            "count": 8,
+            "true_state": {
+              "small": 6,
+              "absent": 2,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 2,
+            "hits": 2,
+            "precision": 0.25,
+            "patients": 8,
+            "physical_slices": 8,
+            "ci95": [
+              0.0,
+              0.6
+            ]
+          }
+        },
+        "LV/ES/small": {
+          "offered": {
+            "count": 52,
+            "true_state": {
+              "small": 22,
+              "absent": 8,
+              "typical_positive": 22
+            },
+            "slice_acquired_under_another_intent": 8,
+            "hits": 22,
+            "precision": 0.4230769230769231,
+            "patients": 52,
+            "physical_slices": 52,
+            "ci95": [
+              0.28807506053268767,
+              0.5600350877192984
+            ]
+          },
+          "selected": {
+            "count": 16,
+            "true_state": {
+              "small": 5,
+              "absent": 2,
+              "typical_positive": 9
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 5,
+            "precision": 0.3125,
+            "patients": 16,
+            "physical_slices": 16,
+            "ci95": [
+              0.08333333333333333,
+              0.5454545454545454
+            ]
+          },
+          "passed_over": {
+            "count": 36,
+            "true_state": {
+              "small": 17,
+              "absent": 6,
+              "typical_positive": 13
+            },
+            "slice_acquired_under_another_intent": 8,
+            "hits": 17,
+            "precision": 0.4722222222222222,
+            "patients": 36,
+            "physical_slices": 36,
+            "ci95": [
+              0.3103448275862069,
+              0.6363636363636364
+            ]
+          }
+        },
+        "LV/absent": {
+          "offered": {
+            "count": 42,
+            "true_state": {
+              "small": 34,
+              "absent": 6,
+              "typical_positive": 2
+            },
+            "slice_acquired_under_another_intent": 7,
+            "hits": 6,
+            "precision": 0.14285714285714285,
+            "patients": 28,
+            "physical_slices": 42,
+            "ci95": [
+              0.02564102564102564,
+              0.2903372434017596
+            ]
+          },
+          "selected": {
+            "count": 28,
+            "true_state": {
+              "small": 22,
+              "absent": 4,
+              "typical_positive": 2
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 4,
+            "precision": 0.14285714285714285,
+            "patients": 22,
+            "physical_slices": 28,
+            "ci95": [
+              0.0,
+              0.3225806451612903
+            ]
+          },
+          "passed_over": {
+            "count": 14,
+            "true_state": {
+              "small": 12,
+              "absent": 2,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 7,
+            "hits": 2,
+            "precision": 0.14285714285714285,
+            "patients": 14,
+            "physical_slices": 14,
+            "ci95": [
+              0.0,
+              0.35714285714285715
+            ]
+          }
+        },
+        "LV/small": {
+          "offered": {
+            "count": 97,
+            "true_state": {
+              "small": 49,
+              "absent": 9,
+              "typical_positive": 39
+            },
+            "slice_acquired_under_another_intent": 12,
+            "hits": 49,
+            "precision": 0.5051546391752577,
+            "patients": 58,
+            "physical_slices": 97,
+            "ci95": [
+              0.3939393939393939,
+              0.6190476190476191
+            ]
+          },
+          "selected": {
+            "count": 33,
+            "true_state": {
+              "small": 17,
+              "absent": 3,
+              "typical_positive": 13
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 17,
+            "precision": 0.5151515151515151,
+            "patients": 28,
+            "physical_slices": 33,
+            "ci95": [
+              0.375,
+              0.6551724137931034
+            ]
+          },
+          "passed_over": {
+            "count": 64,
+            "true_state": {
+              "small": 32,
+              "absent": 6,
+              "typical_positive": 26
+            },
+            "slice_acquired_under_another_intent": 12,
+            "hits": 32,
+            "precision": 0.5,
+            "patients": 47,
+            "physical_slices": 64,
+            "ci95": [
+              0.37092431761786604,
+              0.6296423135464232
+            ]
+          }
+        },
+        "MYO/ED/absent": {
+          "offered": {
+            "count": 8,
+            "true_state": {
+              "small": 5,
+              "absent": 1,
+              "typical_positive": 2
+            },
+            "slice_acquired_under_another_intent": 2,
+            "hits": 1,
+            "precision": 0.125,
+            "patients": 8,
+            "physical_slices": 8,
+            "ci95": [
+              0.0,
+              0.4166666666666667
+            ]
+          },
+          "selected": {
+            "count": 6,
+            "true_state": {
+              "small": 4,
+              "absent": 0,
+              "typical_positive": 2
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 0,
+            "precision": 0.0,
+            "patients": 6,
+            "physical_slices": 6,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "passed_over": {
+            "count": 2,
+            "true_state": {
+              "small": 1,
+              "absent": 1,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 2,
+            "hits": 1,
+            "precision": 0.5,
+            "patients": 2,
+            "physical_slices": 2,
+            "ci95": [
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "MYO/ED/small": {
+          "offered": {
+            "count": 42,
+            "true_state": {
+              "small": 16,
+              "absent": 5,
+              "typical_positive": 21
+            },
+            "slice_acquired_under_another_intent": 14,
+            "hits": 16,
+            "precision": 0.38095238095238093,
+            "patients": 42,
+            "physical_slices": 42,
+            "ci95": [
+              0.23809523809523808,
+              0.5238392857142858
+            ]
+          },
+          "selected": {
+            "count": 16,
+            "true_state": {
+              "small": 5,
+              "absent": 2,
+              "typical_positive": 9
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 5,
+            "precision": 0.3125,
+            "patients": 16,
+            "physical_slices": 16,
+            "ci95": [
+              0.08333333333333333,
+              0.55
+            ]
+          },
+          "passed_over": {
+            "count": 26,
+            "true_state": {
+              "small": 11,
+              "absent": 3,
+              "typical_positive": 12
+            },
+            "slice_acquired_under_another_intent": 14,
+            "hits": 11,
+            "precision": 0.4230769230769231,
+            "patients": 26,
+            "physical_slices": 26,
+            "ci95": [
+              0.23809523809523808,
+              0.6086956521739131
+            ]
+          }
+        },
+        "MYO/ES/absent": {
+          "offered": {
+            "count": 12,
+            "true_state": {
+              "small": 3,
+              "absent": 4,
+              "typical_positive": 5
+            },
+            "slice_acquired_under_another_intent": 3,
+            "hits": 4,
+            "precision": 0.3333333333333333,
+            "patients": 12,
+            "physical_slices": 12,
+            "ci95": [
+              0.08333333333333333,
+              0.6363636363636364
+            ]
+          },
+          "selected": {
+            "count": 8,
+            "true_state": {
+              "small": 2,
+              "absent": 3,
+              "typical_positive": 3
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 3,
+            "precision": 0.375,
+            "patients": 8,
+            "physical_slices": 8,
+            "ci95": [
+              0.0,
+              0.75
+            ]
+          },
+          "passed_over": {
+            "count": 4,
+            "true_state": {
+              "small": 1,
+              "absent": 1,
+              "typical_positive": 2
+            },
+            "slice_acquired_under_another_intent": 3,
+            "hits": 1,
+            "precision": 0.25,
+            "patients": 4,
+            "physical_slices": 4,
+            "ci95": [
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "MYO/ES/small": {
+          "offered": {
+            "count": 55,
+            "true_state": {
+              "small": 18,
+              "absent": 6,
+              "typical_positive": 31
+            },
+            "slice_acquired_under_another_intent": 10,
+            "hits": 18,
+            "precision": 0.32727272727272727,
+            "patients": 55,
+            "physical_slices": 55,
+            "ci95": [
+              0.20833333333333334,
+              0.45098039215686275
+            ]
+          },
+          "selected": {
+            "count": 16,
+            "true_state": {
+              "small": 7,
+              "absent": 1,
+              "typical_positive": 8
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 7,
+            "precision": 0.4375,
+            "patients": 16,
+            "physical_slices": 16,
+            "ci95": [
+              0.1875,
+              0.6875
+            ]
+          },
+          "passed_over": {
+            "count": 39,
+            "true_state": {
+              "small": 11,
+              "absent": 5,
+              "typical_positive": 23
+            },
+            "slice_acquired_under_another_intent": 10,
+            "hits": 11,
+            "precision": 0.28205128205128205,
+            "patients": 39,
+            "physical_slices": 39,
+            "ci95": [
+              0.14705882352941177,
+              0.42857142857142855
+            ]
+          }
+        },
+        "MYO/absent": {
+          "offered": {
+            "count": 20,
+            "true_state": {
+              "small": 8,
+              "absent": 5,
+              "typical_positive": 7
+            },
+            "slice_acquired_under_another_intent": 5,
+            "hits": 5,
+            "precision": 0.25,
+            "patients": 13,
+            "physical_slices": 20,
+            "ci95": [
+              0.05263157894736842,
+              0.5
+            ]
+          },
+          "selected": {
+            "count": 14,
+            "true_state": {
+              "small": 6,
+              "absent": 3,
+              "typical_positive": 5
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 3,
+            "precision": 0.21428571428571427,
+            "patients": 10,
+            "physical_slices": 14,
+            "ci95": [
+              0.0,
+              0.46153846153846156
+            ]
+          },
+          "passed_over": {
+            "count": 6,
+            "true_state": {
+              "small": 2,
+              "absent": 2,
+              "typical_positive": 2
+            },
+            "slice_acquired_under_another_intent": 5,
+            "hits": 2,
+            "precision": 0.3333333333333333,
+            "patients": 4,
+            "physical_slices": 6,
+            "ci95": [
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "MYO/small": {
+          "offered": {
+            "count": 97,
+            "true_state": {
+              "small": 34,
+              "absent": 11,
+              "typical_positive": 52
+            },
+            "slice_acquired_under_another_intent": 24,
+            "hits": 34,
+            "precision": 0.35051546391752575,
+            "patients": 59,
+            "physical_slices": 97,
+            "ci95": [
+              0.25,
+              0.44955275229357805
+            ]
+          },
+          "selected": {
+            "count": 32,
+            "true_state": {
+              "small": 12,
+              "absent": 3,
+              "typical_positive": 17
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 12,
+            "precision": 0.375,
+            "patients": 24,
+            "physical_slices": 32,
+            "ci95": [
+              0.1944220430107527,
+              0.5652173913043478
+            ]
+          },
+          "passed_over": {
+            "count": 65,
+            "true_state": {
+              "small": 22,
+              "absent": 8,
+              "typical_positive": 35
+            },
+            "slice_acquired_under_another_intent": 24,
+            "hits": 22,
+            "precision": 0.3384615384615385,
+            "patients": 46,
+            "physical_slices": 65,
+            "ci95": [
+              0.22218137254901962,
+              0.4576447740112995
+            ]
+          }
+        },
+        "RV/ED/absent": {
+          "offered": {
+            "count": 7,
+            "true_state": {
+              "small": 5,
+              "absent": 2,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 2,
+            "precision": 0.2857142857142857,
+            "patients": 7,
+            "physical_slices": 7,
+            "ci95": [
+              0.0,
+              0.6666666666666666
+            ]
+          },
+          "selected": {
+            "count": 6,
+            "true_state": {
+              "small": 4,
+              "absent": 2,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 2,
+            "precision": 0.3333333333333333,
+            "patients": 6,
+            "physical_slices": 6,
+            "ci95": [
+              0.0,
+              0.75
+            ]
+          },
+          "passed_over": {
+            "count": 1,
+            "true_state": {
+              "small": 1,
+              "absent": 0,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 0,
+            "precision": 0.0,
+            "patients": 1,
+            "physical_slices": 1,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "RV/ED/small": {
+          "offered": {
+            "count": 56,
+            "true_state": {
+              "small": 41,
+              "absent": 7,
+              "typical_positive": 8
+            },
+            "slice_acquired_under_another_intent": 10,
+            "hits": 41,
+            "precision": 0.7321428571428571,
+            "patients": 56,
+            "physical_slices": 56,
+            "ci95": [
+              0.6071428571428571,
+              0.8421052631578947
+            ]
+          },
+          "selected": {
+            "count": 16,
+            "true_state": {
+              "small": 14,
+              "absent": 0,
+              "typical_positive": 2
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 14,
+            "precision": 0.875,
+            "patients": 16,
+            "physical_slices": 16,
+            "ci95": [
+              0.6875,
+              1.0
+            ]
+          },
+          "passed_over": {
+            "count": 40,
+            "true_state": {
+              "small": 27,
+              "absent": 7,
+              "typical_positive": 6
+            },
+            "slice_acquired_under_another_intent": 10,
+            "hits": 27,
+            "precision": 0.675,
+            "patients": 40,
+            "physical_slices": 40,
+            "ci95": [
+              0.525,
+              0.8181818181818182
+            ]
+          }
+        },
+        "RV/ES/absent": {
+          "offered": {
+            "count": 7,
+            "true_state": {
+              "small": 2,
+              "absent": 5,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 1,
+            "hits": 5,
+            "precision": 0.7142857142857143,
+            "patients": 7,
+            "physical_slices": 7,
+            "ci95": [
+              0.3333333333333333,
+              1.0
+            ]
+          },
+          "selected": {
+            "count": 6,
+            "true_state": {
+              "small": 1,
+              "absent": 5,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 5,
+            "precision": 0.8333333333333334,
+            "patients": 6,
+            "physical_slices": 6,
+            "ci95": [
+              0.5,
+              1.0
+            ]
+          },
+          "passed_over": {
+            "count": 1,
+            "true_state": {
+              "small": 1,
+              "absent": 0,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 1,
+            "hits": 0,
+            "precision": 0.0,
+            "patients": 1,
+            "physical_slices": 1,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "RV/ES/small": {
+          "offered": {
+            "count": 67,
+            "true_state": {
+              "small": 44,
+              "absent": 16,
+              "typical_positive": 7
+            },
+            "slice_acquired_under_another_intent": 12,
+            "hits": 44,
+            "precision": 0.6567164179104478,
+            "patients": 67,
+            "physical_slices": 67,
+            "ci95": [
+              0.5396520146520146,
+              0.7705152224824356
+            ]
+          },
+          "selected": {
+            "count": 17,
+            "true_state": {
+              "small": 10,
+              "absent": 3,
+              "typical_positive": 4
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 10,
+            "precision": 0.5882352941176471,
+            "patients": 17,
+            "physical_slices": 17,
+            "ci95": [
+              0.3333333333333333,
+              0.8235294117647058
+            ]
+          },
+          "passed_over": {
+            "count": 50,
+            "true_state": {
+              "small": 34,
+              "absent": 13,
+              "typical_positive": 3
+            },
+            "slice_acquired_under_another_intent": 12,
+            "hits": 34,
+            "precision": 0.68,
+            "patients": 50,
+            "physical_slices": 50,
+            "ci95": [
+              0.5490196078431373,
+              0.803921568627451
+            ]
+          }
+        },
+        "RV/absent": {
+          "offered": {
+            "count": 14,
+            "true_state": {
+              "small": 7,
+              "absent": 7,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 1,
+            "hits": 7,
+            "precision": 0.5,
+            "patients": 11,
+            "physical_slices": 14,
+            "ci95": [
+              0.2222222222222222,
+              0.75
+            ]
+          },
+          "selected": {
+            "count": 12,
+            "true_state": {
+              "small": 5,
+              "absent": 7,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 7,
+            "precision": 0.5833333333333334,
+            "patients": 10,
+            "physical_slices": 12,
+            "ci95": [
+              0.2727272727272727,
+              0.8461538461538461
+            ]
+          },
+          "passed_over": {
+            "count": 2,
+            "true_state": {
+              "small": 2,
+              "absent": 0,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 1,
+            "hits": 0,
+            "precision": 0.0,
+            "patients": 2,
+            "physical_slices": 2,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "RV/small": {
+          "offered": {
+            "count": 123,
+            "true_state": {
+              "small": 85,
+              "absent": 23,
+              "typical_positive": 15
+            },
+            "slice_acquired_under_another_intent": 22,
+            "hits": 85,
+            "precision": 0.6910569105691057,
+            "patients": 69,
+            "physical_slices": 123,
+            "ci95": [
+              0.6033057851239669,
+              0.7741935483870968
+            ]
+          },
+          "selected": {
+            "count": 33,
+            "true_state": {
+              "small": 24,
+              "absent": 3,
+              "typical_positive": 6
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 24,
+            "precision": 0.7272727272727273,
+            "patients": 23,
+            "physical_slices": 33,
+            "ci95": [
+              0.5813765941485372,
+              0.8621388630009321
+            ]
+          },
+          "passed_over": {
+            "count": 90,
+            "true_state": {
+              "small": 61,
+              "absent": 20,
+              "typical_positive": 9
+            },
+            "slice_acquired_under_another_intent": 22,
+            "hits": 61,
+            "precision": 0.6777777777777778,
+            "patients": 57,
+            "physical_slices": 90,
+            "ci95": [
+              0.5617977528089888,
+              0.7820652173913044
+            ]
+          }
+        },
+        "absent": {
+          "offered": {
+            "count": 76,
+            "true_state": {
+              "small": 49,
+              "absent": 18,
+              "typical_positive": 9
+            },
+            "slice_acquired_under_another_intent": 13,
+            "hits": 18,
+            "precision": 0.23684210526315788,
+            "patients": 36,
+            "physical_slices": 63,
+            "ci95": [
+              0.11627064374789349,
+              0.37624726758390126
+            ]
+          },
+          "selected": {
+            "count": 54,
+            "true_state": {
+              "small": 33,
+              "absent": 14,
+              "typical_positive": 7
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 14,
+            "precision": 0.25925925925925924,
+            "patients": 35,
+            "physical_slices": 54,
+            "ci95": [
+              0.1346153846153846,
+              0.3958333333333333
+            ]
+          },
+          "passed_over": {
+            "count": 22,
+            "true_state": {
+              "small": 16,
+              "absent": 4,
+              "typical_positive": 2
+            },
+            "slice_acquired_under_another_intent": 13,
+            "hits": 4,
+            "precision": 0.18181818181818182,
+            "patients": 17,
+            "physical_slices": 21,
+            "ci95": [
+              0.0,
+              0.4090909090909091
+            ]
+          }
+        },
+        "small": {
+          "offered": {
+            "count": 317,
+            "true_state": {
+              "small": 168,
+              "absent": 43,
+              "typical_positive": 106
+            },
+            "slice_acquired_under_another_intent": 58,
+            "hits": 168,
+            "precision": 0.5299684542586751,
+            "patients": 77,
+            "physical_slices": 265,
+            "ci95": [
+              0.4666666666666667,
+              0.5903235522736106
+            ]
+          },
+          "selected": {
+            "count": 98,
+            "true_state": {
+              "small": 53,
+              "absent": 9,
+              "typical_positive": 36
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 53,
+            "precision": 0.5408163265306123,
+            "patients": 58,
+            "physical_slices": 98,
+            "ci95": [
+              0.45161290322580644,
+              0.6282079646017699
+            ]
+          },
+          "passed_over": {
+            "count": 219,
+            "true_state": {
+              "small": 115,
+              "absent": 34,
+              "typical_positive": 70
+            },
+            "slice_acquired_under_another_intent": 58,
+            "hits": 115,
+            "precision": 0.5251141552511416,
+            "patients": 67,
+            "physical_slices": 193,
+            "ci95": [
+              0.4485900741218176,
+              0.5970891041273639
+            ]
+          }
+        }
+      },
+      "fallback": 8,
+      "assignments": 160
+    },
+    "2028": {
+      "groups": {
+        "LV/ED/absent": {
+          "offered": {
+            "count": 27,
+            "true_state": {
+              "small": 24,
+              "absent": 2,
+              "typical_positive": 1
+            },
+            "slice_acquired_under_another_intent": 9,
+            "hits": 2,
+            "precision": 0.07407407407407407,
+            "patients": 27,
+            "physical_slices": 27,
+            "ci95": [
+              0.0,
+              0.18181818181818182
+            ]
+          },
+          "selected": {
+            "count": 15,
+            "true_state": {
+              "small": 14,
+              "absent": 1,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 1,
+            "precision": 0.06666666666666667,
+            "patients": 15,
+            "physical_slices": 15,
+            "ci95": [
+              0.0,
+              0.21428571428571427
+            ]
+          },
+          "passed_over": {
+            "count": 12,
+            "true_state": {
+              "small": 10,
+              "absent": 1,
+              "typical_positive": 1
+            },
+            "slice_acquired_under_another_intent": 9,
+            "hits": 1,
+            "precision": 0.08333333333333333,
+            "patients": 12,
+            "physical_slices": 12,
+            "ci95": [
+              0.0,
+              0.2727272727272727
+            ]
+          }
+        },
+        "LV/ED/small": {
+          "offered": {
+            "count": 54,
+            "true_state": {
+              "small": 31,
+              "absent": 2,
+              "typical_positive": 21
+            },
+            "slice_acquired_under_another_intent": 13,
+            "hits": 31,
+            "precision": 0.5740740740740741,
+            "patients": 54,
+            "physical_slices": 54,
+            "ci95": [
+              0.4423076923076923,
+              0.7021276595744681
+            ]
+          },
+          "selected": {
+            "count": 15,
+            "true_state": {
+              "small": 11,
+              "absent": 0,
+              "typical_positive": 4
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 11,
+            "precision": 0.7333333333333333,
+            "patients": 15,
+            "physical_slices": 15,
+            "ci95": [
+              0.5,
+              0.9375
+            ]
+          },
+          "passed_over": {
+            "count": 39,
+            "true_state": {
+              "small": 20,
+              "absent": 2,
+              "typical_positive": 17
+            },
+            "slice_acquired_under_another_intent": 13,
+            "hits": 20,
+            "precision": 0.5128205128205128,
+            "patients": 39,
+            "physical_slices": 39,
+            "ci95": [
+              0.35,
+              0.6666666666666666
+            ]
+          }
+        },
+        "LV/ES/absent": {
+          "offered": {
+            "count": 39,
+            "true_state": {
+              "small": 29,
+              "absent": 7,
+              "typical_positive": 3
+            },
+            "slice_acquired_under_another_intent": 11,
+            "hits": 7,
+            "precision": 0.1794871794871795,
+            "patients": 39,
+            "physical_slices": 39,
+            "ci95": [
+              0.07142857142857142,
+              0.3076923076923077
+            ]
+          },
+          "selected": {
+            "count": 15,
+            "true_state": {
+              "small": 11,
+              "absent": 3,
+              "typical_positive": 1
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 3,
+            "precision": 0.2,
+            "patients": 15,
+            "physical_slices": 15,
+            "ci95": [
+              0.0,
+              0.4167763157894741
+            ]
+          },
+          "passed_over": {
+            "count": 24,
+            "true_state": {
+              "small": 18,
+              "absent": 4,
+              "typical_positive": 2
+            },
+            "slice_acquired_under_another_intent": 11,
+            "hits": 4,
+            "precision": 0.16666666666666666,
+            "patients": 24,
+            "physical_slices": 24,
+            "ci95": [
+              0.038461538461538464,
+              0.3200357142857144
+            ]
+          }
+        },
+        "LV/ES/small": {
+          "offered": {
+            "count": 58,
+            "true_state": {
+              "small": 26,
+              "absent": 5,
+              "typical_positive": 27
+            },
+            "slice_acquired_under_another_intent": 15,
+            "hits": 26,
+            "precision": 0.4482758620689655,
+            "patients": 58,
+            "physical_slices": 58,
+            "ci95": [
+              0.32142857142857145,
+              0.5789473684210527
+            ]
+          },
+          "selected": {
+            "count": 14,
+            "true_state": {
+              "small": 6,
+              "absent": 0,
+              "typical_positive": 8
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 6,
+            "precision": 0.42857142857142855,
+            "patients": 14,
+            "physical_slices": 14,
+            "ci95": [
+              0.16666666666666666,
+              0.7
+            ]
+          },
+          "passed_over": {
+            "count": 44,
+            "true_state": {
+              "small": 20,
+              "absent": 5,
+              "typical_positive": 19
+            },
+            "slice_acquired_under_another_intent": 15,
+            "hits": 20,
+            "precision": 0.45454545454545453,
+            "patients": 44,
+            "physical_slices": 44,
+            "ci95": [
+              0.30612244897959184,
+              0.6052830940988836
+            ]
+          }
+        },
+        "LV/absent": {
+          "offered": {
+            "count": 66,
+            "true_state": {
+              "small": 53,
+              "absent": 9,
+              "typical_positive": 4
+            },
+            "slice_acquired_under_another_intent": 20,
+            "hits": 9,
+            "precision": 0.13636363636363635,
+            "patients": 43,
+            "physical_slices": 66,
+            "ci95": [
+              0.06153846153846154,
+              0.22033898305084745
+            ]
+          },
+          "selected": {
+            "count": 30,
+            "true_state": {
+              "small": 25,
+              "absent": 4,
+              "typical_positive": 1
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 4,
+            "precision": 0.13333333333333333,
+            "patients": 24,
+            "physical_slices": 30,
+            "ci95": [
+              0.03125,
+              0.26666666666666666
+            ]
+          },
+          "passed_over": {
+            "count": 36,
+            "true_state": {
+              "small": 28,
+              "absent": 5,
+              "typical_positive": 3
+            },
+            "slice_acquired_under_another_intent": 20,
+            "hits": 5,
+            "precision": 0.1388888888888889,
+            "patients": 27,
+            "physical_slices": 36,
+            "ci95": [
+              0.03571428571428571,
+              0.24444444444444444
+            ]
+          }
+        },
+        "LV/small": {
+          "offered": {
+            "count": 112,
+            "true_state": {
+              "small": 57,
+              "absent": 7,
+              "typical_positive": 48
+            },
+            "slice_acquired_under_another_intent": 28,
+            "hits": 57,
+            "precision": 0.5089285714285714,
+            "patients": 66,
+            "physical_slices": 112,
+            "ci95": [
+              0.413038492221779,
+              0.6074897196261683
+            ]
+          },
+          "selected": {
+            "count": 29,
+            "true_state": {
+              "small": 17,
+              "absent": 0,
+              "typical_positive": 12
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 17,
+            "precision": 0.5862068965517241,
+            "patients": 22,
+            "physical_slices": 29,
+            "ci95": [
+              0.4074074074074074,
+              0.7777777777777778
+            ]
+          },
+          "passed_over": {
+            "count": 83,
+            "true_state": {
+              "small": 40,
+              "absent": 7,
+              "typical_positive": 36
+            },
+            "slice_acquired_under_another_intent": 28,
+            "hits": 40,
+            "precision": 0.4819277108433735,
+            "patients": 55,
+            "physical_slices": 83,
+            "ci95": [
+              0.37037037037037035,
+              0.5946031474512488
+            ]
+          }
+        },
+        "MYO/ED/absent": {
+          "offered": {
+            "count": 11,
+            "true_state": {
+              "small": 6,
+              "absent": 1,
+              "typical_positive": 4
+            },
+            "slice_acquired_under_another_intent": 1,
+            "hits": 1,
+            "precision": 0.09090909090909091,
+            "patients": 11,
+            "physical_slices": 11,
+            "ci95": [
+              0.0,
+              0.2857142857142857
+            ]
+          },
+          "selected": {
+            "count": 9,
+            "true_state": {
+              "small": 6,
+              "absent": 1,
+              "typical_positive": 2
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 1,
+            "precision": 0.1111111111111111,
+            "patients": 9,
+            "physical_slices": 9,
+            "ci95": [
+              0.0,
+              0.375
+            ]
+          },
+          "passed_over": {
+            "count": 2,
+            "true_state": {
+              "small": 0,
+              "absent": 0,
+              "typical_positive": 2
+            },
+            "slice_acquired_under_another_intent": 1,
+            "hits": 0,
+            "precision": 0.0,
+            "patients": 2,
+            "physical_slices": 2,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "MYO/ED/small": {
+          "offered": {
+            "count": 53,
+            "true_state": {
+              "small": 17,
+              "absent": 2,
+              "typical_positive": 34
+            },
+            "slice_acquired_under_another_intent": 16,
+            "hits": 17,
+            "precision": 0.32075471698113206,
+            "patients": 53,
+            "physical_slices": 53,
+            "ci95": [
+              0.19607843137254902,
+              0.44642857142857145
+            ]
+          },
+          "selected": {
+            "count": 16,
+            "true_state": {
+              "small": 4,
+              "absent": 2,
+              "typical_positive": 10
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 4,
+            "precision": 0.25,
+            "patients": 16,
+            "physical_slices": 16,
+            "ci95": [
+              0.058823529411764705,
+              0.5
+            ]
+          },
+          "passed_over": {
+            "count": 37,
+            "true_state": {
+              "small": 13,
+              "absent": 0,
+              "typical_positive": 24
+            },
+            "slice_acquired_under_another_intent": 16,
+            "hits": 13,
+            "precision": 0.35135135135135137,
+            "patients": 37,
+            "physical_slices": 37,
+            "ci95": [
+              0.2,
+              0.5
+            ]
+          }
+        },
+        "MYO/ES/absent": {
+          "offered": {
+            "count": 13,
+            "true_state": {
+              "small": 4,
+              "absent": 3,
+              "typical_positive": 6
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 3,
+            "precision": 0.23076923076923078,
+            "patients": 13,
+            "physical_slices": 13,
+            "ci95": [
+              0.0,
+              0.5
+            ]
+          },
+          "selected": {
+            "count": 11,
+            "true_state": {
+              "small": 3,
+              "absent": 3,
+              "typical_positive": 5
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 3,
+            "precision": 0.2727272727272727,
+            "patients": 11,
+            "physical_slices": 11,
+            "ci95": [
+              0.0,
+              0.5714285714285714
+            ]
+          },
+          "passed_over": {
+            "count": 2,
+            "true_state": {
+              "small": 1,
+              "absent": 0,
+              "typical_positive": 1
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 0,
+            "precision": 0.0,
+            "patients": 2,
+            "physical_slices": 2,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "MYO/ES/small": {
+          "offered": {
+            "count": 61,
+            "true_state": {
+              "small": 14,
+              "absent": 10,
+              "typical_positive": 37
+            },
+            "slice_acquired_under_another_intent": 17,
+            "hits": 14,
+            "precision": 0.22950819672131148,
+            "patients": 61,
+            "physical_slices": 61,
+            "ci95": [
+              0.12903225806451613,
+              0.3384615384615385
+            ]
+          },
+          "selected": {
+            "count": 14,
+            "true_state": {
+              "small": 4,
+              "absent": 1,
+              "typical_positive": 9
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 4,
+            "precision": 0.2857142857142857,
+            "patients": 14,
+            "physical_slices": 14,
+            "ci95": [
+              0.06666666666666667,
+              0.5384615384615384
+            ]
+          },
+          "passed_over": {
+            "count": 47,
+            "true_state": {
+              "small": 10,
+              "absent": 9,
+              "typical_positive": 28
+            },
+            "slice_acquired_under_another_intent": 17,
+            "hits": 10,
+            "precision": 0.2127659574468085,
+            "patients": 47,
+            "physical_slices": 47,
+            "ci95": [
+              0.10416666666666667,
+              0.3333333333333333
+            ]
+          }
+        },
+        "MYO/absent": {
+          "offered": {
+            "count": 24,
+            "true_state": {
+              "small": 10,
+              "absent": 4,
+              "typical_positive": 10
+            },
+            "slice_acquired_under_another_intent": 1,
+            "hits": 4,
+            "precision": 0.16666666666666666,
+            "patients": 15,
+            "physical_slices": 24,
+            "ci95": [
+              0.04,
+              0.29417211328976056
+            ]
+          },
+          "selected": {
+            "count": 20,
+            "true_state": {
+              "small": 9,
+              "absent": 4,
+              "typical_positive": 7
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 4,
+            "precision": 0.2,
+            "patients": 14,
+            "physical_slices": 20,
+            "ci95": [
+              0.047619047619047616,
+              0.36363636363636365
+            ]
+          },
+          "passed_over": {
+            "count": 4,
+            "true_state": {
+              "small": 1,
+              "absent": 0,
+              "typical_positive": 3
+            },
+            "slice_acquired_under_another_intent": 1,
+            "hits": 0,
+            "precision": 0.0,
+            "patients": 3,
+            "physical_slices": 4,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "MYO/small": {
+          "offered": {
+            "count": 114,
+            "true_state": {
+              "small": 31,
+              "absent": 12,
+              "typical_positive": 71
+            },
+            "slice_acquired_under_another_intent": 33,
+            "hits": 31,
+            "precision": 0.2719298245614035,
+            "patients": 64,
+            "physical_slices": 114,
+            "ci95": [
+              0.1919191919191919,
+              0.35717654986522923
+            ]
+          },
+          "selected": {
+            "count": 30,
+            "true_state": {
+              "small": 8,
+              "absent": 3,
+              "typical_positive": 19
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 8,
+            "precision": 0.26666666666666666,
+            "patients": 23,
+            "physical_slices": 30,
+            "ci95": [
+              0.11538461538461539,
+              0.45454545454545453
+            ]
+          },
+          "passed_over": {
+            "count": 84,
+            "true_state": {
+              "small": 23,
+              "absent": 9,
+              "typical_positive": 52
+            },
+            "slice_acquired_under_another_intent": 33,
+            "hits": 23,
+            "precision": 0.27380952380952384,
+            "patients": 53,
+            "physical_slices": 84,
+            "ci95": [
+              0.1794871794871795,
+              0.37180232558139537
+            ]
+          }
+        },
+        "RV/ED/absent": {
+          "offered": {
+            "count": 8,
+            "true_state": {
+              "small": 6,
+              "absent": 2,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 1,
+            "hits": 2,
+            "precision": 0.25,
+            "patients": 8,
+            "physical_slices": 8,
+            "ci95": [
+              0.0,
+              0.6
+            ]
+          },
+          "selected": {
+            "count": 7,
+            "true_state": {
+              "small": 6,
+              "absent": 1,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 1,
+            "precision": 0.14285714285714285,
+            "patients": 7,
+            "physical_slices": 7,
+            "ci95": [
+              0.0,
+              0.5
+            ]
+          },
+          "passed_over": {
+            "count": 1,
+            "true_state": {
+              "small": 0,
+              "absent": 1,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 1,
+            "hits": 1,
+            "precision": 1.0,
+            "patients": 1,
+            "physical_slices": 1,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "RV/ED/small": {
+          "offered": {
+            "count": 71,
+            "true_state": {
+              "small": 50,
+              "absent": 10,
+              "typical_positive": 11
+            },
+            "slice_acquired_under_another_intent": 13,
+            "hits": 50,
+            "precision": 0.704225352112676,
+            "patients": 71,
+            "physical_slices": 71,
+            "ci95": [
+              0.5970149253731343,
+              0.8055555555555556
+            ]
+          },
+          "selected": {
+            "count": 16,
+            "true_state": {
+              "small": 11,
+              "absent": 2,
+              "typical_positive": 3
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 11,
+            "precision": 0.6875,
+            "patients": 16,
+            "physical_slices": 16,
+            "ci95": [
+              0.45454545454545453,
+              0.9090909090909091
+            ]
+          },
+          "passed_over": {
+            "count": 55,
+            "true_state": {
+              "small": 39,
+              "absent": 8,
+              "typical_positive": 8
+            },
+            "slice_acquired_under_another_intent": 13,
+            "hits": 39,
+            "precision": 0.7090909090909091,
+            "patients": 55,
+            "physical_slices": 55,
+            "ci95": [
+              0.5833333333333334,
+              0.8235294117647058
+            ]
+          }
+        },
+        "RV/ES/absent": {
+          "offered": {
+            "count": 13,
+            "true_state": {
+              "small": 6,
+              "absent": 7,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 1,
+            "hits": 7,
+            "precision": 0.5384615384615384,
+            "patients": 13,
+            "physical_slices": 13,
+            "ci95": [
+              0.25,
+              0.8181818181818182
+            ]
+          },
+          "selected": {
+            "count": 11,
+            "true_state": {
+              "small": 4,
+              "absent": 7,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 7,
+            "precision": 0.6363636363636364,
+            "patients": 11,
+            "physical_slices": 11,
+            "ci95": [
+              0.3333333333333333,
+              0.9166666666666666
+            ]
+          },
+          "passed_over": {
+            "count": 2,
+            "true_state": {
+              "small": 2,
+              "absent": 0,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 1,
+            "hits": 0,
+            "precision": 0.0,
+            "patients": 2,
+            "physical_slices": 2,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "RV/ES/small": {
+          "offered": {
+            "count": 73,
+            "true_state": {
+              "small": 42,
+              "absent": 20,
+              "typical_positive": 11
+            },
+            "slice_acquired_under_another_intent": 12,
+            "hits": 42,
+            "precision": 0.5753424657534246,
+            "patients": 73,
+            "physical_slices": 73,
+            "ci95": [
+              0.4647887323943662,
+              0.6842105263157895
+            ]
+          },
+          "selected": {
+            "count": 14,
+            "true_state": {
+              "small": 8,
+              "absent": 2,
+              "typical_positive": 4
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 8,
+            "precision": 0.5714285714285714,
+            "patients": 14,
+            "physical_slices": 14,
+            "ci95": [
+              0.3,
+              0.8235294117647058
+            ]
+          },
+          "passed_over": {
+            "count": 59,
+            "true_state": {
+              "small": 34,
+              "absent": 18,
+              "typical_positive": 7
+            },
+            "slice_acquired_under_another_intent": 12,
+            "hits": 34,
+            "precision": 0.576271186440678,
+            "patients": 59,
+            "physical_slices": 59,
+            "ci95": [
+              0.45454545454545453,
+              0.7037037037037037
+            ]
+          }
+        },
+        "RV/absent": {
+          "offered": {
+            "count": 21,
+            "true_state": {
+              "small": 12,
+              "absent": 9,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 2,
+            "hits": 9,
+            "precision": 0.42857142857142855,
+            "patients": 15,
+            "physical_slices": 21,
+            "ci95": [
+              0.22727272727272727,
+              0.6666666666666666
+            ]
+          },
+          "selected": {
+            "count": 18,
+            "true_state": {
+              "small": 10,
+              "absent": 8,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 8,
+            "precision": 0.4444444444444444,
+            "patients": 13,
+            "physical_slices": 18,
+            "ci95": [
+              0.23529411764705882,
+              0.6923076923076923
+            ]
+          },
+          "passed_over": {
+            "count": 3,
+            "true_state": {
+              "small": 2,
+              "absent": 1,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 2,
+            "hits": 1,
+            "precision": 0.3333333333333333,
+            "patients": 3,
+            "physical_slices": 3,
+            "ci95": [
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "RV/small": {
+          "offered": {
+            "count": 144,
+            "true_state": {
+              "small": 92,
+              "absent": 30,
+              "typical_positive": 22
+            },
+            "slice_acquired_under_another_intent": 25,
+            "hits": 92,
+            "precision": 0.6388888888888888,
+            "patients": 77,
+            "physical_slices": 144,
+            "ci95": [
+              0.5571428571428572,
+              0.7202797202797203
+            ]
+          },
+          "selected": {
+            "count": 30,
+            "true_state": {
+              "small": 19,
+              "absent": 4,
+              "typical_positive": 7
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 19,
+            "precision": 0.6333333333333333,
+            "patients": 23,
+            "physical_slices": 30,
+            "ci95": [
+              0.45161290322580644,
+              0.8
+            ]
+          },
+          "passed_over": {
+            "count": 114,
+            "true_state": {
+              "small": 73,
+              "absent": 26,
+              "typical_positive": 15
+            },
+            "slice_acquired_under_another_intent": 25,
+            "hits": 73,
+            "precision": 0.6403508771929824,
+            "patients": 68,
+            "physical_slices": 114,
+            "ci95": [
+              0.5428450363196126,
+              0.7345132743362832
+            ]
+          }
+        },
+        "absent": {
+          "offered": {
+            "count": 111,
+            "true_state": {
+              "small": 75,
+              "absent": 22,
+              "typical_positive": 14
+            },
+            "slice_acquired_under_another_intent": 23,
+            "hits": 22,
+            "precision": 0.1981981981981982,
+            "patients": 47,
+            "physical_slices": 87,
+            "ci95": [
+              0.12497844827586208,
+              0.27681051587301597
+            ]
+          },
+          "selected": {
+            "count": 68,
+            "true_state": {
+              "small": 44,
+              "absent": 16,
+              "typical_positive": 8
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 16,
+            "precision": 0.23529411764705882,
+            "patients": 42,
+            "physical_slices": 68,
+            "ci95": [
+              0.15151515151515152,
+              0.32259305210918116
+            ]
+          },
+          "passed_over": {
+            "count": 43,
+            "true_state": {
+              "small": 31,
+              "absent": 6,
+              "typical_positive": 6
+            },
+            "slice_acquired_under_another_intent": 23,
+            "hits": 6,
+            "precision": 0.13953488372093023,
+            "patients": 27,
+            "physical_slices": 39,
+            "ci95": [
+              0.03333333333333333,
+              0.25
+            ]
+          }
+        },
+        "small": {
+          "offered": {
+            "count": 370,
+            "true_state": {
+              "small": 180,
+              "absent": 49,
+              "typical_positive": 141
+            },
+            "slice_acquired_under_another_intent": 86,
+            "hits": 180,
+            "precision": 0.4864864864864865,
+            "patients": 79,
+            "physical_slices": 285,
+            "ci95": [
+              0.425410448823831,
+              0.5498719859166247
+            ]
+          },
+          "selected": {
+            "count": 89,
+            "true_state": {
+              "small": 44,
+              "absent": 7,
+              "typical_positive": 38
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 44,
+            "precision": 0.4943820224719101,
+            "patients": 53,
+            "physical_slices": 89,
+            "ci95": [
+              0.3827069716775599,
+              0.6
+            ]
+          },
+          "passed_over": {
+            "count": 281,
+            "true_state": {
+              "small": 136,
+              "absent": 42,
+              "typical_positive": 103
+            },
+            "slice_acquired_under_another_intent": 86,
+            "hits": 136,
+            "precision": 0.48398576512455516,
+            "patients": 76,
+            "physical_slices": 233,
+            "ci95": [
+              0.4142821067821068,
+              0.5586231439440422
+            ]
+          }
+        }
+      },
+      "fallback": 3,
+      "assignments": 160
+    },
+    "2029": {
+      "groups": {
+        "LV/ED/absent": {
+          "offered": {
+            "count": 27,
+            "true_state": {
+              "small": 22,
+              "absent": 3,
+              "typical_positive": 2
+            },
+            "slice_acquired_under_another_intent": 11,
+            "hits": 3,
+            "precision": 0.1111111111111111,
+            "patients": 27,
+            "physical_slices": 27,
+            "ci95": [
+              0.0,
+              0.25
+            ]
+          },
+          "selected": {
+            "count": 13,
+            "true_state": {
+              "small": 10,
+              "absent": 2,
+              "typical_positive": 1
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 2,
+            "precision": 0.15384615384615385,
+            "patients": 13,
+            "physical_slices": 13,
+            "ci95": [
+              0.0,
+              0.4
+            ]
+          },
+          "passed_over": {
+            "count": 14,
+            "true_state": {
+              "small": 12,
+              "absent": 1,
+              "typical_positive": 1
+            },
+            "slice_acquired_under_another_intent": 11,
+            "hits": 1,
+            "precision": 0.07142857142857142,
+            "patients": 14,
+            "physical_slices": 14,
+            "ci95": [
+              0.0,
+              0.23566176470588368
+            ]
+          }
+        },
+        "LV/ED/small": {
+          "offered": {
+            "count": 55,
+            "true_state": {
+              "small": 29,
+              "absent": 1,
+              "typical_positive": 25
+            },
+            "slice_acquired_under_another_intent": 8,
+            "hits": 29,
+            "precision": 0.5272727272727272,
+            "patients": 55,
+            "physical_slices": 55,
+            "ci95": [
+              0.40350877192982454,
+              0.6530612244897959
+            ]
+          },
+          "selected": {
+            "count": 15,
+            "true_state": {
+              "small": 7,
+              "absent": 1,
+              "typical_positive": 7
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 7,
+            "precision": 0.4666666666666667,
+            "patients": 15,
+            "physical_slices": 15,
+            "ci95": [
+              0.2141917293233083,
+              0.7222222222222222
+            ]
+          },
+          "passed_over": {
+            "count": 40,
+            "true_state": {
+              "small": 22,
+              "absent": 0,
+              "typical_positive": 18
+            },
+            "slice_acquired_under_another_intent": 8,
+            "hits": 22,
+            "precision": 0.55,
+            "patients": 40,
+            "physical_slices": 40,
+            "ci95": [
+              0.4,
+              0.6956851119894599
+            ]
+          }
+        },
+        "LV/ES/absent": {
+          "offered": {
+            "count": 34,
+            "true_state": {
+              "small": 23,
+              "absent": 8,
+              "typical_positive": 3
+            },
+            "slice_acquired_under_another_intent": 9,
+            "hits": 8,
+            "precision": 0.23529411764705882,
+            "patients": 34,
+            "physical_slices": 34,
+            "ci95": [
+              0.0967741935483871,
+              0.3889227642276424
+            ]
+          },
+          "selected": {
+            "count": 16,
+            "true_state": {
+              "small": 10,
+              "absent": 4,
+              "typical_positive": 2
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 4,
+            "precision": 0.25,
+            "patients": 16,
+            "physical_slices": 16,
+            "ci95": [
+              0.05555555555555555,
+              0.5
+            ]
+          },
+          "passed_over": {
+            "count": 18,
+            "true_state": {
+              "small": 13,
+              "absent": 4,
+              "typical_positive": 1
+            },
+            "slice_acquired_under_another_intent": 9,
+            "hits": 4,
+            "precision": 0.2222222222222222,
+            "patients": 18,
+            "physical_slices": 18,
+            "ci95": [
+              0.05263157894736842,
+              0.42857142857142855
+            ]
+          }
+        },
+        "LV/ES/small": {
+          "offered": {
+            "count": 62,
+            "true_state": {
+              "small": 32,
+              "absent": 4,
+              "typical_positive": 26
+            },
+            "slice_acquired_under_another_intent": 12,
+            "hits": 32,
+            "precision": 0.5161290322580645,
+            "patients": 62,
+            "physical_slices": 62,
+            "ci95": [
+              0.3898069679849341,
+              0.6428571428571429
+            ]
+          },
+          "selected": {
+            "count": 16,
+            "true_state": {
+              "small": 5,
+              "absent": 0,
+              "typical_positive": 11
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 5,
+            "precision": 0.3125,
+            "patients": 16,
+            "physical_slices": 16,
+            "ci95": [
+              0.09090909090909091,
+              0.5555555555555556
+            ]
+          },
+          "passed_over": {
+            "count": 46,
+            "true_state": {
+              "small": 27,
+              "absent": 4,
+              "typical_positive": 15
+            },
+            "slice_acquired_under_another_intent": 12,
+            "hits": 27,
+            "precision": 0.5869565217391305,
+            "patients": 46,
+            "physical_slices": 46,
+            "ci95": [
+              0.43997560975609756,
+              0.7291666666666666
+            ]
+          }
+        },
+        "LV/absent": {
+          "offered": {
+            "count": 61,
+            "true_state": {
+              "small": 45,
+              "absent": 11,
+              "typical_positive": 5
+            },
+            "slice_acquired_under_another_intent": 20,
+            "hits": 11,
+            "precision": 0.18032786885245902,
+            "patients": 39,
+            "physical_slices": 61,
+            "ci95": [
+              0.0958904109589041,
+              0.273972602739726
+            ]
+          },
+          "selected": {
+            "count": 29,
+            "true_state": {
+              "small": 20,
+              "absent": 6,
+              "typical_positive": 3
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 6,
+            "precision": 0.20689655172413793,
+            "patients": 22,
+            "physical_slices": 29,
+            "ci95": [
+              0.07407407407407407,
+              0.375
+            ]
+          },
+          "passed_over": {
+            "count": 32,
+            "true_state": {
+              "small": 25,
+              "absent": 5,
+              "typical_positive": 2
+            },
+            "slice_acquired_under_another_intent": 20,
+            "hits": 5,
+            "precision": 0.15625,
+            "patients": 23,
+            "physical_slices": 32,
+            "ci95": [
+              0.037037037037037035,
+              0.2857142857142857
+            ]
+          }
+        },
+        "LV/small": {
+          "offered": {
+            "count": 117,
+            "true_state": {
+              "small": 61,
+              "absent": 5,
+              "typical_positive": 51
+            },
+            "slice_acquired_under_another_intent": 20,
+            "hits": 61,
+            "precision": 0.5213675213675214,
+            "patients": 69,
+            "physical_slices": 117,
+            "ci95": [
+              0.42724664679582713,
+              0.6126126126126126
+            ]
+          },
+          "selected": {
+            "count": 31,
+            "true_state": {
+              "small": 12,
+              "absent": 1,
+              "typical_positive": 18
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 12,
+            "precision": 0.3870967741935484,
+            "patients": 27,
+            "physical_slices": 31,
+            "ci95": [
+              0.21875,
+              0.5714285714285714
+            ]
+          },
+          "passed_over": {
+            "count": 86,
+            "true_state": {
+              "small": 49,
+              "absent": 4,
+              "typical_positive": 33
+            },
+            "slice_acquired_under_another_intent": 20,
+            "hits": 49,
+            "precision": 0.5697674418604651,
+            "patients": 56,
+            "physical_slices": 86,
+            "ci95": [
+              0.45569620253164556,
+              0.6823672883787663
+            ]
+          }
+        },
+        "MYO/ED/absent": {
+          "offered": {
+            "count": 16,
+            "true_state": {
+              "small": 9,
+              "absent": 1,
+              "typical_positive": 6
+            },
+            "slice_acquired_under_another_intent": 6,
+            "hits": 1,
+            "precision": 0.0625,
+            "patients": 16,
+            "physical_slices": 16,
+            "ci95": [
+              0.0,
+              0.21052631578947367
+            ]
+          },
+          "selected": {
+            "count": 9,
+            "true_state": {
+              "small": 7,
+              "absent": 0,
+              "typical_positive": 2
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 0,
+            "precision": 0.0,
+            "patients": 9,
+            "physical_slices": 9,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "passed_over": {
+            "count": 7,
+            "true_state": {
+              "small": 2,
+              "absent": 1,
+              "typical_positive": 4
+            },
+            "slice_acquired_under_another_intent": 6,
+            "hits": 1,
+            "precision": 0.14285714285714285,
+            "patients": 7,
+            "physical_slices": 7,
+            "ci95": [
+              0.0,
+              0.5
+            ]
+          }
+        },
+        "MYO/ED/small": {
+          "offered": {
+            "count": 47,
+            "true_state": {
+              "small": 14,
+              "absent": 5,
+              "typical_positive": 28
+            },
+            "slice_acquired_under_another_intent": 11,
+            "hits": 14,
+            "precision": 0.2978723404255319,
+            "patients": 47,
+            "physical_slices": 47,
+            "ci95": [
+              0.17391304347826086,
+              0.43137254901960786
+            ]
+          },
+          "selected": {
+            "count": 15,
+            "true_state": {
+              "small": 2,
+              "absent": 3,
+              "typical_positive": 10
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 2,
+            "precision": 0.13333333333333333,
+            "patients": 15,
+            "physical_slices": 15,
+            "ci95": [
+              0.0,
+              0.3333333333333333
+            ]
+          },
+          "passed_over": {
+            "count": 32,
+            "true_state": {
+              "small": 12,
+              "absent": 2,
+              "typical_positive": 18
+            },
+            "slice_acquired_under_another_intent": 11,
+            "hits": 12,
+            "precision": 0.375,
+            "patients": 32,
+            "physical_slices": 32,
+            "ci95": [
+              0.20924218123496394,
+              0.5483870967741935
+            ]
+          }
+        },
+        "MYO/ES/absent": {
+          "offered": {
+            "count": 15,
+            "true_state": {
+              "small": 3,
+              "absent": 4,
+              "typical_positive": 8
+            },
+            "slice_acquired_under_another_intent": 5,
+            "hits": 4,
+            "precision": 0.26666666666666666,
+            "patients": 15,
+            "physical_slices": 15,
+            "ci95": [
+              0.0625,
+              0.5
+            ]
+          },
+          "selected": {
+            "count": 7,
+            "true_state": {
+              "small": 2,
+              "absent": 1,
+              "typical_positive": 4
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 1,
+            "precision": 0.14285714285714285,
+            "patients": 7,
+            "physical_slices": 7,
+            "ci95": [
+              0.0,
+              0.5
+            ]
+          },
+          "passed_over": {
+            "count": 8,
+            "true_state": {
+              "small": 1,
+              "absent": 3,
+              "typical_positive": 4
+            },
+            "slice_acquired_under_another_intent": 5,
+            "hits": 3,
+            "precision": 0.375,
+            "patients": 8,
+            "physical_slices": 8,
+            "ci95": [
+              0.0,
+              0.75
+            ]
+          }
+        },
+        "MYO/ES/small": {
+          "offered": {
+            "count": 62,
+            "true_state": {
+              "small": 15,
+              "absent": 14,
+              "typical_positive": 33
+            },
+            "slice_acquired_under_another_intent": 10,
+            "hits": 15,
+            "precision": 0.24193548387096775,
+            "patients": 62,
+            "physical_slices": 62,
+            "ci95": [
+              0.13636363636363635,
+              0.35
+            ]
+          },
+          "selected": {
+            "count": 16,
+            "true_state": {
+              "small": 4,
+              "absent": 4,
+              "typical_positive": 8
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 4,
+            "precision": 0.25,
+            "patients": 16,
+            "physical_slices": 16,
+            "ci95": [
+              0.058823529411764705,
+              0.47368421052631576
+            ]
+          },
+          "passed_over": {
+            "count": 46,
+            "true_state": {
+              "small": 11,
+              "absent": 10,
+              "typical_positive": 25
+            },
+            "slice_acquired_under_another_intent": 10,
+            "hits": 11,
+            "precision": 0.2391304347826087,
+            "patients": 46,
+            "physical_slices": 46,
+            "ci95": [
+              0.12,
+              0.36585365853658536
+            ]
+          }
+        },
+        "MYO/absent": {
+          "offered": {
+            "count": 31,
+            "true_state": {
+              "small": 12,
+              "absent": 5,
+              "typical_positive": 14
+            },
+            "slice_acquired_under_another_intent": 11,
+            "hits": 5,
+            "precision": 0.16129032258064516,
+            "patients": 17,
+            "physical_slices": 31,
+            "ci95": [
+              0.03225806451612903,
+              0.3225806451612903
+            ]
+          },
+          "selected": {
+            "count": 16,
+            "true_state": {
+              "small": 9,
+              "absent": 1,
+              "typical_positive": 6
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 1,
+            "precision": 0.0625,
+            "patients": 11,
+            "physical_slices": 16,
+            "ci95": [
+              0.0,
+              0.19047619047619047
+            ]
+          },
+          "passed_over": {
+            "count": 15,
+            "true_state": {
+              "small": 3,
+              "absent": 4,
+              "typical_positive": 8
+            },
+            "slice_acquired_under_another_intent": 11,
+            "hits": 4,
+            "precision": 0.26666666666666666,
+            "patients": 9,
+            "physical_slices": 15,
+            "ci95": [
+              0.0,
+              0.5833333333333334
+            ]
+          }
+        },
+        "MYO/small": {
+          "offered": {
+            "count": 109,
+            "true_state": {
+              "small": 29,
+              "absent": 19,
+              "typical_positive": 61
+            },
+            "slice_acquired_under_another_intent": 21,
+            "hits": 29,
+            "precision": 0.26605504587155965,
+            "patients": 64,
+            "physical_slices": 109,
+            "ci95": [
+              0.1743119266055046,
+              0.36283185840707965
+            ]
+          },
+          "selected": {
+            "count": 31,
+            "true_state": {
+              "small": 6,
+              "absent": 7,
+              "typical_positive": 18
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 6,
+            "precision": 0.1935483870967742,
+            "patients": 26,
+            "physical_slices": 31,
+            "ci95": [
+              0.047619047619047616,
+              0.3478804347826089
+            ]
+          },
+          "passed_over": {
+            "count": 78,
+            "true_state": {
+              "small": 23,
+              "absent": 12,
+              "typical_positive": 43
+            },
+            "slice_acquired_under_another_intent": 21,
+            "hits": 23,
+            "precision": 0.2948717948717949,
+            "patients": 52,
+            "physical_slices": 78,
+            "ci95": [
+              0.1882169117647059,
+              0.40910460021905815
+            ]
+          }
+        },
+        "RV/ED/absent": {
+          "offered": {
+            "count": 10,
+            "true_state": {
+              "small": 8,
+              "absent": 2,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 2,
+            "hits": 2,
+            "precision": 0.2,
+            "patients": 10,
+            "physical_slices": 10,
+            "ci95": [
+              0.0,
+              0.5
+            ]
+          },
+          "selected": {
+            "count": 7,
+            "true_state": {
+              "small": 6,
+              "absent": 1,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 1,
+            "precision": 0.14285714285714285,
+            "patients": 7,
+            "physical_slices": 7,
+            "ci95": [
+              0.0,
+              0.5
+            ]
+          },
+          "passed_over": {
+            "count": 3,
+            "true_state": {
+              "small": 2,
+              "absent": 1,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 2,
+            "hits": 1,
+            "precision": 0.3333333333333333,
+            "patients": 3,
+            "physical_slices": 3,
+            "ci95": [
+              0.0,
+              1.0
+            ]
+          }
+        },
+        "RV/ED/small": {
+          "offered": {
+            "count": 61,
+            "true_state": {
+              "small": 40,
+              "absent": 12,
+              "typical_positive": 9
+            },
+            "slice_acquired_under_another_intent": 15,
+            "hits": 40,
+            "precision": 0.6557377049180327,
+            "patients": 61,
+            "physical_slices": 61,
+            "ci95": [
+              0.5333333333333333,
+              0.7692307692307693
+            ]
+          },
+          "selected": {
+            "count": 16,
+            "true_state": {
+              "small": 12,
+              "absent": 2,
+              "typical_positive": 2
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 12,
+            "precision": 0.75,
+            "patients": 16,
+            "physical_slices": 16,
+            "ci95": [
+              0.5,
+              0.9411764705882353
+            ]
+          },
+          "passed_over": {
+            "count": 45,
+            "true_state": {
+              "small": 28,
+              "absent": 10,
+              "typical_positive": 7
+            },
+            "slice_acquired_under_another_intent": 15,
+            "hits": 28,
+            "precision": 0.6222222222222222,
+            "patients": 45,
+            "physical_slices": 45,
+            "ci95": [
+              0.4799791666666667,
+              0.7560975609756098
+            ]
+          }
+        },
+        "RV/ES/absent": {
+          "offered": {
+            "count": 20,
+            "true_state": {
+              "small": 10,
+              "absent": 10,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 4,
+            "hits": 10,
+            "precision": 0.5,
+            "patients": 20,
+            "physical_slices": 20,
+            "ci95": [
+              0.2777777777777778,
+              0.7222222222222222
+            ]
+          },
+          "selected": {
+            "count": 10,
+            "true_state": {
+              "small": 6,
+              "absent": 4,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 4,
+            "precision": 0.4,
+            "patients": 10,
+            "physical_slices": 10,
+            "ci95": [
+              0.1111111111111111,
+              0.7142857142857143
+            ]
+          },
+          "passed_over": {
+            "count": 10,
+            "true_state": {
+              "small": 4,
+              "absent": 6,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 4,
+            "hits": 6,
+            "precision": 0.6,
+            "patients": 10,
+            "physical_slices": 10,
+            "ci95": [
+              0.2727272727272727,
+              0.9
+            ]
+          }
+        },
+        "RV/ES/small": {
+          "offered": {
+            "count": 63,
+            "true_state": {
+              "small": 35,
+              "absent": 22,
+              "typical_positive": 6
+            },
+            "slice_acquired_under_another_intent": 7,
+            "hits": 35,
+            "precision": 0.5555555555555556,
+            "patients": 63,
+            "physical_slices": 63,
+            "ci95": [
+              0.43071428571428577,
+              0.6769354838709678
+            ]
+          },
+          "selected": {
+            "count": 15,
+            "true_state": {
+              "small": 6,
+              "absent": 7,
+              "typical_positive": 2
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 6,
+            "precision": 0.4,
+            "patients": 15,
+            "physical_slices": 15,
+            "ci95": [
+              0.14285714285714285,
+              0.6666666666666666
+            ]
+          },
+          "passed_over": {
+            "count": 48,
+            "true_state": {
+              "small": 29,
+              "absent": 15,
+              "typical_positive": 4
+            },
+            "slice_acquired_under_another_intent": 7,
+            "hits": 29,
+            "precision": 0.6041666666666666,
+            "patients": 48,
+            "physical_slices": 48,
+            "ci95": [
+              0.4650955149501661,
+              0.7358738828202582
+            ]
+          }
+        },
+        "RV/absent": {
+          "offered": {
+            "count": 30,
+            "true_state": {
+              "small": 18,
+              "absent": 12,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 6,
+            "hits": 12,
+            "precision": 0.4,
+            "patients": 24,
+            "physical_slices": 30,
+            "ci95": [
+              0.21875,
+              0.59375
+            ]
+          },
+          "selected": {
+            "count": 17,
+            "true_state": {
+              "small": 12,
+              "absent": 5,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 5,
+            "precision": 0.29411764705882354,
+            "patients": 14,
+            "physical_slices": 17,
+            "ci95": [
+              0.08695652173913043,
+              0.5625
+            ]
+          },
+          "passed_over": {
+            "count": 13,
+            "true_state": {
+              "small": 6,
+              "absent": 7,
+              "typical_positive": 0
+            },
+            "slice_acquired_under_another_intent": 6,
+            "hits": 7,
+            "precision": 0.5384615384615384,
+            "patients": 12,
+            "physical_slices": 13,
+            "ci95": [
+              0.2222222222222222,
+              0.812642045454546
+            ]
+          }
+        },
+        "RV/small": {
+          "offered": {
+            "count": 124,
+            "true_state": {
+              "small": 75,
+              "absent": 34,
+              "typical_positive": 15
+            },
+            "slice_acquired_under_another_intent": 22,
+            "hits": 75,
+            "precision": 0.6048387096774194,
+            "patients": 69,
+            "physical_slices": 124,
+            "ci95": [
+              0.5042717086834734,
+              0.696969696969697
+            ]
+          },
+          "selected": {
+            "count": 31,
+            "true_state": {
+              "small": 18,
+              "absent": 9,
+              "typical_positive": 4
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 18,
+            "precision": 0.5806451612903226,
+            "patients": 23,
+            "physical_slices": 31,
+            "ci95": [
+              0.38095238095238093,
+              0.7714285714285715
+            ]
+          },
+          "passed_over": {
+            "count": 93,
+            "true_state": {
+              "small": 57,
+              "absent": 25,
+              "typical_positive": 11
+            },
+            "slice_acquired_under_another_intent": 22,
+            "hits": 57,
+            "precision": 0.6129032258064516,
+            "patients": 57,
+            "physical_slices": 93,
+            "ci95": [
+              0.5058789722785666,
+              0.7142857142857143
+            ]
+          }
+        },
+        "absent": {
+          "offered": {
+            "count": 122,
+            "true_state": {
+              "small": 75,
+              "absent": 28,
+              "typical_positive": 19
+            },
+            "slice_acquired_under_another_intent": 37,
+            "hits": 28,
+            "precision": 0.22950819672131148,
+            "patients": 44,
+            "physical_slices": 85,
+            "ci95": [
+              0.14285714285714285,
+              0.3217391304347826
+            ]
+          },
+          "selected": {
+            "count": 62,
+            "true_state": {
+              "small": 41,
+              "absent": 12,
+              "typical_positive": 9
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 12,
+            "precision": 0.1935483870967742,
+            "patients": 40,
+            "physical_slices": 62,
+            "ci95": [
+              0.10638297872340426,
+              0.2857142857142857
+            ]
+          },
+          "passed_over": {
+            "count": 60,
+            "true_state": {
+              "small": 34,
+              "absent": 16,
+              "typical_positive": 10
+            },
+            "slice_acquired_under_another_intent": 37,
+            "hits": 16,
+            "precision": 0.26666666666666666,
+            "patients": 28,
+            "physical_slices": 49,
+            "ci95": [
+              0.13793103448275862,
+              0.39623454782042944
+            ]
+          }
+        },
+        "small": {
+          "offered": {
+            "count": 350,
+            "true_state": {
+              "small": 165,
+              "absent": 58,
+              "typical_positive": 127
+            },
+            "slice_acquired_under_another_intent": 63,
+            "hits": 165,
+            "precision": 0.4714285714285714,
+            "patients": 80,
+            "physical_slices": 270,
+            "ci95": [
+              0.4117647058823529,
+              0.5289336771104307
+            ]
+          },
+          "selected": {
+            "count": 93,
+            "true_state": {
+              "small": 36,
+              "absent": 17,
+              "typical_positive": 40
+            },
+            "slice_acquired_under_another_intent": 0,
+            "hits": 36,
+            "precision": 0.3870967741935484,
+            "patients": 58,
+            "physical_slices": 93,
+            "ci95": [
+              0.28391067538126363,
+              0.4938344226579521
+            ]
+          },
+          "passed_over": {
+            "count": 257,
+            "true_state": {
+              "small": 129,
+              "absent": 41,
+              "typical_positive": 87
+            },
+            "slice_acquired_under_another_intent": 63,
+            "hits": 129,
+            "precision": 0.5019455252918288,
+            "patients": 75,
+            "physical_slices": 211,
+            "ci95": [
+              0.43144963630613536,
+              0.5714285714285714
+            ]
+          }
+        }
+      },
+      "fallback": 5,
+      "assignments": 160
+    }
+  },
+  "bootstrap_draws": 4000,
+  "precision_interval": "Patient-clustered stratified bootstrap within each fitted source block; assignments held fixed",
+  "scored_after_assignment": true
+}

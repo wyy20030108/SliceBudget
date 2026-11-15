@@ -68,3 +68,18 @@ python audit_verified_negatives.py aggregate --folds runs/verified-hvsmr2/fold-0
 ```
 
 The fold files and reference-group map are used locally. The distributed JSON gives patient-macro rates, support counts, paired bootstrap intervals, and retrospective recall at 20% external FPR. The method retains the supplied ACDC thresholds for observed FPR and small-slice recall. Evaluation is limited to the two cavities in the static axial acquisition.
+
+## Second review analyses
+
+The anonymous reproduction archive contains a compressed numeric ledger for the common-support and source-calibration analysis. The ledger uses artificial patient keys and sorted within-support scores. It includes no source images, masks, original case keys, or slice coordinates. Extract the archive and run the analysis with NumPy, SciPy and scikit-learn. The saved JSON includes separate RV and LV results, area cells, nominal FPR curves, opposite-ventricle support, and paired contrasts. The original three-class ACDC table uses centered scores for both matched recall and standardized partial AUC.
+
+```bash
+OPENBLAS_NUM_THREADS=2 python audit_review_common_support.py replay \
+  --ledger data/review2-common-support-ledger.json.gz --draws 4000 --output results/recomputed-common-support.json
+```
+
+To regenerate the ledger from the original dataset releases, use the frozen ACDC and HVSMR score outputs from the preceding sections. Run `extract_review_calibration.py` per fold with those original and replay paths. The `cache-acdc-native` and `compare` commands of `audit_review_common_support.py` combine the unresized official ACDC reference areas, external cache, frozen score records and calibration score records. Use the original and manual-source HVSMR grouping recorded in its preparation step.
+
+For the candidate audit, reuse the original and strong-seed runs above. Run `audit_candidate_stage.py` with `--repeat-seed`, `--fold`, `--registration registration-image-budget.json` and `--seed-runs runs/strong-seed` in addition to the original candidate audit arguments. Pass the six replay JSONs to `--repeat-files` to regenerate the aggregated seed stability table. The analysis compares reconstructed acquisition rosters against previously scored ones. Its inference resamples patients within each fixed training fold.
+
+The CHLA release's nearest-neighbor data are pinned to the original authors' repository revision `1e0d483045cbcd4d172156152c6ab7e8169528a4`. Fetch the corresponding source tar.gz and pass it to `prepare_chla.py --archive <archive> --out-root data/chla-positive-192`. The script verifies the archive digest. Run `audit_chla_positive.py score` with the same source arguments as the HVSMR score command, omitting `--coverage`, and choose either the `lv` or `rv` subdirectory under the external cache. Run `aggregate` on the two fold outputs for that class. The published release supplies contoured positives only for the screening scope used here.

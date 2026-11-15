@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "summary": "No use of the reserved cohort for fitting, acquisition, calibration, or assessment prior to its designated sensitivity evaluation was found in the inspected, retained project records.",
+  "scope": "The ACDC training-release same-source reserve defined by the seed-2026 patient protocol. The official 50-patient ACDC assessment and PRCV are separate from this claim.",
+  "cache_loading": "All 20 reserved cases were present in the 100-case source cache in both archives. Legacy code could load the shared cache prior to forming role-specific inputs. The audit tracks recorded roles and outcomes.",
+  "legacy_roster_receipts": "Legacy validation and pilot protocol manifests contain the same 20 IDs under test only. The sibling run configuration agrees with each protocol hash. Retained confirmation gates report held_out_test_used false with failed checks. No legacy holdout-start or holdout-outcome record was found.",
+  "assessment_receipts": "The two designated sensitivity-evaluation fold manifests each contain the same reserved roster for seven image-only policies. These are recorded outcomes from the intended audit.",
+  "counts": {
+    "manifest_copies_inspected": 580,
+    "unique_file_and_hash_pairs": 407
+  },
+  "archives": [
+    {
+      "archive": "project-copy",
+      "scope": "All retained runs/**/*.json, root registration-*.json and the legacy holdout-start marker in runs or data.",
+      "interpretation": "Checks retained project records next to the ACDC caches. Does not establish use outside these records or independence from prior PRCV experiments.",
+      "protocol_seed": 2026,
+      "reserved_patients": 20,
+      "reserved_roster_sha256": "0b842cbbad76d2d7c2f67174c7e1c6f1f3fc94a42364af333432ebe8512a4efc",
+      "training_release_cache_cases": 100,
+      "official_assessment_cache_cases": 50,
+      "reserved_cache_cases": 20,
+      "records_inspected": 224,
+      "named_run_roster_and_audit_ledgers": 29,
+      "run_json_files_declaring_roles": {
+        "training": 8,
+        "calibration": 8,
+        "assessment": 8
+      },
+      "records_by_role": {
+        "legacy confirmation gate": 2,
+        "legacy test roster declaration": 6,
+        "no reserved ID mention": 216
+      },
+      "retained_legacy_guard_sha256": "94f347f85e6e9f65e12785de70814110851c93cae93d1f44a4552efb4bf0c0a8",
+      "legacy_gate_opened": false,
+      "unresolved_records": []
+    },
+    {
+      "archive": "retained-autodl",
+      "scope": "All retained runs/**/*.json, root registration-*.json and the legacy holdout-start marker in runs or data.",
+      "interpretation": "Checks retained project records next to the ACDC caches. Does not establish use outside these records or independence from prior PRCV experiments.",
+      "protocol_seed": 2026,
+      "reserved_patients": 20,
+      "reserved_roster_sha256": "0b842cbbad76d2d7c2f67174c7e1c6f1f3fc94a42364af333432ebe8512a4efc",
+      "training_release_cache_cases": 100,
+      "official_assessment_cache_cases": 50,
+      "reserved_cache_cases": 20,
+      "records_inspected": 356,
+      "named_run_roster_and_audit_ledgers": 38,
+      "run_json_files_declaring_roles": {
+        "training": 16,
+        "calibration": 16,
+        "assessment": 16
+      },
+      "records_by_role": {
+        "designated reserved sensitivity assessment": 2,
+        "legacy confirmation gate": 1,
+        "legacy test roster declaration": 4,
+        "no reserved ID mention": 349
+      },
+      "retained_legacy_guard_sha256": "94f347f85e6e9f65e12785de70814110851c93cae93d1f44a4552efb4bf0c0a8",
+      "legacy_gate_opened": false,
+      "unresolved_records": []
+    }
+  ],
+  "limits": "The audit is bounded by retained files and canonical ACDC patient IDs in those records. It does not attest to unlogged, deleted or unrelated work, including PRCV.",
+  "verification": {
+    "locked_roster_sha256": "0b842cbbad76d2d7c2f67174c7e1c6f1f3fc94a42364af333432ebe8512a4efc",
+    "checked_against": "source-roles-and-acquisitions.json",
+    "audit_script": "audit_reserved_provenance.py",
+    "audit_script_sha256": "28cd2a4eb46b1a753515d93d3f6d9139aafb2c55aed236bdc87fb49e98b0ef25",
+    "manifest_index": "reserved-cohort-manifest-index.json",
+    "manifest_index_sha256": "124b894402eb6cffffba81e47d5d17e6b7935f0423fbcec9b93ab1726964261f"
+  }
+}
