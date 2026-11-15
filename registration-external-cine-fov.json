@@ -1,0 +1,30 @@
+{
+  "dataset": "CMR-MULTI published short-axis steady-state cine image/reference pairs",
+  "official_release": "TaipingQu/CMR-MULTI@cfdbfec4b18b245bd96b631b5b330236ae2f238e",
+  "cohort_rule": "Include all publicly released unique paired and phase-resolvable short-axis cases. Reject malformed pairs, ambiguous phase metadata or absent cycle-wide reference for a target class before model inference, with reasons. Do not use hidden test or unlabeled validation images.",
+  "arms": [
+    "pooled_image_farthest",
+    "calibrated",
+    "bounded",
+    "image_loss_matched"
+  ],
+  "seeds": [
+    2027,
+    2028,
+    2029
+  ],
+  "folds": [
+    0,
+    1
+  ],
+  "phase_rule": "Recover native slices and cardiac phases from the official phase counts and flat order. Use annotated LV cavity-volume extrema for ED and ES and check reported LVEF where available. Select phases from reference, never from model predictions.",
+  "negative_rule": "Within an evaluated phase, a native slice must have zero pixels of the target, positive pixels of another released class and a positive target area elsewhere in the phase. Entirely blank slices are outside decision support. Near absences must also precede or follow a same-class small positive by one native slice. Preserve all released structure labels.",
+  "positive_rule": "Small positive: native reference area >0 and at most 25% of the same target's maximum native area in that phase.",
+  "overlap": "Dice on the frozen 192-pixel input grid, excluding entirely blank native-reference planes. Whole-scope volumes average class-by-phase Dice, small-slice Dice averages the native small slice-class subset; patient averaging over shared coverage.",
+  "primary": "Bounded minus image-difference small-positive recall at pooled patient-macro ROC-matched 20% FPR on all verified absences. Report every direction; matched operation points are descriptive and use target references.",
+  "secondary": "Report pooled matched recall for adjacent absences; class-specific, equal-class and equal-ventricular matched recall for both negative sets; original frozen cutoff recall/FPR; global and small Dice. An endpoint without reference-negative support is unavailable, including its three-class average. Include unbounded and eight-swap comparators.",
+  "support_audit": "Before any model scores were obtained, native coverage counts showed no eligible MYO negatives under the conservative rule. Keep all three classes in overlap and the pooled comparison, give the individual supports, and separately weight both ventricles equally.",
+  "thresholds": "Use the exact ACDC six-patient calibrated threshold of each checkpoint. No target threshold, training, or model selection. Use shared source calibration patient draws within each fold with the original pooled fallback for uncertainty in transported performance.",
+  "sampling": "4,000 patient-level paired bootstrap draws shared across models, three fixed seeds and both fits. Bootstrap target once; source cutoff sensitivity also resamples the two disjoint six-patient source folds. Report per-seed estimates. No post-hoc clinical margin or promotion of the secondary endpoint.",
+  "preprocessing_sensitivity": "Exploratory diagnostic after the native-grid transfer showed low overlap. Retain every accepted case, selected frame, native eligibility flag, checkpoint and cutoff. Use source ACDC ED input-spacing medians only for physical in-plane resampling and center padding; retain the native array orientation. Report the full native-grid comparison separately."
+}

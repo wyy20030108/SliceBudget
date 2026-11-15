@@ -168,6 +168,43 @@ OPENBLAS_NUM_THREADS=2 python audit_review_common_support.py replay \
   --ledger data/review2-common-support-ledger.json.gz --draws 4000 --output results/recomputed-common-support.json
 ```
 
+### Independent cine validation of the frozen policies
+
+Use the ACDC checkpoints from the bounded and matched-slot runs. This workflow reads source cutoff panels, verifies checkpoint digests and evaluates all source fits on the independent data. The primary comparison uses the ordinary array-aspect resize. The separate geometry diagnostic matches ACDC input pixel spacing and preserves phase indices and reference eligibility.
+
+```bash
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
+python download_cmr_multi.py --output data/cmr-multi-raw
+python prepare_cmr_multi.py --raw data/cmr-multi-raw --output data/cmr-multi-192
+python audit_cmr_multi_cycle_support.py --raw data/cmr-multi-raw --cache data/cmr-multi-192 \
+  --output data/cmr-multi-192/cycle-eligibility.json
+python prepare_cmr_multi_fov.py --raw data/cmr-multi-raw --source data/acdc-192 \
+  --primary data/cmr-multi-192 --output data/cmr-multi-fov-192
+for variant in native fov; do
+  if [ "$variant" = native ]; then
+    data=data/cmr-multi-192
+    design=registration-external-cine.json
+  else
+    data=data/cmr-multi-fov-192
+    design=registration-external-cine-fov.json
+  fi
+  out="runs/external-cine-$variant"
+  for fold in 0 1; do
+    for seed in 2027 2028 2029; do
+      python audit_external_cine.py score --source data/acdc-192 --target "$data" \
+        --bounded runs/bounded-boundary/development --swap runs/boundary-swap-control/development \
+        --design "$design" --seed "$seed" --fold "$fold" --output "$out/seed-$seed-fold-$fold.json.gz"
+    done
+  done
+  python audit_external_cine.py replay --files "$out"/seed-*.json.gz --design "$design" --output "$out/summary.json"
+done
+python audit_cmr_multi_phase_agreement.py --coverage data/cmr-multi-192/coverage.json \
+  --files runs/external-cine-native/seed-*.json.gz --design registration-external-cine.json \
+  --output runs/external-cine-native/phase-agreement.json
+```
+
+The cine archive includes the native and physical-spacing ledgers, role and geometry receipts, and both aggregate results. The replay commands use those ledgers without re-running inference. Three fitted seeds and both folds share a single resample of target patients. Only cutoff-sensitivity intervals resample the six ACDC source patients in each fold. A blank class-specific endpoint denotes insufficient verified reference support.
+
 To regenerate the ledger from the original dataset releases, use the frozen ACDC and HVSMR score outputs from the preceding sections. Run `extract_review_calibration.py` per fold with those original and replay paths. The `cache-acdc-native` and `compare` commands of `audit_review_common_support.py` combine the unresized official ACDC reference areas, external cache, frozen score records and calibration score records. Use the original and manual-source HVSMR grouping recorded in its preparation step.
 
 For the candidate audit, reuse the original and strong-seed runs above. Run `audit_candidate_stage.py` with `--repeat-seed`, `--fold`, `--registration registration-image-budget.json` and `--seed-runs runs/strong-seed` in addition to the original candidate audit arguments. Pass the six replay JSONs to `--repeat-files` to regenerate the aggregated seed stability table. The analysis compares reconstructed acquisition rosters against previously scored ones. Its inference resamples patients within each fixed training fold.
