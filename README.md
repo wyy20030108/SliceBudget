@@ -1,5 +1,7 @@
 # SliceBudget
 
+修订稿补做的同误报率比较、候选分配前审计、预留样本评分和种子复跑，见 [审稿复现实验步骤](README_REVIEW.md)。同行评审使用单独提供的匿名复现包。
+
 源码和 `results/` 中的聚合 JSON 用于科研复核。数据下载和许可说明见 [DATA.md](DATA.md)。 [ACDC 数据入口](https://www.creatis.insa-lyon.fr/Challenge/acdc/) · [ACDC 引用](https://doi.org/10.1109/TMI.2018.2837502)
 
 使用支持 CUDA 的 PyTorch 环境并安装 `requirements.txt`。本轮使用两张 RTX 4090D 和 PyTorch 2.8+cu128，Linux 环境将 OpenMP、MKL 和 OpenBLAS 线程数各设为 2。用空结果目录保存每次运行。

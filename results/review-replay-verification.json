@@ -1,0 +1,124 @@
+{
+  "metric_delta_tolerance": 1e-06,
+  "threshold_delta_tolerance": 0.001,
+  "folds": {
+    "0": {
+      "fold": 0,
+      "seed": 2027,
+      "pytorch": "2.8.0+cu128",
+      "assessment_patients": 50,
+      "baseline_plan_sha256": "fd39f967b993b8ce9ff9e2d4a46774f7c799421a729321b1dcf334a0852014de",
+      "factorial_plan_sha256": "2ccbcdc803c381ed1b805790fdc656bcb3906827702b57c715cb2db28092afd8",
+      "warmup_checkpoint_sha256": "966bc9531654ea12a73f867cd1f7c9d1344969ad5039f1ee0c9b7a3bee536bb5",
+      "verification": {
+        "pooled_image_farthest": {
+          "thresholds": {
+            "1": 0.5938979387283325,
+            "2": 0.7806392312049866,
+            "3": 0.49000659584999084
+          },
+          "calibration_negative_patient_support": {
+            "1": 12,
+            "2": 7,
+            "3": 9
+          },
+          "max_abs_threshold_delta": 0.0,
+          "max_abs_patient_outcome_delta": 0.0,
+          "archived_assessment_sha256": "df9e7637116ebc2f738a57a417922bdf425fedec62a1e6cf121f7c8b868fab56",
+          "checkpoint_sha256": "305c470a569dde3a821a35a1028edeb6f67b1529099c7489f5bfbaaba2bab89a"
+        },
+        "uniform_random": {
+          "thresholds": {
+            "1": 0.680783212184906,
+            "2": 0.6819632649421692,
+            "3": 0.6765671968460083
+          },
+          "calibration_negative_patient_support": {
+            "1": 12,
+            "2": 7,
+            "3": 9
+          },
+          "max_abs_threshold_delta": 0.0,
+          "max_abs_patient_outcome_delta": 0.0,
+          "archived_assessment_sha256": "d56104976d9b386581545372a7073e0fba5c539fa2907e29498304526c9b4ed3",
+          "checkpoint_sha256": "bffeb9e859b087132c9a6423ba05346608abc7e3d581828cf128f04f29eb883a"
+        },
+        "mixed_image": {
+          "thresholds": {
+            "1": 0.6593953967094421,
+            "2": 0.7768670320510864,
+            "3": 0.8930923938751221
+          },
+          "calibration_negative_patient_support": {
+            "1": 12,
+            "2": 7,
+            "3": 9
+          },
+          "max_abs_threshold_delta": 0.0,
+          "max_abs_patient_outcome_delta": 0.0,
+          "archived_assessment_sha256": "fa442ec9e960319222e107b7d283efa144ace13b9856e13727ca1d0de9cdc237",
+          "checkpoint_sha256": "cd1f781889224fe7b5295fa0d977612eca7bba6e10880448dd4e32d1a4271d9e"
+        }
+      }
+    },
+    "1": {
+      "fold": 1,
+      "seed": 2027,
+      "pytorch": "2.8.0+cu128",
+      "assessment_patients": 50,
+      "baseline_plan_sha256": "f8592f47e63786a185e8fa658769806542969a90a4f87df1af0d498c8edabc94",
+      "factorial_plan_sha256": "3044c4875f1e523cf84886852e9e97dbe59f44b7311786c11a0864acce78c97b",
+      "warmup_checkpoint_sha256": "603da7797b420b90b39f71fb63fc73c99356c9c92474979af3d3de87afeb20e8",
+      "verification": {
+        "pooled_image_farthest": {
+          "thresholds": {
+            "1": 0.2828121781349182,
+            "2": 0.4861717224121094,
+            "3": 0.2341521978378296
+          },
+          "calibration_negative_patient_support": {
+            "1": 11,
+            "2": 6,
+            "3": 8
+          },
+          "max_abs_threshold_delta": 0.0,
+          "max_abs_patient_outcome_delta": 0.0,
+          "archived_assessment_sha256": "859c5734db3f159e222880047fbb45fdfa5cfced508f45ab9d25cd231eaa2784",
+          "checkpoint_sha256": "aae98bf7516f99f235c818d63cc3fb576a40bea7d393cd0e2dc6580e3c7836ea"
+        },
+        "uniform_random": {
+          "thresholds": {
+            "1": 0.9946404099464417,
+            "2": 0.6536924242973328,
+            "3": 0.6676488518714905
+          },
+          "calibration_negative_patient_support": {
+            "1": 11,
+            "2": 6,
+            "3": 8
+          },
+          "max_abs_threshold_delta": 0.0,
+          "max_abs_patient_outcome_delta": 0.0,
+          "archived_assessment_sha256": "0719916cb24e9dab0c23ab7e1ab56287f0f1666eea0351b2dda28227523f7c20",
+          "checkpoint_sha256": "d9d0a948e95fc609e4ca0e69148173ac3474e91913fc3b632355beadf49f4a37"
+        },
+        "mixed_image": {
+          "thresholds": {
+            "1": 0.9845988154411316,
+            "2": 0.6450408697128296,
+            "3": 0.5458687543869019
+          },
+          "calibration_negative_patient_support": {
+            "1": 11,
+            "2": 6,
+            "3": 8
+          },
+          "max_abs_threshold_delta": 0.0,
+          "max_abs_patient_outcome_delta": 0.0,
+          "archived_assessment_sha256": "f0c810f1f9dc51e15e345122439c6d1702b123896001c4b9e6724245de7ccd82",
+          "checkpoint_sha256": "f6b692f2c572b46b313ebfc05affdc4bc7ad298a28744dfa67018905895c8fea"
+        }
+      }
+    }
+  }
+}

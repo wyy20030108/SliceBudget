@@ -1,0 +1,2119 @@
+{
+  "scope": "Frozen source warm-up proposals in two 40-patient ACDC development training folds",
+  "proposal_unit": "One best offered slice per patient, phase, class and requested state. A slice may be proposed for multiple class/state pairs.",
+  "selected_definition": "Same class/state and slice chosen by the balanced assignment. Interval fallback has no selected class/state.",
+  "small_definition": "Positive reference area at most one quarter of that patient's class peak in its phase.",
+  "reference_use": "Reference masks are used only after reproducing the candidate set and assignment.",
+  "fallback_by_fold": {
+    "0": 3,
+    "1": 5
+  },
+  "groups": {
+    "LV/ED/absent": {
+      "offered": {
+        "count": 20,
+        "true_state": {
+          "small": 17,
+          "absent": 2,
+          "typical_positive": 1
+        },
+        "slice_acquired_under_another_intent": 5,
+        "hits": 2,
+        "precision": 0.1
+      },
+      "selected": {
+        "count": 14,
+        "true_state": {
+          "small": 11,
+          "absent": 2,
+          "typical_positive": 1
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 2,
+        "precision": 0.14285714285714285
+      },
+      "passed_over": {
+        "count": 6,
+        "true_state": {
+          "small": 6,
+          "absent": 0,
+          "typical_positive": 0
+        },
+        "slice_acquired_under_another_intent": 5,
+        "hits": 0,
+        "precision": 0.0
+      }
+    },
+    "LV/ED/small": {
+      "offered": {
+        "count": 45,
+        "true_state": {
+          "small": 27,
+          "absent": 1,
+          "typical_positive": 17
+        },
+        "slice_acquired_under_another_intent": 4,
+        "hits": 27,
+        "precision": 0.6
+      },
+      "selected": {
+        "count": 17,
+        "true_state": {
+          "small": 12,
+          "absent": 1,
+          "typical_positive": 4
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 12,
+        "precision": 0.7058823529411765
+      },
+      "passed_over": {
+        "count": 28,
+        "true_state": {
+          "small": 15,
+          "absent": 0,
+          "typical_positive": 13
+        },
+        "slice_acquired_under_another_intent": 4,
+        "hits": 15,
+        "precision": 0.5357142857142857
+      }
+    },
+    "LV/ES/absent": {
+      "offered": {
+        "count": 22,
+        "true_state": {
+          "small": 17,
+          "absent": 4,
+          "typical_positive": 1
+        },
+        "slice_acquired_under_another_intent": 2,
+        "hits": 4,
+        "precision": 0.18181818181818182
+      },
+      "selected": {
+        "count": 14,
+        "true_state": {
+          "small": 11,
+          "absent": 2,
+          "typical_positive": 1
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 2,
+        "precision": 0.14285714285714285
+      },
+      "passed_over": {
+        "count": 8,
+        "true_state": {
+          "small": 6,
+          "absent": 2,
+          "typical_positive": 0
+        },
+        "slice_acquired_under_another_intent": 2,
+        "hits": 2,
+        "precision": 0.25
+      }
+    },
+    "LV/ES/small": {
+      "offered": {
+        "count": 52,
+        "true_state": {
+          "small": 22,
+          "absent": 8,
+          "typical_positive": 22
+        },
+        "slice_acquired_under_another_intent": 8,
+        "hits": 22,
+        "precision": 0.4230769230769231
+      },
+      "selected": {
+        "count": 16,
+        "true_state": {
+          "small": 5,
+          "absent": 2,
+          "typical_positive": 9
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 5,
+        "precision": 0.3125
+      },
+      "passed_over": {
+        "count": 36,
+        "true_state": {
+          "small": 17,
+          "absent": 6,
+          "typical_positive": 13
+        },
+        "slice_acquired_under_another_intent": 8,
+        "hits": 17,
+        "precision": 0.4722222222222222
+      }
+    },
+    "LV/absent": {
+      "offered": {
+        "count": 42,
+        "true_state": {
+          "small": 34,
+          "absent": 6,
+          "typical_positive": 2
+        },
+        "slice_acquired_under_another_intent": 7,
+        "hits": 6,
+        "precision": 0.14285714285714285
+      },
+      "selected": {
+        "count": 28,
+        "true_state": {
+          "small": 22,
+          "absent": 4,
+          "typical_positive": 2
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 4,
+        "precision": 0.14285714285714285
+      },
+      "passed_over": {
+        "count": 14,
+        "true_state": {
+          "small": 12,
+          "absent": 2,
+          "typical_positive": 0
+        },
+        "slice_acquired_under_another_intent": 7,
+        "hits": 2,
+        "precision": 0.14285714285714285
+      }
+    },
+    "LV/small": {
+      "offered": {
+        "count": 97,
+        "true_state": {
+          "small": 49,
+          "absent": 9,
+          "typical_positive": 39
+        },
+        "slice_acquired_under_another_intent": 12,
+        "hits": 49,
+        "precision": 0.5051546391752577
+      },
+      "selected": {
+        "count": 33,
+        "true_state": {
+          "small": 17,
+          "absent": 3,
+          "typical_positive": 13
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 17,
+        "precision": 0.5151515151515151
+      },
+      "passed_over": {
+        "count": 64,
+        "true_state": {
+          "small": 32,
+          "absent": 6,
+          "typical_positive": 26
+        },
+        "slice_acquired_under_another_intent": 12,
+        "hits": 32,
+        "precision": 0.5
+      }
+    },
+    "MYO/ED/absent": {
+      "offered": {
+        "count": 8,
+        "true_state": {
+          "small": 5,
+          "absent": 1,
+          "typical_positive": 2
+        },
+        "slice_acquired_under_another_intent": 2,
+        "hits": 1,
+        "precision": 0.125
+      },
+      "selected": {
+        "count": 6,
+        "true_state": {
+          "small": 4,
+          "absent": 0,
+          "typical_positive": 2
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 0,
+        "precision": 0.0
+      },
+      "passed_over": {
+        "count": 2,
+        "true_state": {
+          "small": 1,
+          "absent": 1,
+          "typical_positive": 0
+        },
+        "slice_acquired_under_another_intent": 2,
+        "hits": 1,
+        "precision": 0.5
+      }
+    },
+    "MYO/ED/small": {
+      "offered": {
+        "count": 42,
+        "true_state": {
+          "small": 16,
+          "absent": 5,
+          "typical_positive": 21
+        },
+        "slice_acquired_under_another_intent": 14,
+        "hits": 16,
+        "precision": 0.38095238095238093
+      },
+      "selected": {
+        "count": 16,
+        "true_state": {
+          "small": 5,
+          "absent": 2,
+          "typical_positive": 9
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 5,
+        "precision": 0.3125
+      },
+      "passed_over": {
+        "count": 26,
+        "true_state": {
+          "small": 11,
+          "absent": 3,
+          "typical_positive": 12
+        },
+        "slice_acquired_under_another_intent": 14,
+        "hits": 11,
+        "precision": 0.4230769230769231
+      }
+    },
+    "MYO/ES/absent": {
+      "offered": {
+        "count": 12,
+        "true_state": {
+          "small": 3,
+          "absent": 4,
+          "typical_positive": 5
+        },
+        "slice_acquired_under_another_intent": 3,
+        "hits": 4,
+        "precision": 0.3333333333333333
+      },
+      "selected": {
+        "count": 8,
+        "true_state": {
+          "small": 2,
+          "absent": 3,
+          "typical_positive": 3
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 3,
+        "precision": 0.375
+      },
+      "passed_over": {
+        "count": 4,
+        "true_state": {
+          "small": 1,
+          "absent": 1,
+          "typical_positive": 2
+        },
+        "slice_acquired_under_another_intent": 3,
+        "hits": 1,
+        "precision": 0.25
+      }
+    },
+    "MYO/ES/small": {
+      "offered": {
+        "count": 55,
+        "true_state": {
+          "small": 18,
+          "absent": 6,
+          "typical_positive": 31
+        },
+        "slice_acquired_under_another_intent": 10,
+        "hits": 18,
+        "precision": 0.32727272727272727
+      },
+      "selected": {
+        "count": 16,
+        "true_state": {
+          "small": 7,
+          "absent": 1,
+          "typical_positive": 8
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 7,
+        "precision": 0.4375
+      },
+      "passed_over": {
+        "count": 39,
+        "true_state": {
+          "small": 11,
+          "absent": 5,
+          "typical_positive": 23
+        },
+        "slice_acquired_under_another_intent": 10,
+        "hits": 11,
+        "precision": 0.28205128205128205
+      }
+    },
+    "MYO/absent": {
+      "offered": {
+        "count": 20,
+        "true_state": {
+          "small": 8,
+          "absent": 5,
+          "typical_positive": 7
+        },
+        "slice_acquired_under_another_intent": 5,
+        "hits": 5,
+        "precision": 0.25
+      },
+      "selected": {
+        "count": 14,
+        "true_state": {
+          "small": 6,
+          "absent": 3,
+          "typical_positive": 5
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 3,
+        "precision": 0.21428571428571427
+      },
+      "passed_over": {
+        "count": 6,
+        "true_state": {
+          "small": 2,
+          "absent": 2,
+          "typical_positive": 2
+        },
+        "slice_acquired_under_another_intent": 5,
+        "hits": 2,
+        "precision": 0.3333333333333333
+      }
+    },
+    "MYO/small": {
+      "offered": {
+        "count": 97,
+        "true_state": {
+          "small": 34,
+          "absent": 11,
+          "typical_positive": 52
+        },
+        "slice_acquired_under_another_intent": 24,
+        "hits": 34,
+        "precision": 0.35051546391752575
+      },
+      "selected": {
+        "count": 32,
+        "true_state": {
+          "small": 12,
+          "absent": 3,
+          "typical_positive": 17
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 12,
+        "precision": 0.375
+      },
+      "passed_over": {
+        "count": 65,
+        "true_state": {
+          "small": 22,
+          "absent": 8,
+          "typical_positive": 35
+        },
+        "slice_acquired_under_another_intent": 24,
+        "hits": 22,
+        "precision": 0.3384615384615385
+      }
+    },
+    "RV/ED/absent": {
+      "offered": {
+        "count": 7,
+        "true_state": {
+          "small": 5,
+          "absent": 2,
+          "typical_positive": 0
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 2,
+        "precision": 0.2857142857142857
+      },
+      "selected": {
+        "count": 6,
+        "true_state": {
+          "small": 4,
+          "absent": 2,
+          "typical_positive": 0
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 2,
+        "precision": 0.3333333333333333
+      },
+      "passed_over": {
+        "count": 1,
+        "true_state": {
+          "small": 1,
+          "absent": 0,
+          "typical_positive": 0
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 0,
+        "precision": 0.0
+      }
+    },
+    "RV/ED/small": {
+      "offered": {
+        "count": 56,
+        "true_state": {
+          "small": 41,
+          "absent": 7,
+          "typical_positive": 8
+        },
+        "slice_acquired_under_another_intent": 10,
+        "hits": 41,
+        "precision": 0.7321428571428571
+      },
+      "selected": {
+        "count": 16,
+        "true_state": {
+          "small": 14,
+          "absent": 0,
+          "typical_positive": 2
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 14,
+        "precision": 0.875
+      },
+      "passed_over": {
+        "count": 40,
+        "true_state": {
+          "small": 27,
+          "absent": 7,
+          "typical_positive": 6
+        },
+        "slice_acquired_under_another_intent": 10,
+        "hits": 27,
+        "precision": 0.675
+      }
+    },
+    "RV/ES/absent": {
+      "offered": {
+        "count": 7,
+        "true_state": {
+          "small": 2,
+          "absent": 5,
+          "typical_positive": 0
+        },
+        "slice_acquired_under_another_intent": 1,
+        "hits": 5,
+        "precision": 0.7142857142857143
+      },
+      "selected": {
+        "count": 6,
+        "true_state": {
+          "small": 1,
+          "absent": 5,
+          "typical_positive": 0
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 5,
+        "precision": 0.8333333333333334
+      },
+      "passed_over": {
+        "count": 1,
+        "true_state": {
+          "small": 1,
+          "absent": 0,
+          "typical_positive": 0
+        },
+        "slice_acquired_under_another_intent": 1,
+        "hits": 0,
+        "precision": 0.0
+      }
+    },
+    "RV/ES/small": {
+      "offered": {
+        "count": 67,
+        "true_state": {
+          "small": 44,
+          "absent": 16,
+          "typical_positive": 7
+        },
+        "slice_acquired_under_another_intent": 12,
+        "hits": 44,
+        "precision": 0.6567164179104478
+      },
+      "selected": {
+        "count": 17,
+        "true_state": {
+          "small": 10,
+          "absent": 3,
+          "typical_positive": 4
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 10,
+        "precision": 0.5882352941176471
+      },
+      "passed_over": {
+        "count": 50,
+        "true_state": {
+          "small": 34,
+          "absent": 13,
+          "typical_positive": 3
+        },
+        "slice_acquired_under_another_intent": 12,
+        "hits": 34,
+        "precision": 0.68
+      }
+    },
+    "RV/absent": {
+      "offered": {
+        "count": 14,
+        "true_state": {
+          "small": 7,
+          "absent": 7,
+          "typical_positive": 0
+        },
+        "slice_acquired_under_another_intent": 1,
+        "hits": 7,
+        "precision": 0.5
+      },
+      "selected": {
+        "count": 12,
+        "true_state": {
+          "small": 5,
+          "absent": 7,
+          "typical_positive": 0
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 7,
+        "precision": 0.5833333333333334
+      },
+      "passed_over": {
+        "count": 2,
+        "true_state": {
+          "small": 2,
+          "absent": 0,
+          "typical_positive": 0
+        },
+        "slice_acquired_under_another_intent": 1,
+        "hits": 0,
+        "precision": 0.0
+      }
+    },
+    "RV/small": {
+      "offered": {
+        "count": 123,
+        "true_state": {
+          "small": 85,
+          "absent": 23,
+          "typical_positive": 15
+        },
+        "slice_acquired_under_another_intent": 22,
+        "hits": 85,
+        "precision": 0.6910569105691057
+      },
+      "selected": {
+        "count": 33,
+        "true_state": {
+          "small": 24,
+          "absent": 3,
+          "typical_positive": 6
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 24,
+        "precision": 0.7272727272727273
+      },
+      "passed_over": {
+        "count": 90,
+        "true_state": {
+          "small": 61,
+          "absent": 20,
+          "typical_positive": 9
+        },
+        "slice_acquired_under_another_intent": 22,
+        "hits": 61,
+        "precision": 0.6777777777777778
+      }
+    },
+    "absent": {
+      "offered": {
+        "count": 76,
+        "true_state": {
+          "small": 49,
+          "absent": 18,
+          "typical_positive": 9
+        },
+        "slice_acquired_under_another_intent": 13,
+        "hits": 18,
+        "precision": 0.23684210526315788
+      },
+      "selected": {
+        "count": 54,
+        "true_state": {
+          "small": 33,
+          "absent": 14,
+          "typical_positive": 7
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 14,
+        "precision": 0.25925925925925924
+      },
+      "passed_over": {
+        "count": 22,
+        "true_state": {
+          "small": 16,
+          "absent": 4,
+          "typical_positive": 2
+        },
+        "slice_acquired_under_another_intent": 13,
+        "hits": 4,
+        "precision": 0.18181818181818182
+      }
+    },
+    "small": {
+      "offered": {
+        "count": 317,
+        "true_state": {
+          "small": 168,
+          "absent": 43,
+          "typical_positive": 106
+        },
+        "slice_acquired_under_another_intent": 58,
+        "hits": 168,
+        "precision": 0.5299684542586751
+      },
+      "selected": {
+        "count": 98,
+        "true_state": {
+          "small": 53,
+          "absent": 9,
+          "typical_positive": 36
+        },
+        "slice_acquired_under_another_intent": 0,
+        "hits": 53,
+        "precision": 0.5408163265306123
+      },
+      "passed_over": {
+        "count": 219,
+        "true_state": {
+          "small": 115,
+          "absent": 34,
+          "typical_positive": 70
+        },
+        "slice_acquired_under_another_intent": 58,
+        "hits": 115,
+        "precision": 0.5251141552511416
+      }
+    }
+  },
+  "by_fold": {
+    "0": {
+      "LV/ED/absent": {
+        "offered": {
+          "count": 9,
+          "true_state": {
+            "small": 8,
+            "absent": 1,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 4,
+          "hits": 1,
+          "precision": 0.1111111111111111
+        },
+        "selected": {
+          "count": 5,
+          "true_state": {
+            "small": 4,
+            "absent": 1,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 1,
+          "precision": 0.2
+        },
+        "passed_over": {
+          "count": 4,
+          "true_state": {
+            "small": 4,
+            "absent": 0,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 4,
+          "hits": 0,
+          "precision": 0.0
+        }
+      },
+      "LV/ED/small": {
+        "offered": {
+          "count": 23,
+          "true_state": {
+            "small": 13,
+            "absent": 0,
+            "typical_positive": 10
+          },
+          "slice_acquired_under_another_intent": 2,
+          "hits": 13,
+          "precision": 0.5652173913043478
+        },
+        "selected": {
+          "count": 8,
+          "true_state": {
+            "small": 6,
+            "absent": 0,
+            "typical_positive": 2
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 6,
+          "precision": 0.75
+        },
+        "passed_over": {
+          "count": 15,
+          "true_state": {
+            "small": 7,
+            "absent": 0,
+            "typical_positive": 8
+          },
+          "slice_acquired_under_another_intent": 2,
+          "hits": 7,
+          "precision": 0.4666666666666667
+        }
+      },
+      "LV/ES/absent": {
+        "offered": {
+          "count": 7,
+          "true_state": {
+            "small": 6,
+            "absent": 1,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 1,
+          "hits": 1,
+          "precision": 0.14285714285714285
+        },
+        "selected": {
+          "count": 5,
+          "true_state": {
+            "small": 5,
+            "absent": 0,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 0,
+          "precision": 0.0
+        },
+        "passed_over": {
+          "count": 2,
+          "true_state": {
+            "small": 1,
+            "absent": 1,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 1,
+          "hits": 1,
+          "precision": 0.5
+        }
+      },
+      "LV/ES/small": {
+        "offered": {
+          "count": 28,
+          "true_state": {
+            "small": 12,
+            "absent": 4,
+            "typical_positive": 12
+          },
+          "slice_acquired_under_another_intent": 6,
+          "hits": 12,
+          "precision": 0.42857142857142855
+        },
+        "selected": {
+          "count": 7,
+          "true_state": {
+            "small": 4,
+            "absent": 1,
+            "typical_positive": 2
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 4,
+          "precision": 0.5714285714285714
+        },
+        "passed_over": {
+          "count": 21,
+          "true_state": {
+            "small": 8,
+            "absent": 3,
+            "typical_positive": 10
+          },
+          "slice_acquired_under_another_intent": 6,
+          "hits": 8,
+          "precision": 0.38095238095238093
+        }
+      },
+      "LV/absent": {
+        "offered": {
+          "count": 16,
+          "true_state": {
+            "small": 14,
+            "absent": 2,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 5,
+          "hits": 2,
+          "precision": 0.125
+        },
+        "selected": {
+          "count": 10,
+          "true_state": {
+            "small": 9,
+            "absent": 1,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 1,
+          "precision": 0.1
+        },
+        "passed_over": {
+          "count": 6,
+          "true_state": {
+            "small": 5,
+            "absent": 1,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 5,
+          "hits": 1,
+          "precision": 0.16666666666666666
+        }
+      },
+      "LV/small": {
+        "offered": {
+          "count": 51,
+          "true_state": {
+            "small": 25,
+            "absent": 4,
+            "typical_positive": 22
+          },
+          "slice_acquired_under_another_intent": 8,
+          "hits": 25,
+          "precision": 0.49019607843137253
+        },
+        "selected": {
+          "count": 15,
+          "true_state": {
+            "small": 10,
+            "absent": 1,
+            "typical_positive": 4
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 10,
+          "precision": 0.6666666666666666
+        },
+        "passed_over": {
+          "count": 36,
+          "true_state": {
+            "small": 15,
+            "absent": 3,
+            "typical_positive": 18
+          },
+          "slice_acquired_under_another_intent": 8,
+          "hits": 15,
+          "precision": 0.4166666666666667
+        }
+      },
+      "MYO/ED/absent": {
+        "offered": {
+          "count": 7,
+          "true_state": {
+            "small": 5,
+            "absent": 1,
+            "typical_positive": 1
+          },
+          "slice_acquired_under_another_intent": 2,
+          "hits": 1,
+          "precision": 0.14285714285714285
+        },
+        "selected": {
+          "count": 5,
+          "true_state": {
+            "small": 4,
+            "absent": 0,
+            "typical_positive": 1
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 0,
+          "precision": 0.0
+        },
+        "passed_over": {
+          "count": 2,
+          "true_state": {
+            "small": 1,
+            "absent": 1,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 2,
+          "hits": 1,
+          "precision": 0.5
+        }
+      },
+      "MYO/ED/small": {
+        "offered": {
+          "count": 19,
+          "true_state": {
+            "small": 9,
+            "absent": 2,
+            "typical_positive": 8
+          },
+          "slice_acquired_under_another_intent": 6,
+          "hits": 9,
+          "precision": 0.47368421052631576
+        },
+        "selected": {
+          "count": 8,
+          "true_state": {
+            "small": 3,
+            "absent": 1,
+            "typical_positive": 4
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 3,
+          "precision": 0.375
+        },
+        "passed_over": {
+          "count": 11,
+          "true_state": {
+            "small": 6,
+            "absent": 1,
+            "typical_positive": 4
+          },
+          "slice_acquired_under_another_intent": 6,
+          "hits": 6,
+          "precision": 0.5454545454545454
+        }
+      },
+      "MYO/ES/absent": {
+        "offered": {
+          "count": 11,
+          "true_state": {
+            "small": 3,
+            "absent": 4,
+            "typical_positive": 4
+          },
+          "slice_acquired_under_another_intent": 3,
+          "hits": 4,
+          "precision": 0.36363636363636365
+        },
+        "selected": {
+          "count": 7,
+          "true_state": {
+            "small": 2,
+            "absent": 3,
+            "typical_positive": 2
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 3,
+          "precision": 0.42857142857142855
+        },
+        "passed_over": {
+          "count": 4,
+          "true_state": {
+            "small": 1,
+            "absent": 1,
+            "typical_positive": 2
+          },
+          "slice_acquired_under_another_intent": 3,
+          "hits": 1,
+          "precision": 0.25
+        }
+      },
+      "MYO/ES/small": {
+        "offered": {
+          "count": 23,
+          "true_state": {
+            "small": 11,
+            "absent": 1,
+            "typical_positive": 11
+          },
+          "slice_acquired_under_another_intent": 3,
+          "hits": 11,
+          "precision": 0.4782608695652174
+        },
+        "selected": {
+          "count": 7,
+          "true_state": {
+            "small": 4,
+            "absent": 1,
+            "typical_positive": 2
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 4,
+          "precision": 0.5714285714285714
+        },
+        "passed_over": {
+          "count": 16,
+          "true_state": {
+            "small": 7,
+            "absent": 0,
+            "typical_positive": 9
+          },
+          "slice_acquired_under_another_intent": 3,
+          "hits": 7,
+          "precision": 0.4375
+        }
+      },
+      "MYO/absent": {
+        "offered": {
+          "count": 18,
+          "true_state": {
+            "small": 8,
+            "absent": 5,
+            "typical_positive": 5
+          },
+          "slice_acquired_under_another_intent": 5,
+          "hits": 5,
+          "precision": 0.2777777777777778
+        },
+        "selected": {
+          "count": 12,
+          "true_state": {
+            "small": 6,
+            "absent": 3,
+            "typical_positive": 3
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 3,
+          "precision": 0.25
+        },
+        "passed_over": {
+          "count": 6,
+          "true_state": {
+            "small": 2,
+            "absent": 2,
+            "typical_positive": 2
+          },
+          "slice_acquired_under_another_intent": 5,
+          "hits": 2,
+          "precision": 0.3333333333333333
+        }
+      },
+      "MYO/small": {
+        "offered": {
+          "count": 42,
+          "true_state": {
+            "small": 20,
+            "absent": 3,
+            "typical_positive": 19
+          },
+          "slice_acquired_under_another_intent": 9,
+          "hits": 20,
+          "precision": 0.47619047619047616
+        },
+        "selected": {
+          "count": 15,
+          "true_state": {
+            "small": 7,
+            "absent": 2,
+            "typical_positive": 6
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 7,
+          "precision": 0.4666666666666667
+        },
+        "passed_over": {
+          "count": 27,
+          "true_state": {
+            "small": 13,
+            "absent": 1,
+            "typical_positive": 13
+          },
+          "slice_acquired_under_another_intent": 9,
+          "hits": 13,
+          "precision": 0.48148148148148145
+        }
+      },
+      "RV/ED/absent": {
+        "offered": {
+          "count": 5,
+          "true_state": {
+            "small": 3,
+            "absent": 2,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 2,
+          "precision": 0.4
+        },
+        "selected": {
+          "count": 4,
+          "true_state": {
+            "small": 2,
+            "absent": 2,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 2,
+          "precision": 0.5
+        },
+        "passed_over": {
+          "count": 1,
+          "true_state": {
+            "small": 1,
+            "absent": 0,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 0,
+          "precision": 0.0
+        }
+      },
+      "RV/ED/small": {
+        "offered": {
+          "count": 32,
+          "true_state": {
+            "small": 26,
+            "absent": 4,
+            "typical_positive": 2
+          },
+          "slice_acquired_under_another_intent": 7,
+          "hits": 26,
+          "precision": 0.8125
+        },
+        "selected": {
+          "count": 8,
+          "true_state": {
+            "small": 8,
+            "absent": 0,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 8,
+          "precision": 1.0
+        },
+        "passed_over": {
+          "count": 24,
+          "true_state": {
+            "small": 18,
+            "absent": 4,
+            "typical_positive": 2
+          },
+          "slice_acquired_under_another_intent": 7,
+          "hits": 18,
+          "precision": 0.75
+        }
+      },
+      "RV/ES/absent": {
+        "offered": {
+          "count": 6,
+          "true_state": {
+            "small": 2,
+            "absent": 4,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 1,
+          "hits": 4,
+          "precision": 0.6666666666666666
+        },
+        "selected": {
+          "count": 5,
+          "true_state": {
+            "small": 1,
+            "absent": 4,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 4,
+          "precision": 0.8
+        },
+        "passed_over": {
+          "count": 1,
+          "true_state": {
+            "small": 1,
+            "absent": 0,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 1,
+          "hits": 0,
+          "precision": 0.0
+        }
+      },
+      "RV/ES/small": {
+        "offered": {
+          "count": 38,
+          "true_state": {
+            "small": 25,
+            "absent": 11,
+            "typical_positive": 2
+          },
+          "slice_acquired_under_another_intent": 3,
+          "hits": 25,
+          "precision": 0.6578947368421053
+        },
+        "selected": {
+          "count": 8,
+          "true_state": {
+            "small": 5,
+            "absent": 2,
+            "typical_positive": 1
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 5,
+          "precision": 0.625
+        },
+        "passed_over": {
+          "count": 30,
+          "true_state": {
+            "small": 20,
+            "absent": 9,
+            "typical_positive": 1
+          },
+          "slice_acquired_under_another_intent": 3,
+          "hits": 20,
+          "precision": 0.6666666666666666
+        }
+      },
+      "RV/absent": {
+        "offered": {
+          "count": 11,
+          "true_state": {
+            "small": 5,
+            "absent": 6,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 1,
+          "hits": 6,
+          "precision": 0.5454545454545454
+        },
+        "selected": {
+          "count": 9,
+          "true_state": {
+            "small": 3,
+            "absent": 6,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 6,
+          "precision": 0.6666666666666666
+        },
+        "passed_over": {
+          "count": 2,
+          "true_state": {
+            "small": 2,
+            "absent": 0,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 1,
+          "hits": 0,
+          "precision": 0.0
+        }
+      },
+      "RV/small": {
+        "offered": {
+          "count": 70,
+          "true_state": {
+            "small": 51,
+            "absent": 15,
+            "typical_positive": 4
+          },
+          "slice_acquired_under_another_intent": 10,
+          "hits": 51,
+          "precision": 0.7285714285714285
+        },
+        "selected": {
+          "count": 16,
+          "true_state": {
+            "small": 13,
+            "absent": 2,
+            "typical_positive": 1
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 13,
+          "precision": 0.8125
+        },
+        "passed_over": {
+          "count": 54,
+          "true_state": {
+            "small": 38,
+            "absent": 13,
+            "typical_positive": 3
+          },
+          "slice_acquired_under_another_intent": 10,
+          "hits": 38,
+          "precision": 0.7037037037037037
+        }
+      },
+      "absent": {
+        "offered": {
+          "count": 45,
+          "true_state": {
+            "small": 27,
+            "absent": 13,
+            "typical_positive": 5
+          },
+          "slice_acquired_under_another_intent": 11,
+          "hits": 13,
+          "precision": 0.28888888888888886
+        },
+        "selected": {
+          "count": 31,
+          "true_state": {
+            "small": 18,
+            "absent": 10,
+            "typical_positive": 3
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 10,
+          "precision": 0.3225806451612903
+        },
+        "passed_over": {
+          "count": 14,
+          "true_state": {
+            "small": 9,
+            "absent": 3,
+            "typical_positive": 2
+          },
+          "slice_acquired_under_another_intent": 11,
+          "hits": 3,
+          "precision": 0.21428571428571427
+        }
+      },
+      "small": {
+        "offered": {
+          "count": 163,
+          "true_state": {
+            "small": 96,
+            "absent": 22,
+            "typical_positive": 45
+          },
+          "slice_acquired_under_another_intent": 27,
+          "hits": 96,
+          "precision": 0.588957055214724
+        },
+        "selected": {
+          "count": 46,
+          "true_state": {
+            "small": 30,
+            "absent": 5,
+            "typical_positive": 11
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 30,
+          "precision": 0.6521739130434783
+        },
+        "passed_over": {
+          "count": 117,
+          "true_state": {
+            "small": 66,
+            "absent": 17,
+            "typical_positive": 34
+          },
+          "slice_acquired_under_another_intent": 27,
+          "hits": 66,
+          "precision": 0.5641025641025641
+        }
+      }
+    },
+    "1": {
+      "LV/ED/absent": {
+        "offered": {
+          "count": 11,
+          "true_state": {
+            "small": 9,
+            "absent": 1,
+            "typical_positive": 1
+          },
+          "slice_acquired_under_another_intent": 1,
+          "hits": 1,
+          "precision": 0.09090909090909091
+        },
+        "selected": {
+          "count": 9,
+          "true_state": {
+            "small": 7,
+            "absent": 1,
+            "typical_positive": 1
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 1,
+          "precision": 0.1111111111111111
+        },
+        "passed_over": {
+          "count": 2,
+          "true_state": {
+            "small": 2,
+            "absent": 0,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 1,
+          "hits": 0,
+          "precision": 0.0
+        }
+      },
+      "LV/ED/small": {
+        "offered": {
+          "count": 22,
+          "true_state": {
+            "small": 14,
+            "absent": 1,
+            "typical_positive": 7
+          },
+          "slice_acquired_under_another_intent": 2,
+          "hits": 14,
+          "precision": 0.6363636363636364
+        },
+        "selected": {
+          "count": 9,
+          "true_state": {
+            "small": 6,
+            "absent": 1,
+            "typical_positive": 2
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 6,
+          "precision": 0.6666666666666666
+        },
+        "passed_over": {
+          "count": 13,
+          "true_state": {
+            "small": 8,
+            "absent": 0,
+            "typical_positive": 5
+          },
+          "slice_acquired_under_another_intent": 2,
+          "hits": 8,
+          "precision": 0.6153846153846154
+        }
+      },
+      "LV/ES/absent": {
+        "offered": {
+          "count": 15,
+          "true_state": {
+            "small": 11,
+            "absent": 3,
+            "typical_positive": 1
+          },
+          "slice_acquired_under_another_intent": 1,
+          "hits": 3,
+          "precision": 0.2
+        },
+        "selected": {
+          "count": 9,
+          "true_state": {
+            "small": 6,
+            "absent": 2,
+            "typical_positive": 1
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 2,
+          "precision": 0.2222222222222222
+        },
+        "passed_over": {
+          "count": 6,
+          "true_state": {
+            "small": 5,
+            "absent": 1,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 1,
+          "hits": 1,
+          "precision": 0.16666666666666666
+        }
+      },
+      "LV/ES/small": {
+        "offered": {
+          "count": 24,
+          "true_state": {
+            "small": 10,
+            "absent": 4,
+            "typical_positive": 10
+          },
+          "slice_acquired_under_another_intent": 2,
+          "hits": 10,
+          "precision": 0.4166666666666667
+        },
+        "selected": {
+          "count": 9,
+          "true_state": {
+            "small": 1,
+            "absent": 1,
+            "typical_positive": 7
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 1,
+          "precision": 0.1111111111111111
+        },
+        "passed_over": {
+          "count": 15,
+          "true_state": {
+            "small": 9,
+            "absent": 3,
+            "typical_positive": 3
+          },
+          "slice_acquired_under_another_intent": 2,
+          "hits": 9,
+          "precision": 0.6
+        }
+      },
+      "LV/absent": {
+        "offered": {
+          "count": 26,
+          "true_state": {
+            "small": 20,
+            "absent": 4,
+            "typical_positive": 2
+          },
+          "slice_acquired_under_another_intent": 2,
+          "hits": 4,
+          "precision": 0.15384615384615385
+        },
+        "selected": {
+          "count": 18,
+          "true_state": {
+            "small": 13,
+            "absent": 3,
+            "typical_positive": 2
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 3,
+          "precision": 0.16666666666666666
+        },
+        "passed_over": {
+          "count": 8,
+          "true_state": {
+            "small": 7,
+            "absent": 1,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 2,
+          "hits": 1,
+          "precision": 0.125
+        }
+      },
+      "LV/small": {
+        "offered": {
+          "count": 46,
+          "true_state": {
+            "small": 24,
+            "absent": 5,
+            "typical_positive": 17
+          },
+          "slice_acquired_under_another_intent": 4,
+          "hits": 24,
+          "precision": 0.5217391304347826
+        },
+        "selected": {
+          "count": 18,
+          "true_state": {
+            "small": 7,
+            "absent": 2,
+            "typical_positive": 9
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 7,
+          "precision": 0.3888888888888889
+        },
+        "passed_over": {
+          "count": 28,
+          "true_state": {
+            "small": 17,
+            "absent": 3,
+            "typical_positive": 8
+          },
+          "slice_acquired_under_another_intent": 4,
+          "hits": 17,
+          "precision": 0.6071428571428571
+        }
+      },
+      "MYO/ED/absent": {
+        "offered": {
+          "count": 1,
+          "true_state": {
+            "small": 0,
+            "absent": 0,
+            "typical_positive": 1
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 0,
+          "precision": 0.0
+        },
+        "selected": {
+          "count": 1,
+          "true_state": {
+            "small": 0,
+            "absent": 0,
+            "typical_positive": 1
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 0,
+          "precision": 0.0
+        },
+        "passed_over": {
+          "count": 0,
+          "true_state": {
+            "small": 0,
+            "absent": 0,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 0,
+          "precision": null
+        }
+      },
+      "MYO/ED/small": {
+        "offered": {
+          "count": 23,
+          "true_state": {
+            "small": 7,
+            "absent": 3,
+            "typical_positive": 13
+          },
+          "slice_acquired_under_another_intent": 8,
+          "hits": 7,
+          "precision": 0.30434782608695654
+        },
+        "selected": {
+          "count": 8,
+          "true_state": {
+            "small": 2,
+            "absent": 1,
+            "typical_positive": 5
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 2,
+          "precision": 0.25
+        },
+        "passed_over": {
+          "count": 15,
+          "true_state": {
+            "small": 5,
+            "absent": 2,
+            "typical_positive": 8
+          },
+          "slice_acquired_under_another_intent": 8,
+          "hits": 5,
+          "precision": 0.3333333333333333
+        }
+      },
+      "MYO/ES/absent": {
+        "offered": {
+          "count": 1,
+          "true_state": {
+            "small": 0,
+            "absent": 0,
+            "typical_positive": 1
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 0,
+          "precision": 0.0
+        },
+        "selected": {
+          "count": 1,
+          "true_state": {
+            "small": 0,
+            "absent": 0,
+            "typical_positive": 1
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 0,
+          "precision": 0.0
+        },
+        "passed_over": {
+          "count": 0,
+          "true_state": {
+            "small": 0,
+            "absent": 0,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 0,
+          "precision": null
+        }
+      },
+      "MYO/ES/small": {
+        "offered": {
+          "count": 32,
+          "true_state": {
+            "small": 7,
+            "absent": 5,
+            "typical_positive": 20
+          },
+          "slice_acquired_under_another_intent": 7,
+          "hits": 7,
+          "precision": 0.21875
+        },
+        "selected": {
+          "count": 9,
+          "true_state": {
+            "small": 3,
+            "absent": 0,
+            "typical_positive": 6
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 3,
+          "precision": 0.3333333333333333
+        },
+        "passed_over": {
+          "count": 23,
+          "true_state": {
+            "small": 4,
+            "absent": 5,
+            "typical_positive": 14
+          },
+          "slice_acquired_under_another_intent": 7,
+          "hits": 4,
+          "precision": 0.17391304347826086
+        }
+      },
+      "MYO/absent": {
+        "offered": {
+          "count": 2,
+          "true_state": {
+            "small": 0,
+            "absent": 0,
+            "typical_positive": 2
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 0,
+          "precision": 0.0
+        },
+        "selected": {
+          "count": 2,
+          "true_state": {
+            "small": 0,
+            "absent": 0,
+            "typical_positive": 2
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 0,
+          "precision": 0.0
+        },
+        "passed_over": {
+          "count": 0,
+          "true_state": {
+            "small": 0,
+            "absent": 0,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 0,
+          "precision": null
+        }
+      },
+      "MYO/small": {
+        "offered": {
+          "count": 55,
+          "true_state": {
+            "small": 14,
+            "absent": 8,
+            "typical_positive": 33
+          },
+          "slice_acquired_under_another_intent": 15,
+          "hits": 14,
+          "precision": 0.2545454545454545
+        },
+        "selected": {
+          "count": 17,
+          "true_state": {
+            "small": 5,
+            "absent": 1,
+            "typical_positive": 11
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 5,
+          "precision": 0.29411764705882354
+        },
+        "passed_over": {
+          "count": 38,
+          "true_state": {
+            "small": 9,
+            "absent": 7,
+            "typical_positive": 22
+          },
+          "slice_acquired_under_another_intent": 15,
+          "hits": 9,
+          "precision": 0.23684210526315788
+        }
+      },
+      "RV/ED/absent": {
+        "offered": {
+          "count": 2,
+          "true_state": {
+            "small": 2,
+            "absent": 0,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 0,
+          "precision": 0.0
+        },
+        "selected": {
+          "count": 2,
+          "true_state": {
+            "small": 2,
+            "absent": 0,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 0,
+          "precision": 0.0
+        },
+        "passed_over": {
+          "count": 0,
+          "true_state": {
+            "small": 0,
+            "absent": 0,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 0,
+          "precision": null
+        }
+      },
+      "RV/ED/small": {
+        "offered": {
+          "count": 24,
+          "true_state": {
+            "small": 15,
+            "absent": 3,
+            "typical_positive": 6
+          },
+          "slice_acquired_under_another_intent": 3,
+          "hits": 15,
+          "precision": 0.625
+        },
+        "selected": {
+          "count": 8,
+          "true_state": {
+            "small": 6,
+            "absent": 0,
+            "typical_positive": 2
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 6,
+          "precision": 0.75
+        },
+        "passed_over": {
+          "count": 16,
+          "true_state": {
+            "small": 9,
+            "absent": 3,
+            "typical_positive": 4
+          },
+          "slice_acquired_under_another_intent": 3,
+          "hits": 9,
+          "precision": 0.5625
+        }
+      },
+      "RV/ES/absent": {
+        "offered": {
+          "count": 1,
+          "true_state": {
+            "small": 0,
+            "absent": 1,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 1,
+          "precision": 1.0
+        },
+        "selected": {
+          "count": 1,
+          "true_state": {
+            "small": 0,
+            "absent": 1,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 1,
+          "precision": 1.0
+        },
+        "passed_over": {
+          "count": 0,
+          "true_state": {
+            "small": 0,
+            "absent": 0,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 0,
+          "precision": null
+        }
+      },
+      "RV/ES/small": {
+        "offered": {
+          "count": 29,
+          "true_state": {
+            "small": 19,
+            "absent": 5,
+            "typical_positive": 5
+          },
+          "slice_acquired_under_another_intent": 9,
+          "hits": 19,
+          "precision": 0.6551724137931034
+        },
+        "selected": {
+          "count": 9,
+          "true_state": {
+            "small": 5,
+            "absent": 1,
+            "typical_positive": 3
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 5,
+          "precision": 0.5555555555555556
+        },
+        "passed_over": {
+          "count": 20,
+          "true_state": {
+            "small": 14,
+            "absent": 4,
+            "typical_positive": 2
+          },
+          "slice_acquired_under_another_intent": 9,
+          "hits": 14,
+          "precision": 0.7
+        }
+      },
+      "RV/absent": {
+        "offered": {
+          "count": 3,
+          "true_state": {
+            "small": 2,
+            "absent": 1,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 1,
+          "precision": 0.3333333333333333
+        },
+        "selected": {
+          "count": 3,
+          "true_state": {
+            "small": 2,
+            "absent": 1,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 1,
+          "precision": 0.3333333333333333
+        },
+        "passed_over": {
+          "count": 0,
+          "true_state": {
+            "small": 0,
+            "absent": 0,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 0,
+          "precision": null
+        }
+      },
+      "RV/small": {
+        "offered": {
+          "count": 53,
+          "true_state": {
+            "small": 34,
+            "absent": 8,
+            "typical_positive": 11
+          },
+          "slice_acquired_under_another_intent": 12,
+          "hits": 34,
+          "precision": 0.6415094339622641
+        },
+        "selected": {
+          "count": 17,
+          "true_state": {
+            "small": 11,
+            "absent": 1,
+            "typical_positive": 5
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 11,
+          "precision": 0.6470588235294118
+        },
+        "passed_over": {
+          "count": 36,
+          "true_state": {
+            "small": 23,
+            "absent": 7,
+            "typical_positive": 6
+          },
+          "slice_acquired_under_another_intent": 12,
+          "hits": 23,
+          "precision": 0.6388888888888888
+        }
+      },
+      "absent": {
+        "offered": {
+          "count": 31,
+          "true_state": {
+            "small": 22,
+            "absent": 5,
+            "typical_positive": 4
+          },
+          "slice_acquired_under_another_intent": 2,
+          "hits": 5,
+          "precision": 0.16129032258064516
+        },
+        "selected": {
+          "count": 23,
+          "true_state": {
+            "small": 15,
+            "absent": 4,
+            "typical_positive": 4
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 4,
+          "precision": 0.17391304347826086
+        },
+        "passed_over": {
+          "count": 8,
+          "true_state": {
+            "small": 7,
+            "absent": 1,
+            "typical_positive": 0
+          },
+          "slice_acquired_under_another_intent": 2,
+          "hits": 1,
+          "precision": 0.125
+        }
+      },
+      "small": {
+        "offered": {
+          "count": 154,
+          "true_state": {
+            "small": 72,
+            "absent": 21,
+            "typical_positive": 61
+          },
+          "slice_acquired_under_another_intent": 31,
+          "hits": 72,
+          "precision": 0.4675324675324675
+        },
+        "selected": {
+          "count": 52,
+          "true_state": {
+            "small": 23,
+            "absent": 4,
+            "typical_positive": 25
+          },
+          "slice_acquired_under_another_intent": 0,
+          "hits": 23,
+          "precision": 0.4423076923076923
+        },
+        "passed_over": {
+          "count": 102,
+          "true_state": {
+            "small": 49,
+            "absent": 17,
+            "typical_positive": 36
+          },
+          "slice_acquired_under_another_intent": 31,
+          "hits": 49,
+          "precision": 0.4803921568627451
+        }
+      }
+    }
+  }
+}

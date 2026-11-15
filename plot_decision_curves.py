@@ -12,6 +12,7 @@ METHODS = (
     ("targeted", "Balanced targeting", "#146769", False),
     ("uncertain", "Uncertainty", "#9c4326", True),
 )
+REVIEW_METHODS = METHODS + (("pooled_image_farthest", "Image difference", "#1b4d84", True),)
 PANELS = (
     ("absent", "A   All verified absences"),
     ("near_absent", "B   Adjacent verified absences"),
@@ -27,7 +28,7 @@ def label(plot, x, y, text, size=8, *, align="left", bold=False):
     draw[align](x, y, text)
 
 
-def panel(plot, x, title, results, fpr_points):
+def panel(plot, x, title, results, fpr_points, methods):
     y, width, height = 39, 132, 97
     label(plot, x, y + height + 11, title, 8.2, bold=True)
     for value in (0, 20, 40, 60, 80, 100):
@@ -43,18 +44,21 @@ def panel(plot, x, title, results, fpr_points):
         col = x + width * (value - 5) / 35
         plot.line(col, y, col, y - 3)
         label(plot, col, y - 12, str(value), 7, align="center")
-    for method, _, color, dashed in METHODS:
+    for method, _, color, dashed in methods:
         xs = [x + width * (100 * value - 5) / 35 for value in fpr_points]
         ys = [y + height * value for value in results["methods"][method]["recall"]]
         plot.setStrokeColor(HexColor(color))
         plot.setFillColor(HexColor(color))
         plot.setLineWidth(1.3)
-        plot.setDash([4, 2.5] if dashed else [])
+        plot.setDash([1.5, 1.8] if method == "pooled_image_farthest" else [4, 2.5] if dashed else [])
         for left, right in zip(zip(xs, ys), zip(xs[1:], ys[1:])):
             plot.line(*left, *right)
         plot.setDash([])
         for cx, cy in zip(xs, ys, strict=True):
-            if dashed:
+            if method == "pooled_image_farthest":
+                plot.line(cx - 2, cy - 2, cx + 2, cy + 2)
+                plot.line(cx - 2, cy + 2, cx + 2, cy - 2)
+            elif dashed:
                 plot.rect(cx - 1.6, cy - 1.6, 3.2, 3.2, stroke=0, fill=1)
             else:
                 plot.circle(cx, cy, 1.85, stroke=0, fill=1)
@@ -66,22 +70,31 @@ def main():
     parser.add_argument("output", type=Path)
     args = parser.parse_args()
     audit = json.loads(args.audit.read_text(encoding="utf-8"))
+    methods = METHODS
+    if "cohorts" in audit:
+        pool = audit["cohorts"]["official"]["scores"]["top1"]["pooled"]
+        audit = {"false_positive_rates": pool["fpr_points"],
+                 "groups": {key: {"methods": {arm: {"recall": data["matched_recall"][key]}
+                                               for arm, data in pool["methods"].items()}}
+                            for key, _ in PANELS}}
+        methods = REVIEW_METHODS
     if audit["false_positive_rates"] != [0.05, 0.1, 0.2, 0.3, 0.4]:
         raise ValueError("Expected the recorded 5 to 40 percent FPR grid")
     plot = Canvas(str(args.output), pagesize=(336, 177), invariant=True)
     plot.setTitle("Patient-macro recall at matched false-positive rates")
     for (key, title), x in zip(PANELS, (33, 193), strict=True):
-        panel(plot, x, title, audit["groups"][key], audit["false_positive_rates"])
+        panel(plot, x, title, audit["groups"][key], audit["false_positive_rates"], methods)
     label(plot, 174, 12, "Matched false-positive rate (%)", 8, align="center")
     plot.saveState()
     plot.translate(8, 87)
     plot.rotate(90)
     label(plot, 0, 0, "Small-slice recall (%)", 8, align="center")
     plot.restoreState()
-    for (_, text, color, dashed), x in zip(METHODS, (85, 185), strict=True):
+    legend_positions = (48, 150, 227) if methods is REVIEW_METHODS else (85, 185)
+    for (method, text, color, dashed), x in zip(methods, legend_positions, strict=True):
         plot.setStrokeColor(HexColor(color))
         plot.setLineWidth(1.3)
-        plot.setDash([4, 2.5] if dashed else [])
+        plot.setDash([1.5, 1.8] if method == "pooled_image_farthest" else [4, 2.5] if dashed else [])
         plot.line(x, 164, x + 15, 164)
         plot.setDash([])
         label(plot, x + 19, 161, text, 8)

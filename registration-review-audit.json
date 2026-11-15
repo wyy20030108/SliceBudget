@@ -1,0 +1,10 @@
+{
+  "status": "Post-review analysis plan fixed before the new inference outputs. The 50 official ACDC patients had been used in preceding analyses.",
+  "inference": "Freeze both original seed-2027 ACDC split-specific models and acquisition lists. Replay missing controls and require exact agreement with archived per-patient outcomes and thresholds within 1e-6.",
+  "primary_comparison": "Balanced targeting minus pooled-image difference using top-1 percent class-score mean, at a retrospective 20 percent patient-macro FPR. Report all-absence and one-slice-adjacent absence separately.",
+  "secondary_comparisons": "All seven image-only policies. Report each support and calibration cutoff. Top-0.1 percent probabilities and largest 4-connected argmax component are separate predefined score checks. Assess RV, MYO, LV individually, and report top-1 percent phase and small-area strata descriptively.",
+  "size_strata": "Small positive: 0 < pixel area <= 25 percent of class+phase peak. Within small positives split at 10 percent of phase peak and, separately, at the evaluated top-1-percent score mask size (369 pixels at 192 squared). Hold negatives fixed within each phase/structure scope.",
+  "calibration": "Fit each score and class cutoff on the same 12 source patients per split, with patient-equal negative weights. Class supports with fewer than 5 patients fall back to pooled class negatives.",
+  "uncertainty": "Resample paired test patients, with common draws across procedures. Re-estimate both fixed-model ROC curves in each draw. Main and classwise pointwise intervals use 4000 draws. No multiplicity adjustment. Report phase and area splits as descriptive.",
+  "reserved_cohort": "Evaluate the 20 ACDC training-release patients reserved by the original seed-2026 roster separately, without score, model, threshold or analysis changes following their results. Archived records show no prior project fitting, tuning or outcome scoring on the reserved roster. Files were cached and may have been loaded without use. This is a same-source cohort, and independence from any earlier unrelated project is not asserted."
+}

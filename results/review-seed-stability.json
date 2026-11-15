@@ -1,0 +1,890 @@
+{
+  "scope": "Post-hoc robustness, same official ACDC patients and source folds; training repeats are not new patients",
+  "matched_fpr": 0.2,
+  "matched_estimator": "Retrospective patient-macro ROC by fitted fold using class-cutoff-centered scores; mean of fold recalls",
+  "contrast_reference": "balanced targeting minus comparator",
+  "results_by_seed": {
+    "2028": {
+      "patients": 50,
+      "means": {
+        "uncertain": {
+          "recall": {
+            "mean": 0.15418995383701264,
+            "n": 50
+          },
+          "fpr": {
+            "mean": 0.21589288396011083,
+            "n": 49
+          },
+          "near_fpr": {
+            "mean": 0.06341463414634146,
+            "n": 41
+          },
+          "global_dice": {
+            "mean": 0.7816183672121737,
+            "n": 50
+          },
+          "small_dice": {
+            "mean": 0.2974373486412379,
+            "n": 50
+          }
+        },
+        "pooled_image_farthest": {
+          "recall": {
+            "mean": 0.17755582162935105,
+            "n": 50
+          },
+          "fpr": {
+            "mean": 0.23614015869418029,
+            "n": 49
+          },
+          "near_fpr": {
+            "mean": 0.03760162601626016,
+            "n": 41
+          },
+          "global_dice": {
+            "mean": 0.7642499602701338,
+            "n": 50
+          },
+          "small_dice": {
+            "mean": 0.45970299635595124,
+            "n": 50
+          }
+        },
+        "targeted": {
+          "recall": {
+            "mean": 0.033306998556998556,
+            "n": 50
+          },
+          "fpr": {
+            "mean": 0.1805138788782246,
+            "n": 49
+          },
+          "near_fpr": {
+            "mean": 0.012195121951219513,
+            "n": 41
+          },
+          "global_dice": {
+            "mean": 0.757571428710088,
+            "n": 50
+          },
+          "small_dice": {
+            "mean": 0.4706503766761797,
+            "n": 50
+          }
+        }
+      },
+      "contrasts": {
+        "uncertain": {
+          "recall": {
+            "difference": -0.1208829552800141,
+            "interval": [
+              -0.16694315635345047,
+              -0.0789824489236254
+            ]
+          },
+          "fpr": {
+            "difference": -0.03537900508188624,
+            "interval": [
+              -0.07007674223535568,
+              -0.002654440439179338
+            ]
+          },
+          "near_fpr": {
+            "difference": -0.051219512195121955,
+            "interval": [
+              -0.09349593495934959,
+              -0.016260162601626015
+            ]
+          },
+          "global_dice": {
+            "difference": -0.024046938502085703,
+            "interval": [
+              -0.03330106314791785,
+              -0.014079446397954398
+            ]
+          },
+          "small_dice": {
+            "difference": 0.17321302803494174,
+            "interval": [
+              0.14314281079603824,
+              0.2054191250012586
+            ]
+          }
+        },
+        "pooled_image_farthest": {
+          "recall": {
+            "difference": -0.14424882307235248,
+            "interval": [
+              -0.17499455932139754,
+              -0.113289235396956
+            ]
+          },
+          "fpr": {
+            "difference": -0.055626279815955686,
+            "interval": [
+              -0.08432472347913525,
+              -0.029854191676670663
+            ]
+          },
+          "near_fpr": {
+            "difference": -0.025406504065040646,
+            "interval": [
+              -0.054878048780487805,
+              0.0020325203252032522
+            ]
+          },
+          "global_dice": {
+            "difference": -0.006678531560045735,
+            "interval": [
+              -0.012871580886623197,
+              0.00015967961553021526
+            ]
+          },
+          "small_dice": {
+            "difference": 0.010947380320228395,
+            "interval": [
+              -0.006477320881574673,
+              0.02780243151543402
+            ]
+          }
+        }
+      },
+      "mean_run_pauc": {
+        "uncertain": {
+          "all_absent": 0.46341018289194624,
+          "near_absent": 0.6416472182267265
+        },
+        "pooled_image_farthest": {
+          "all_absent": 0.46974578028873726,
+          "near_absent": 0.7473575612894221
+        },
+        "targeted": {
+          "all_absent": 0.4191543892358107,
+          "near_absent": 0.7299170689122595
+        }
+      },
+      "by_fold": {
+        "uncertain": [
+          {
+            "matched_operating_points": {
+              "absent": {
+                "recall_at_20pct_fpr": 0.1152628482628477,
+                "small_patients": 50,
+                "negative_patients": 49,
+                "small_pairs": 387,
+                "negative_pairs": 381
+              },
+              "near_absent": {
+                "recall_at_20pct_fpr": 0.5205071007423925,
+                "small_patients": 50,
+                "negative_patients": 41,
+                "small_pairs": 387,
+                "negative_pairs": 107
+              }
+            },
+            "calibration": {
+              "global_dice": 0.7446999458893129,
+              "small_dice": 0.34253573420978783,
+              "recall": 0.09603174603174602,
+              "count_small": 6.5,
+              "fpr": 0.16196581196581195,
+              "count_absent": 7.5,
+              "near_fpr": 0.0,
+              "count_near_absent": 1.75
+            },
+            "calibration_thresholds": {
+              "1": 0.5194728374481201,
+              "2": 0.7246723175048828,
+              "3": 0.5852254033088684
+            },
+            "calibration_negative_patient_support": {
+              "1": 12,
+              "2": 7,
+              "3": 9
+            },
+            "archived_2028_replay": {
+              "max_abs_patient_delta": 0.0,
+              "max_abs_threshold_delta": 0.0,
+              "same_environment": true
+            },
+            "training_seconds": 19.87043241597712
+          },
+          {
+            "matched_operating_points": {
+              "absent": {
+                "recall_at_20pct_fpr": 0.15040083445965732,
+                "small_patients": 50,
+                "negative_patients": 49,
+                "small_pairs": 387,
+                "negative_pairs": 381
+              },
+              "near_absent": {
+                "recall_at_20pct_fpr": 0.4088384621914015,
+                "small_patients": 50,
+                "negative_patients": 41,
+                "small_pairs": 387,
+                "negative_pairs": 107
+              }
+            },
+            "calibration": {
+              "global_dice": 0.8078380338024124,
+              "small_dice": 0.28622850852884535,
+              "recall": 0.13214285714285715,
+              "count_small": 6.333333333333333,
+              "fpr": 0.19726813590449954,
+              "count_absent": 6.833333333333333,
+              "near_fpr": 0.022727272727272728,
+              "count_near_absent": 2.25
+            },
+            "calibration_thresholds": {
+              "1": 0.3924456238746643,
+              "2": 0.497872531414032,
+              "3": 0.35120663046836853
+            },
+            "calibration_negative_patient_support": {
+              "1": 11,
+              "2": 6,
+              "3": 8
+            },
+            "archived_2028_replay": {
+              "max_abs_patient_delta": 0.0,
+              "max_abs_threshold_delta": 0.0,
+              "same_environment": true
+            },
+            "training_seconds": 19.243085242807865
+          }
+        ],
+        "pooled_image_farthest": [
+          {
+            "matched_operating_points": {
+              "absent": {
+                "recall_at_20pct_fpr": 0.10484770784770739,
+                "small_patients": 50,
+                "negative_patients": 49,
+                "small_pairs": 387,
+                "negative_pairs": 381
+              },
+              "near_absent": {
+                "recall_at_20pct_fpr": 0.4847060847649062,
+                "small_patients": 50,
+                "negative_patients": 41,
+                "small_pairs": 387,
+                "negative_pairs": 107
+              }
+            },
+            "calibration": {
+              "global_dice": 0.7323403481878871,
+              "small_dice": 0.4368922522862699,
+              "recall": 0.15221861471861473,
+              "count_small": 6.5,
+              "fpr": 0.16676379176379175,
+              "count_absent": 7.5,
+              "near_fpr": 0.0,
+              "count_near_absent": 1.75
+            },
+            "calibration_thresholds": {
+              "1": 0.5999911427497864,
+              "2": 0.7549177408218384,
+              "3": 0.2837629020214081
+            },
+            "calibration_negative_patient_support": {
+              "1": 12,
+              "2": 7,
+              "3": 9
+            },
+            "archived_2028_replay": null,
+            "training_seconds": 18.688651128672063
+          },
+          {
+            "matched_operating_points": {
+              "absent": {
+                "recall_at_20pct_fpr": 0.13574234588940406,
+                "small_patients": 50,
+                "negative_patients": 49,
+                "small_pairs": 387,
+                "negative_pairs": 381
+              },
+              "near_absent": {
+                "recall_at_20pct_fpr": 0.5466988991400734,
+                "small_patients": 50,
+                "negative_patients": 41,
+                "small_pairs": 387,
+                "negative_pairs": 107
+              }
+            },
+            "calibration": {
+              "global_dice": 0.7859803104546882,
+              "small_dice": 0.40237215364329537,
+              "recall": 0.14474206349206348,
+              "count_small": 6.333333333333333,
+              "fpr": 0.19051882460973368,
+              "count_absent": 6.833333333333333,
+              "near_fpr": 0.045454545454545456,
+              "count_near_absent": 2.25
+            },
+            "calibration_thresholds": {
+              "1": 0.5017929077148438,
+              "2": 0.4053451716899872,
+              "3": 0.25177615880966187
+            },
+            "calibration_negative_patient_support": {
+              "1": 11,
+              "2": 6,
+              "3": 8
+            },
+            "archived_2028_replay": null,
+            "training_seconds": 19.906641728244722
+          }
+        ],
+        "targeted": [
+          {
+            "matched_operating_points": {
+              "absent": {
+                "recall_at_20pct_fpr": 0.03190620490620476,
+                "small_patients": 50,
+                "negative_patients": 49,
+                "small_pairs": 387,
+                "negative_pairs": 381
+              },
+              "near_absent": {
+                "recall_at_20pct_fpr": 0.6694292472233624,
+                "small_patients": 50,
+                "negative_patients": 41,
+                "small_pairs": 387,
+                "negative_pairs": 107
+              }
+            },
+            "calibration": {
+              "global_dice": 0.7243241536507004,
+              "small_dice": 0.46969335838720316,
+              "recall": 0.061507936507936505,
+              "count_small": 6.5,
+              "fpr": 0.17029914529914528,
+              "count_absent": 7.5,
+              "near_fpr": 0.0,
+              "count_near_absent": 1.75
+            },
+            "calibration_thresholds": {
+              "1": 0.7519049048423767,
+              "2": 0.7711561918258667,
+              "3": 0.6523027420043945
+            },
+            "calibration_negative_patient_support": {
+              "1": 12,
+              "2": 7,
+              "3": 9
+            },
+            "archived_2028_replay": {
+              "max_abs_patient_delta": 0.0,
+              "max_abs_threshold_delta": 0.0,
+              "same_environment": true
+            },
+            "training_seconds": 15.260396571829915
+          },
+          {
+            "matched_operating_points": {
+              "absent": {
+                "recall_at_20pct_fpr": 0.03906493506493492,
+                "small_patients": 50,
+                "negative_patients": 49,
+                "small_pairs": 387,
+                "negative_pairs": 381
+              },
+              "near_absent": {
+                "recall_at_20pct_fpr": 0.5768773514067612,
+                "small_patients": 50,
+                "negative_patients": 41,
+                "small_pairs": 387,
+                "negative_pairs": 107
+              }
+            },
+            "calibration": {
+              "global_dice": 0.7848528056950784,
+              "small_dice": 0.4354048342087151,
+              "recall": 0.0,
+              "count_small": 6.333333333333333,
+              "fpr": 0.17302571166207528,
+              "count_absent": 6.833333333333333,
+              "near_fpr": 0.0,
+              "count_near_absent": 2.25
+            },
+            "calibration_thresholds": {
+              "1": 0.9261454939842224,
+              "2": 0.5813602209091187,
+              "3": 0.5856072902679443
+            },
+            "calibration_negative_patient_support": {
+              "1": 11,
+              "2": 6,
+              "3": 8
+            },
+            "archived_2028_replay": {
+              "max_abs_patient_delta": 0.0,
+              "max_abs_threshold_delta": 0.0,
+              "same_environment": true
+            },
+            "training_seconds": 17.16159823630005
+          }
+        ]
+      },
+      "matched_recall": {
+        "uncertain": {
+          "absent": 0.1328318413612525,
+          "near_absent": 0.464672781466897
+        },
+        "pooled_image_farthest": {
+          "absent": 0.12029502686855573,
+          "near_absent": 0.5157024919524897
+        },
+        "targeted": {
+          "absent": 0.03548556998556984,
+          "near_absent": 0.6231532993150618
+        }
+      },
+      "matched_contrasts": {
+        "uncertain": {
+          "absent": -0.09734627137568266,
+          "near_absent": 0.1584805178481648
+        },
+        "pooled_image_farthest": {
+          "absent": -0.08480945688298588,
+          "near_absent": 0.10745080736257206
+        }
+      }
+    },
+    "2029": {
+      "patients": 50,
+      "means": {
+        "uncertain": {
+          "recall": {
+            "mean": 0.11653241856183032,
+            "n": 50
+          },
+          "fpr": {
+            "mean": 0.20955611515335404,
+            "n": 49
+          },
+          "near_fpr": {
+            "mean": 0.05691056910569105,
+            "n": 41
+          },
+          "global_dice": {
+            "mean": 0.7822786420784104,
+            "n": 50
+          },
+          "small_dice": {
+            "mean": 0.31861712025461625,
+            "n": 50
+          }
+        },
+        "pooled_image_farthest": {
+          "recall": {
+            "mean": 0.08092094670035847,
+            "n": 50
+          },
+          "fpr": {
+            "mean": 0.1849922053403446,
+            "n": 49
+          },
+          "near_fpr": {
+            "mean": 0.02032520325203252,
+            "n": 41
+          },
+          "global_dice": {
+            "mean": 0.7629463361057636,
+            "n": 50
+          },
+          "small_dice": {
+            "mean": 0.4474408010029062,
+            "n": 50
+          }
+        },
+        "targeted": {
+          "recall": {
+            "mean": 0.07038609266550443,
+            "n": 50
+          },
+          "fpr": {
+            "mean": 0.19689887276922088,
+            "n": 49
+          },
+          "near_fpr": {
+            "mean": 0.022357723577235773,
+            "n": 41
+          },
+          "global_dice": {
+            "mean": 0.7538746501915371,
+            "n": 50
+          },
+          "small_dice": {
+            "mean": 0.4809710161820088,
+            "n": 50
+          }
+        }
+      },
+      "contrasts": {
+        "uncertain": {
+          "recall": {
+            "difference": -0.04614632589632589,
+            "interval": [
+              -0.07165569985569986,
+              -0.022783964646464643
+            ]
+          },
+          "fpr": {
+            "difference": -0.012657242384133141,
+            "interval": [
+              -0.04600920725433031,
+              0.02293467020507838
+            ]
+          },
+          "near_fpr": {
+            "difference": -0.03455284552845528,
+            "interval": [
+              -0.06910569105691056,
+              -0.008130081300813007
+            ]
+          },
+          "global_dice": {
+            "difference": -0.028403991886873352,
+            "interval": [
+              -0.03768314842558582,
+              -0.0194137686429904
+            ]
+          },
+          "small_dice": {
+            "difference": 0.16235389592739252,
+            "interval": [
+              0.13613513976292269,
+              0.19221648034571923
+            ]
+          }
+        },
+        "pooled_image_farthest": {
+          "recall": {
+            "difference": -0.010534854034854036,
+            "interval": [
+              -0.037032224025974024,
+              0.01553882575757577
+            ]
+          },
+          "fpr": {
+            "difference": 0.01190666742887631,
+            "interval": [
+              -0.015702191590922083,
+              0.03936131595495341
+            ]
+          },
+          "near_fpr": {
+            "difference": 0.0020325203252032522,
+            "interval": [
+              -0.02032520325203252,
+              0.022357723577235773
+            ]
+          },
+          "global_dice": {
+            "difference": -0.009071685914226621,
+            "interval": [
+              -0.01489277508720388,
+              -0.003033906275668743
+            ]
+          },
+          "small_dice": {
+            "difference": 0.03353021517910259,
+            "interval": [
+              0.017232527794492213,
+              0.049374570148054554
+            ]
+          }
+        }
+      },
+      "mean_run_pauc": {
+        "uncertain": {
+          "all_absent": 0.4541142628940219,
+          "near_absent": 0.6409350244198244
+        },
+        "pooled_image_farthest": {
+          "all_absent": 0.4621322644115642,
+          "near_absent": 0.7319766733663613
+        },
+        "targeted": {
+          "all_absent": 0.4415522191761097,
+          "near_absent": 0.7287514321215665
+        }
+      },
+      "by_fold": {
+        "uncertain": [
+          {
+            "matched_operating_points": {
+              "absent": {
+                "recall_at_20pct_fpr": 0.10578665778665733,
+                "small_patients": 50,
+                "negative_patients": 49,
+                "small_pairs": 387,
+                "negative_pairs": 381
+              },
+              "near_absent": {
+                "recall_at_20pct_fpr": 0.4415926393867549,
+                "small_patients": 50,
+                "negative_patients": 41,
+                "small_pairs": 387,
+                "negative_pairs": 107
+              }
+            },
+            "calibration": {
+              "global_dice": 0.7535766175188447,
+              "small_dice": 0.24388717710559069,
+              "recall": 0.030555555555555558,
+              "count_small": 6.5,
+              "fpr": 0.14933954933954932,
+              "count_absent": 7.5,
+              "near_fpr": 0.0,
+              "count_near_absent": 1.75
+            },
+            "calibration_thresholds": {
+              "1": 0.6270483732223511,
+              "2": 0.7015494704246521,
+              "3": 0.5252160429954529
+            },
+            "calibration_negative_patient_support": {
+              "1": 12,
+              "2": 7,
+              "3": 9
+            },
+            "archived_2028_replay": null,
+            "training_seconds": 19.928667937405407
+          },
+          {
+            "matched_operating_points": {
+              "absent": {
+                "recall_at_20pct_fpr": 0.08374021729904049,
+                "small_patients": 50,
+                "negative_patients": 49,
+                "small_pairs": 387,
+                "negative_pairs": 381
+              },
+              "near_absent": {
+                "recall_at_20pct_fpr": 0.49797984042101484,
+                "small_patients": 50,
+                "negative_patients": 41,
+                "small_pairs": 387,
+                "negative_pairs": 107
+              }
+            },
+            "calibration": {
+              "global_dice": 0.7983460505608324,
+              "small_dice": 0.3260064469615722,
+              "recall": 0.08968253968253968,
+              "count_small": 6.333333333333333,
+              "fpr": 0.195821854912764,
+              "count_absent": 6.833333333333333,
+              "near_fpr": 0.0,
+              "count_near_absent": 2.25
+            },
+            "calibration_thresholds": {
+              "1": 0.6002782583236694,
+              "2": 0.5640290975570679,
+              "3": 0.33001935482025146
+            },
+            "calibration_negative_patient_support": {
+              "1": 11,
+              "2": 6,
+              "3": 8
+            },
+            "archived_2028_replay": null,
+            "training_seconds": 20.695871860720217
+          }
+        ],
+        "pooled_image_farthest": [
+          {
+            "matched_operating_points": {
+              "absent": {
+                "recall_at_20pct_fpr": 0.11330852480852437,
+                "small_patients": 50,
+                "negative_patients": 49,
+                "small_pairs": 387,
+                "negative_pairs": 381
+              },
+              "near_absent": {
+                "recall_at_20pct_fpr": 0.48790686111274134,
+                "small_patients": 50,
+                "negative_patients": 41,
+                "small_pairs": 387,
+                "negative_pairs": 107
+              }
+            },
+            "calibration": {
+              "global_dice": 0.7184909381675606,
+              "small_dice": 0.39492414340306925,
+              "recall": 0.041666666666666664,
+              "count_small": 6.5,
+              "fpr": 0.15211732711732714,
+              "count_absent": 7.5,
+              "near_fpr": 0.0,
+              "count_near_absent": 1.75
+            },
+            "calibration_thresholds": {
+              "1": 0.9332486391067505,
+              "2": 0.5541872978210449,
+              "3": 0.5075541138648987
+            },
+            "calibration_negative_patient_support": {
+              "1": 12,
+              "2": 7,
+              "3": 9
+            },
+            "archived_2028_replay": null,
+            "training_seconds": 19.003394135273993
+          },
+          {
+            "matched_operating_points": {
+              "absent": {
+                "recall_at_20pct_fpr": 0.11165913171795477,
+                "small_patients": 50,
+                "negative_patients": 49,
+                "small_pairs": 387,
+                "negative_pairs": 381
+              },
+              "near_absent": {
+                "recall_at_20pct_fpr": 0.5626006444535835,
+                "small_patients": 50,
+                "negative_patients": 41,
+                "small_pairs": 387,
+                "negative_pairs": 107
+              }
+            },
+            "calibration": {
+              "global_dice": 0.7809087516682665,
+              "small_dice": 0.3919552078237909,
+              "recall": 0.11051587301587301,
+              "count_small": 6.333333333333333,
+              "fpr": 0.2061753902662993,
+              "count_absent": 6.833333333333333,
+              "near_fpr": 0.0,
+              "count_near_absent": 2.25
+            },
+            "calibration_thresholds": {
+              "1": 0.5639707446098328,
+              "2": 0.45236021280288696,
+              "3": 0.3190338909626007
+            },
+            "calibration_negative_patient_support": {
+              "1": 11,
+              "2": 6,
+              "3": 8
+            },
+            "archived_2028_replay": null,
+            "training_seconds": 19.67040903866291
+          }
+        ],
+        "targeted": [
+          {
+            "matched_operating_points": {
+              "absent": {
+                "recall_at_20pct_fpr": 0.07861061161061124,
+                "small_patients": 50,
+                "negative_patients": 49,
+                "small_pairs": 387,
+                "negative_pairs": 381
+              },
+              "near_absent": {
+                "recall_at_20pct_fpr": 0.634439328645208,
+                "small_patients": 50,
+                "negative_patients": 41,
+                "small_pairs": 387,
+                "negative_pairs": 107
+              }
+            },
+            "calibration": {
+              "global_dice": 0.6903258051614185,
+              "small_dice": 0.4215504915916953,
+              "recall": 0.08134920634920634,
+              "count_small": 6.5,
+              "fpr": 0.17029914529914528,
+              "count_absent": 7.5,
+              "near_fpr": 0.0,
+              "count_near_absent": 1.75
+            },
+            "calibration_thresholds": {
+              "1": 0.5067715644836426,
+              "2": 0.5038259625434875,
+              "3": 0.5540674924850464
+            },
+            "calibration_negative_patient_support": {
+              "1": 12,
+              "2": 7,
+              "3": 9
+            },
+            "archived_2028_replay": null,
+            "training_seconds": 19.923581357114017
+          },
+          {
+            "matched_operating_points": {
+              "absent": {
+                "recall_at_20pct_fpr": 0.07224093879976208,
+                "small_patients": 50,
+                "negative_patients": 49,
+                "small_pairs": 387,
+                "negative_pairs": 381
+              },
+              "near_absent": {
+                "recall_at_20pct_fpr": 0.48834915411385843,
+                "small_patients": 50,
+                "negative_patients": 41,
+                "small_pairs": 387,
+                "negative_pairs": 107
+              }
+            },
+            "calibration": {
+              "global_dice": 0.7919653717276387,
+              "small_dice": 0.49103541871622913,
+              "recall": 0.020833333333333332,
+              "count_small": 6.333333333333333,
+              "fpr": 0.18287419651056014,
+              "count_absent": 6.833333333333333,
+              "near_fpr": 0.0,
+              "count_near_absent": 2.25
+            },
+            "calibration_thresholds": {
+              "1": 0.882930338382721,
+              "2": 0.5504141449928284,
+              "3": 0.53435879945755
+            },
+            "calibration_negative_patient_support": {
+              "1": 11,
+              "2": 6,
+              "3": 8
+            },
+            "archived_2028_replay": null,
+            "training_seconds": 19.828035368584096
+          }
+        ]
+      },
+      "matched_recall": {
+        "uncertain": {
+          "absent": 0.09476343754284891,
+          "near_absent": 0.4697862399038849
+        },
+        "pooled_image_farthest": {
+          "absent": 0.11248382826323958,
+          "near_absent": 0.5252537527831624
+        },
+        "targeted": {
+          "absent": 0.07542577520518666,
+          "near_absent": 0.5613942413795332
+        }
+      },
+      "matched_contrasts": {
+        "uncertain": {
+          "absent": -0.01933766233766225,
+          "near_absent": 0.09160800147564829
+        },
+        "pooled_image_farthest": {
+          "absent": -0.03705805305805292,
+          "near_absent": 0.03614048859637076
+        }
+      }
+    }
+  }
+}
